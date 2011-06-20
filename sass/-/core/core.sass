@@ -1,0 +1,214 @@
+///////////////////////////
+//        METRICS        //
+///////////////////////////
+
+// IMAGE + PAGE RATIOS
+=ratio($width, $height, $cols)
+  // image containers
+  .single-#{$width}x#{$height}
+    +width(3)
+  .double-#{$width}x#{$height}
+    +width(6)
+  .triple-#{$width}x#{$height}
+    +width(9)
+  .quad-#{$width}x#{$height}
+    +width(12)
+  // Page ratios
+  @for $i from 1 through $cols
+    .r#{$width}x#{$height}.w#{$i}.fixed
+      height: ($column * $i + $gutter * ( $i - 1 )) * ( $height / $width )
+    .img.w#{$i}
+      &.single-#{$width}x#{$height}, &.double-#{$width}x#{$height}, &.triple-#{$width}x#{$height}, &.quad-#{$width}x#{$height}
+        img
+          +width($i)
+          height: ($column * $i + $gutter * ( $i - 1 )) * ( $height / $width )
+
+// Run the code above. Ratios are defined in the skin
++ratios
+
+// COLUMNS and GRID WIDTHS
+=columns($cols)
+  @for $i from 1 through $cols
+    .c#{$i}
+      margin-left: ($column + $gutter) * ( $i - 1 )
+    .w#{$i}
+      +width($i)
+
+// Run the code above. Columns are defined in the skin
++columns($columns)
+
+
+// GRID+FIGURE MEASUREMENTS
+.grid
+  position: absolute
+  overflow: hidden
+  z-index: 1
+
+// CLEAR MIN-MAX FOR FIXED GRIDS
+.fixed.grid, .sizetocontainer.grid
+  max-width: none
+  max-height: none
+  min-width: none
+  min-height: none
+
+
+///////////////////////////
+// GENERAL FUNCTIONALITY //
+///////////////////////////
+
+// MAKE HEADLINE TEXT RENDER BETTER
+h1, h2, h3, h4, h5, h6
+  text-rendering: optimizeLegibility
+  word-wrap: break-word
+
+p
+  -webkit-hyphens: auto
+  -moz-hyphens: auto
+  -ms-hyphens: auto
+  -o-hyphens: auto
+  hyphens: auto
+
+
+// COLUMNS
+.column, .container
+  position: absolute
+  overflow: hidden
+  top: $top
+  bottom: $bottom
+
+// GRID MODS
+#previousPage, #nextPage
+  z-index: -1
+  opacity: 0.5
+
+.spread
+  &.odd
+    z-index: 2
+    &#previousPage
+      opacity: 1
+      z-index: 1
+  &.even
+    margin-left: 0
+    &#nextPage
+      opacity: 1
+
+// TRIM LEFT OR RIGHT PAGE MARGINS
+.trimleft
+  padding-left: 0
+.trimright
+  padding-right: 0
+
+// FIGURE PLACEMENT
+figure
+  display: block
+
+.colapsed
+  position: absolute
+.fill
+  left: 0
+  top: 0
+.topfix
+  top: 0
+.rightfix
+  right: 0
+.bottomfix
+  bottom: 0
+  top: auto
+.leftfix
+  left: 0
+
+.overflow
+  overflow: visible
+
+// RESOURCES
+.error, .loading
+  position: absolute
+  width: 160px
+  height: 100px
+  letter-spacing: 2px
+  margin: 0 0 0 20px
+  img
+    display: inline
+
+.hidden, .microdata
+  display: none
+
+.group
+  position: absolute
+  top: 0
+  bottom: 0
+  padding: 0
+
+// CURSOR CONSISTANCY
+*
+  cursor: default
+a, button, .zoomable, #previousPage, #nextPage
+  cursor: pointer
+  *
+    cursor: pointer
+
+// CENTER CONTENT
+.center, .center *
+  text-align: center
+
+// DISABLES CAPTIONS FOR CONTAINER
+.nocap .caption
+  display: none
+
+// Add padding to captions when in a fill grid
+.fill .caption
+  padding-left: $margin
+  padding-right: $margin
+
+// INSET CAPTION ADVANCED PLACEMENT
+.caption
+  &.left
+    text-align: left
+  &.right
+    right: 0
+    text-align: right
+
+.insetcap
+  .caption
+    position: absolute
+  &.ul .caption
+    top: 0
+    left: 0
+  &.ur .caption
+    top: 0
+    right: 0
+  &.ll .caption
+    bottom: 0
+    left: 0
+  &.lr .caption
+    bottom: 0
+    right: 0
+
+
+// SUPPORT FULL-BLEED IMAGES *ABITRARY CROPS BEWARE*
+// !IMPORTANT FLAGS NESSISARY TO OVERRIDE TREESAVER
+
+.fullbleed
+  position: absolute
+  bottom: 0 !important
+  top: 0 !important
+  left: 0 !important
+  right: 0 !important
+  width: auto
+  img
+    width: auto !important
+    height: auto !important
+    min-height: 100%
+    min-width: 100%
+
+
+// iPAD
+.browser-os-ipad .chrome
+  bottom: 77px
+
+// iPHONE
+.browser-os-iphone .chrome
+  bottom: 63px
+
+.fullScreen .chrome
+  bottom: 19px

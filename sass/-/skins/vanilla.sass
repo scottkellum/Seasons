@@ -1,0 +1,80 @@
+// TYPE
+$size: 14px
+$line-height: 20px
+
+// METRICS
+$columns: 12
+$column: 78px
+$gutter: 16px
+$margin: 20px
+$top: $line-height * 2
+$bottom: $line-height * 2
+
+// COLORS
+$primary: #D81010
+$secondary: #f50019
+$tertiary: #ccc4b7
+$text: #333
+$page: #fff
+$body: #333
+
+// FONTS
+$font: Georgia, serif
+$headline: "Popular", sans-serif
+$headline-weight: bold
+$headline-style: normal
+$subhead: "AntennaRE", sans-serif
+
+// IMAGE/PAGE RATIOS
+// If you wish to scale images and have fixed page sizes image ratios are a must. This allows images sizes to be measured for Treesaver.
+// Image sizes still need to be hard coded for lightboxes.
+=ratios
+  +ratio(16, 9, $columns)
+  +ratio(5, 4, $columns)
+  +ratio(4, 5, $columns)
+
+=headline
+  font-family: $headline
+  font-weight: $headline-weight
+  font-style: $headline-style
+
+
+// COLUMN WIDTHS
+// If you have a set of grids with a different column width, define it here. The department grid is here as an example but it is only nessisary to list the ones with a different size column from the standard width.
+// Column widths are measured by grid columns. The default should usually be 3 as that is what the image sizes are based on.
+.column
+  +width(3)
+  +type($size, $line-height)
+  .department &
+    +width(3)
+
+// TYPOGRAPHIC STYLES
+// Keep vertical spacing and all line-height attrubutes a multiple of your line-height to avoid text flow bugs. Do not use "!important" on any measurements here
+p
+  +type($size, $line-height)
+  color: $text
+  text-indent: $line-height
+  &.noindent, &.caption, .keeptogether &
+    text-indent: 0
+  &.caption
+    text-align: left
+
+h1, h2, h3, h4 ,h5 ,h6
+  font-family: $subhead
+  font-weight: bold
+
+h1
+  +solid($line-height)
+  +headline
+
+
+// GENERAL GRID STYLES
+// Styles here apply to every grid in your publication
+.grid
+  padding: 0 $margin
+  background: $page
+
+// GRID STYLES
+// Styles to spefic grids in your publication, for example the department grid.
+.department.grid
+  
