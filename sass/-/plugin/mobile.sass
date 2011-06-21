@@ -1,0 +1,96 @@
+// MOBILE STYLES
+// These styles allow you to create smartphone specific grids.
+// To use create a new set of grids with the class "mobile"
+// all width measurements will be overwritten by these styles.
+
+// Suggested cover width
+$cover_width: 250px
+
+// Remove mobile grids for desktop users
+.mobile.grid
+  +over9000
+
+// All the mobile grid styles here.
+.smallscreen.mobile
+  // GRID RESET
+  background: $page
+  .viewer
+    top: 0
+    right: 0
+    left: 0
+  .grid
+    +over9000
+  .mobile.grid
+    width: 280px
+    min-width: 280px
+    padding: 20px
+    border: none
+    +box-shadow(none)
+    margin: 0
+    &#previousPage, &#nextPage
+      opacity: 1
+  .column, .container
+    width: 280px
+    min-width: 280px
+
+// IMAGE + PAGE RATIOS
+=ratio($width, $height, $cols)
+  // Force resize images
+  .mobile.grid
+    .img
+      &.single-#{$width}x#{$height}
+        img
+          width: 280px
+          height: 280px * ( $height / $width )
+  // Fixed page ratios
+  @for $i from 1 through $cols
+    .grid.fixed
+      &.w#{$i}col.r#{$width}x#{$height}
+        +width($i)
+        height: ($column * $i + $gutter * ( $i - 1 )) * ( $height / $width )
+      // Force resize images
+    .fixed.grid, .sizetocontainer.grid
+      .img.w#{$i}col
+        text-align: center
+        &.small-single-#{$width}x#{$height}, &.single-#{$width}x#{$height}, &.small-double-#{$width}x#{$height}, &.double-#{$width}x#{$height}, &.triple-#{$width}x#{$height}, &.quad-#{$width}x#{$height}
+          img
+            +width($i)
+            height: ($column * $i + $gutter * ( $i - 1 )) * ( $height / $width )
+
+// Pull in the ratios defined in the skin
++ratios
+
+// MOBILE COVERS
+// If you grid is named "cover" it will be resized to be optimized for mobile devices.
+.smallscreen.mobile
+  // Large mobile cover
+  .cover.fixed.w3col.grid, .cover.fixed.w3col.grid *
+    margin: 0
+    padding: 0
+    width: $cover_width
+    height: $cover_width * ( 4 / 3 )
+    min-width: $cover_width
+    min-height: $cover_width * ( 4 / 3 )
+    .img
+      top: 0
+  // Small mobile cover
+  .cover.fixed.w2col.grid, .cover.fixed.w2col.grid *
+    margin: 0
+    padding: 0
+    width: $cover_width/2
+    height: $cover_width/2 * ( 4 / 3 )
+    min-width: $cover_width/2
+    min-height: $cover_width/2 * ( 4 / 3 )
+    .img
+      top: 0
+  .cover.grid
+    margin: 0 ( ( $cover_width - 320px ) / 8 )
+  .fixed.grid, .sizetocontainer.grid
+    max-width: none
+    max-height: none
+    min-width: none
+    min-height: none
+  // FALLBACK IMAGES
+  .mobile.grid .keeptogether.fallback img
+    width: 40px
+    height: 40px
