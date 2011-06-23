@@ -56,12 +56,15 @@
 // GENERAL FUNCTIONALITY //
 ///////////////////////////
 
-// MAKE HEADLINE TEXT RENDER BETTER
+// TYPOGRAPHY RESET
+html, body
+  font-family: $font
+  +type($size, $line-height)
+
 h1, h2, h3, h4, h5, h6
   text-rendering: optimizeLegibility
   word-wrap: break-word
 
-// Hyphenate text when possable
 p
   -webkit-hyphens: auto
   -moz-hyphens: auto
