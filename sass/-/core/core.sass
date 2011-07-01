@@ -15,7 +15,7 @@
     +width(12)
   // Page ratios
   @for $i from 1 through $cols
-    .r#{$width}x#{$height}.w#{$i}.fixed
+    .r#{$width}x#{$height}.w#{$i}
       height: ($column * $i + $gutter * ( $i - 1 )) * ( $height / $width )
     .img.w#{$i}
       &.single-#{$width}x#{$height}, &.double-#{$width}x#{$height}, &.triple-#{$width}x#{$height}, &.quad-#{$width}x#{$height}
