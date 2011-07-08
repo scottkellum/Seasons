@@ -1,0 +1,18 @@
+CACHE MANIFEST
+# Explicitly cached 'master entries'.
+CACHE:
+cache.manifest
+toc.html
+resources.html
+/css/style.css
+/js/treesaver-0.9.2.js
+
+#list all articles files below:
+../cover.html
+../article.html
+
+# Resources that require the user to be online.
+NETWORK:
+
+# Fallback Caches
+FALLBACK:
