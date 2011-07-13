@@ -364,8 +364,13 @@ mark
 // SOME BASIC SPRITE STYLING
 .sprite
   display: block
-  overflow: hidden;
-  text-indent: -999px;
+  overflow: hidden
+  text-indent: -999px
+
+=sprite($width, $height, $offset-x, $offset-y)
+  background: url('../img/sprites.png') no-repeat ($offset-x * -1) ($offset-y * -1)
+  width: $width
+  height: $height
 
 
 // TOOL BOX
