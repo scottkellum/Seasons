@@ -1,0 +1,72 @@
+/*
+Syntax error: Undefined mixin 'width'.
+        on line 46 of sass/-/skins/vanilla.sass, in `width'
+        from line 46 of sass/-/skins/vanilla.sass
+
+41: 
+42: // COLUMN WIDTHS
+43: // If you have a set of grids with a different column width, define it here. The department grid is here as an example but it is only nessisary to list the ones with a different size column from the standard width.
+44: // Column widths are measured by grid columns. The default should usually be 3 as that is what the image sizes are based on.
+45: .column
+46:   +width(3)
+47:   +type($size, $line-height)
+48:   .department &
+49:     +width(3)
+50: 
+51: // TYPOGRAPHIC STYLES
+
+Backtrace:
+sass/-/skins/vanilla.sass:46:in `width'
+sass/-/skins/vanilla.sass:46
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:169:in `visit_mixin'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:230:in `visit_rule'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/root_node.rb:20:in `render'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/engine.rb:291:in `_render'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/engine.rb:238:in `render'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin/compiler.rb:319:in `update_stylesheet'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin/compiler.rb:181:in `update_stylesheets'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin/compiler.rb:175:in `each'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin/compiler.rb:175:in `update_stylesheets'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin/compiler.rb:173:in `each'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin/compiler.rb:173:in `update_stylesheets'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin/compiler.rb:214:in `watch'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin.rb:111:in `send'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin.rb:111:in `method_missing'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/exec.rb:408:in `watch_or_update'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/exec.rb:294:in `process_result'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/exec.rb:41:in `parse'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/sass:8
+/usr/bin/sass:19:in `load'
+/usr/bin/sass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'width'.\A         on line 46 of sass/-/skins/vanilla.sass, in `width'\A         from line 46 of sass/-/skins/vanilla.sass\A \A 41: \A 42: // COLUMN WIDTHS\A 43: // If you have a set of grids with a different column width, define it here. The department grid is here as an example but it is only nessisary to list the ones with a different size column from the standard width.\A 44: // Column widths are measured by grid columns. The default should usually be 3 as that is what the image sizes are based on.\A 45: .column\A 46:   +width(3)\A 47:   +type($size, $line-height)\A 48:   .department &\A 49:     +width(3)\A 50: \A 51: // TYPOGRAPHIC STYLES"; }

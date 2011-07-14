@@ -1,0 +1,61 @@
+/*
+Syntax error: Undefined mixin 'ratios'.
+        on line 27 of sass/-/core/core.sass, in `ratios'
+        from line 27 of sass/-/core/core.sass
+
+22:         img
+23:           +width($i)
+24:           height: ($column * $i + $gutter * ( $i - 1 )) * ( $height / $width )
+25: 
+26: // Run the code above. Ratios are defined in the skin
+27: +ratios
+28: 
+29: // COLUMNS and GRID WIDTHS
+30: =columns($cols)
+31:   @for $i from 1 through $cols
+32:     .c#{$i}
+
+Backtrace:
+sass/-/core/core.sass:27:in `ratios'
+sass/-/core/core.sass:27
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:169:in `visit_mixin'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/tree/root_node.rb:20:in `render'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/engine.rb:291:in `_render'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/engine.rb:238:in `render'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin/compiler.rb:319:in `update_stylesheet'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin/compiler.rb:181:in `update_stylesheets'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin/compiler.rb:175:in `each'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin/compiler.rb:175:in `update_stylesheets'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin/compiler.rb:173:in `each'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin/compiler.rb:173:in `update_stylesheets'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin/compiler.rb:214:in `watch'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin.rb:111:in `send'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/plugin.rb:111:in `method_missing'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/exec.rb:408:in `watch_or_update'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/exec.rb:294:in `process_result'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/exec.rb:41:in `parse'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
+/Users/alicia/.gem/ruby/1.8/gems/sass-3.2.0.alpha.0/bin/sass:8
+/usr/bin/sass:19:in `load'
+/usr/bin/sass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'ratios'.\A         on line 27 of sass/-/core/core.sass, in `ratios'\A         from line 27 of sass/-/core/core.sass\A \A 22:         img\A 23:           +width($i)\A 24:           height: ($column * $i + $gutter * ( $i - 1 )) * ( $height / $width )\A 25: \A 26: // Run the code above. Ratios are defined in the skin\A 27: +ratios\A 28: \A 29: // COLUMNS and GRID WIDTHS\A 30: =columns($cols)\A 31:   @for $i from 1 through $cols\A 32:     .c#{$i}"; }
