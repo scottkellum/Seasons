@@ -209,11 +209,12 @@ mark
 =text-shadow($textshadow)
   text-shadow: $textshadow
 
+=letterpress($color)
+  text-shadow: 0 -1px 0 darken($color, 15%), 0 1px 0 lighten($color, 15%)
+
 // DO NOT USE, WORK IN PROGRESS
 =text-extrude($color, $distance, $angle, $blur: 0)
 
-=letterpress($color)
-  text-shadow: 0 -1px 0 darken($color, 15%), 0 1px 0 lighten($color, 15%)
 
 =columns($colcount, $colgutter, $colrulewidth: 0, $colrulecolor: #000, $colrulestyle: solid)
   -webkit-column-count: $colcount
@@ -328,6 +329,13 @@ mark
   -ms-transition: $transition
   -o-transition: $transition
   transition: $transition
+
+
+// FORCE HARDWARE ACCELERATE
+
+=hwaccel
+  +transform(translate3d(0,0,0))
+
 
 // ROTATION
 =transform-origin($origin)
