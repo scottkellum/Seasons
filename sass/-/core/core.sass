@@ -43,7 +43,10 @@
   position: absolute
   overflow: hidden
   z-index: 1
-
+  // helps reduce flickr when paging
+  -webkit-backface-visibility: hidden
+  -webkit-perspective: 1000
+ 
 // CLEAR MIN-MAX FOR FIXED GRIDS
 .fixed.grid, .sizetocontainer.grid
   max-width: none
