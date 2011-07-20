@@ -4,16 +4,6 @@
 
 // IMAGE + PAGE RATIOS
 =ratio($width, $height, $cols)
-  // image containers
-  .single-#{$width}x#{$height}
-    +width(3)
-  .double-#{$width}x#{$height}
-    +width(6)
-  .triple-#{$width}x#{$height}
-    +width(9)
-  .quad-#{$width}x#{$height}
-    +width(12)
-  // Page ratios
   @for $i from 1 through $cols
     .r#{$width}x#{$height}.w#{$i}
       height: ($column * $i + $gutter * ( $i - 1 )) * ( $height / $width )
