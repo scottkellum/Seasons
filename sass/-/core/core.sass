@@ -49,6 +49,38 @@
 // GENERAL FUNCTIONALITY //
 ///////////////////////////
 
+
+// DESKTOP SCROLLING CONTAINER SUPPORT
+
+.no-touch
+  .scroll-container
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    overflow: auto
+    overflow-x: hidden
+
+// GRADIENT TO INDICATE OVERFLOW
+.container.scroll:after
+  content: "\0020"
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 0
+  height: 40px
+  z-index: 3
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba($page, 0)), to(rgba($page, 1)))
+  background-image: -webkit-linear-gradient(top, rgba($page, 0), rgba($page, 1))
+  background-image: -moz-linear-gradient(top, rgba($page, 0), rgba($page, 1))
+  background-image: -ms-linear-gradient(top, rgba($page, 0), rgba($page, 1))
+  background-image: -o-linear-gradient(top, rgba($page, 0), rgba($page, 1))
+  background-image: linear-gradient(top, rgba($page, 0), rgba($page, 1))
+
+.scroll-container
+  padding-bottom: 40px
+
 // TYPOGRAPHY RESET
 html, body
   font-family: $font
@@ -91,9 +123,9 @@ p
 
 // TRIM LEFT OR RIGHT PAGE MARGINS
 .grid.trimleft
-  padding-left: 0 !important
+  padding-left: 0
 .grid.trimright
-  padding-right: 0 !important
+  padding-right: 0
 
 // FIGURE PLACEMENT
 figure
