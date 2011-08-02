@@ -1,0 +1,17 @@
+[
+  {
+    "url": "index.html",
+    "publication": "publication",
+    "timestamp": "timestamp"
+  },
+  {
+    "url": "article.html",
+    "publication": "publication",
+    "section": "section",
+    "subject": "subject",
+    "hed": "hed",
+    "dek": "dek",
+    "byline": "byline",
+    "timestamp": "timestamp"
+  }
+]
