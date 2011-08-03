@@ -1,0 +1,809 @@
+ /*
+ MOBILE STYLES
+ These styles allow you to create smartphone specific grids.
+ To use create a new set of grids with the class "mobile"
+ all width measurements will be overwritten by these styles.
+ */
+
+.mobile.grid {
+  min-width: 9999px;
+  width: 9999px; }
+
+.smallscreen.mobile {
+  background: white; }
+  .smallscreen.mobile .viewer {
+    top: 0;
+    right: 0;
+    left: 0; }
+  .smallscreen.mobile .grid {
+    min-width: 9999px;
+    width: 9999px; }
+  .smallscreen.mobile .mobile.grid {
+    width: 280px;
+    min-width: 280px;
+    padding: 20px;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    margin: 0; }
+    .smallscreen.mobile .mobile.grid#previousPage, .smallscreen.mobile .mobile.grid#nextPage {
+      opacity: 1; }
+  .smallscreen.mobile .column, .smallscreen.mobile .container {
+    width: 280px;
+    min-width: 280px; }
+
+.mobile.grid .img.single-16x9 img {
+  width: 280px;
+  height: 157.5px; }
+
+.grid.fixed.w1col.r16x9 {
+  width: 78px;
+  height: 43.875px; }
+
+.fixed.grid .img.w1col, .sizetocontainer.grid .img.w1col {
+  text-align: center; }
+  .fixed.grid .img.w1col.small-single-16x9 img, .fixed.grid .img.w1col.single-16x9 img, .fixed.grid .img.w1col.small-double-16x9 img, .fixed.grid .img.w1col.double-16x9 img, .fixed.grid .img.w1col.triple-16x9 img, .fixed.grid .img.w1col.quad-16x9 img, .sizetocontainer.grid .img.w1col.small-single-16x9 img, .sizetocontainer.grid .img.w1col.single-16x9 img, .sizetocontainer.grid .img.w1col.small-double-16x9 img, .sizetocontainer.grid .img.w1col.double-16x9 img, .sizetocontainer.grid .img.w1col.triple-16x9 img, .sizetocontainer.grid .img.w1col.quad-16x9 img {
+    width: 78px;
+    height: 43.875px; }
+
+.grid.fixed.w2col.r16x9 {
+  width: 172px;
+  height: 96.75px; }
+
+.fixed.grid .img.w2col, .sizetocontainer.grid .img.w2col {
+  text-align: center; }
+  .fixed.grid .img.w2col.small-single-16x9 img, .fixed.grid .img.w2col.single-16x9 img, .fixed.grid .img.w2col.small-double-16x9 img, .fixed.grid .img.w2col.double-16x9 img, .fixed.grid .img.w2col.triple-16x9 img, .fixed.grid .img.w2col.quad-16x9 img, .sizetocontainer.grid .img.w2col.small-single-16x9 img, .sizetocontainer.grid .img.w2col.single-16x9 img, .sizetocontainer.grid .img.w2col.small-double-16x9 img, .sizetocontainer.grid .img.w2col.double-16x9 img, .sizetocontainer.grid .img.w2col.triple-16x9 img, .sizetocontainer.grid .img.w2col.quad-16x9 img {
+    width: 172px;
+    height: 96.75px; }
+
+.grid.fixed.w3col.r16x9 {
+  width: 266px;
+  height: 149.625px; }
+
+.fixed.grid .img.w3col, .sizetocontainer.grid .img.w3col {
+  text-align: center; }
+  .fixed.grid .img.w3col.small-single-16x9 img, .fixed.grid .img.w3col.single-16x9 img, .fixed.grid .img.w3col.small-double-16x9 img, .fixed.grid .img.w3col.double-16x9 img, .fixed.grid .img.w3col.triple-16x9 img, .fixed.grid .img.w3col.quad-16x9 img, .sizetocontainer.grid .img.w3col.small-single-16x9 img, .sizetocontainer.grid .img.w3col.single-16x9 img, .sizetocontainer.grid .img.w3col.small-double-16x9 img, .sizetocontainer.grid .img.w3col.double-16x9 img, .sizetocontainer.grid .img.w3col.triple-16x9 img, .sizetocontainer.grid .img.w3col.quad-16x9 img {
+    width: 266px;
+    height: 149.625px; }
+
+.grid.fixed.w4col.r16x9 {
+  width: 360px;
+  height: 202.5px; }
+
+.fixed.grid .img.w4col, .sizetocontainer.grid .img.w4col {
+  text-align: center; }
+  .fixed.grid .img.w4col.small-single-16x9 img, .fixed.grid .img.w4col.single-16x9 img, .fixed.grid .img.w4col.small-double-16x9 img, .fixed.grid .img.w4col.double-16x9 img, .fixed.grid .img.w4col.triple-16x9 img, .fixed.grid .img.w4col.quad-16x9 img, .sizetocontainer.grid .img.w4col.small-single-16x9 img, .sizetocontainer.grid .img.w4col.single-16x9 img, .sizetocontainer.grid .img.w4col.small-double-16x9 img, .sizetocontainer.grid .img.w4col.double-16x9 img, .sizetocontainer.grid .img.w4col.triple-16x9 img, .sizetocontainer.grid .img.w4col.quad-16x9 img {
+    width: 360px;
+    height: 202.5px; }
+
+.grid.fixed.w5col.r16x9 {
+  width: 454px;
+  height: 255.375px; }
+
+.fixed.grid .img.w5col, .sizetocontainer.grid .img.w5col {
+  text-align: center; }
+  .fixed.grid .img.w5col.small-single-16x9 img, .fixed.grid .img.w5col.single-16x9 img, .fixed.grid .img.w5col.small-double-16x9 img, .fixed.grid .img.w5col.double-16x9 img, .fixed.grid .img.w5col.triple-16x9 img, .fixed.grid .img.w5col.quad-16x9 img, .sizetocontainer.grid .img.w5col.small-single-16x9 img, .sizetocontainer.grid .img.w5col.single-16x9 img, .sizetocontainer.grid .img.w5col.small-double-16x9 img, .sizetocontainer.grid .img.w5col.double-16x9 img, .sizetocontainer.grid .img.w5col.triple-16x9 img, .sizetocontainer.grid .img.w5col.quad-16x9 img {
+    width: 454px;
+    height: 255.375px; }
+
+.grid.fixed.w6col.r16x9 {
+  width: 548px;
+  height: 308.25px; }
+
+.fixed.grid .img.w6col, .sizetocontainer.grid .img.w6col {
+  text-align: center; }
+  .fixed.grid .img.w6col.small-single-16x9 img, .fixed.grid .img.w6col.single-16x9 img, .fixed.grid .img.w6col.small-double-16x9 img, .fixed.grid .img.w6col.double-16x9 img, .fixed.grid .img.w6col.triple-16x9 img, .fixed.grid .img.w6col.quad-16x9 img, .sizetocontainer.grid .img.w6col.small-single-16x9 img, .sizetocontainer.grid .img.w6col.single-16x9 img, .sizetocontainer.grid .img.w6col.small-double-16x9 img, .sizetocontainer.grid .img.w6col.double-16x9 img, .sizetocontainer.grid .img.w6col.triple-16x9 img, .sizetocontainer.grid .img.w6col.quad-16x9 img {
+    width: 548px;
+    height: 308.25px; }
+
+.grid.fixed.w7col.r16x9 {
+  width: 642px;
+  height: 361.125px; }
+
+.fixed.grid .img.w7col, .sizetocontainer.grid .img.w7col {
+  text-align: center; }
+  .fixed.grid .img.w7col.small-single-16x9 img, .fixed.grid .img.w7col.single-16x9 img, .fixed.grid .img.w7col.small-double-16x9 img, .fixed.grid .img.w7col.double-16x9 img, .fixed.grid .img.w7col.triple-16x9 img, .fixed.grid .img.w7col.quad-16x9 img, .sizetocontainer.grid .img.w7col.small-single-16x9 img, .sizetocontainer.grid .img.w7col.single-16x9 img, .sizetocontainer.grid .img.w7col.small-double-16x9 img, .sizetocontainer.grid .img.w7col.double-16x9 img, .sizetocontainer.grid .img.w7col.triple-16x9 img, .sizetocontainer.grid .img.w7col.quad-16x9 img {
+    width: 642px;
+    height: 361.125px; }
+
+.grid.fixed.w8col.r16x9 {
+  width: 736px;
+  height: 414px; }
+
+.fixed.grid .img.w8col, .sizetocontainer.grid .img.w8col {
+  text-align: center; }
+  .fixed.grid .img.w8col.small-single-16x9 img, .fixed.grid .img.w8col.single-16x9 img, .fixed.grid .img.w8col.small-double-16x9 img, .fixed.grid .img.w8col.double-16x9 img, .fixed.grid .img.w8col.triple-16x9 img, .fixed.grid .img.w8col.quad-16x9 img, .sizetocontainer.grid .img.w8col.small-single-16x9 img, .sizetocontainer.grid .img.w8col.single-16x9 img, .sizetocontainer.grid .img.w8col.small-double-16x9 img, .sizetocontainer.grid .img.w8col.double-16x9 img, .sizetocontainer.grid .img.w8col.triple-16x9 img, .sizetocontainer.grid .img.w8col.quad-16x9 img {
+    width: 736px;
+    height: 414px; }
+
+.grid.fixed.w9col.r16x9 {
+  width: 830px;
+  height: 466.875px; }
+
+.fixed.grid .img.w9col, .sizetocontainer.grid .img.w9col {
+  text-align: center; }
+  .fixed.grid .img.w9col.small-single-16x9 img, .fixed.grid .img.w9col.single-16x9 img, .fixed.grid .img.w9col.small-double-16x9 img, .fixed.grid .img.w9col.double-16x9 img, .fixed.grid .img.w9col.triple-16x9 img, .fixed.grid .img.w9col.quad-16x9 img, .sizetocontainer.grid .img.w9col.small-single-16x9 img, .sizetocontainer.grid .img.w9col.single-16x9 img, .sizetocontainer.grid .img.w9col.small-double-16x9 img, .sizetocontainer.grid .img.w9col.double-16x9 img, .sizetocontainer.grid .img.w9col.triple-16x9 img, .sizetocontainer.grid .img.w9col.quad-16x9 img {
+    width: 830px;
+    height: 466.875px; }
+
+.grid.fixed.w10col.r16x9 {
+  width: 924px;
+  height: 519.75px; }
+
+.fixed.grid .img.w10col, .sizetocontainer.grid .img.w10col {
+  text-align: center; }
+  .fixed.grid .img.w10col.small-single-16x9 img, .fixed.grid .img.w10col.single-16x9 img, .fixed.grid .img.w10col.small-double-16x9 img, .fixed.grid .img.w10col.double-16x9 img, .fixed.grid .img.w10col.triple-16x9 img, .fixed.grid .img.w10col.quad-16x9 img, .sizetocontainer.grid .img.w10col.small-single-16x9 img, .sizetocontainer.grid .img.w10col.single-16x9 img, .sizetocontainer.grid .img.w10col.small-double-16x9 img, .sizetocontainer.grid .img.w10col.double-16x9 img, .sizetocontainer.grid .img.w10col.triple-16x9 img, .sizetocontainer.grid .img.w10col.quad-16x9 img {
+    width: 924px;
+    height: 519.75px; }
+
+.grid.fixed.w11col.r16x9 {
+  width: 1018px;
+  height: 572.625px; }
+
+.fixed.grid .img.w11col, .sizetocontainer.grid .img.w11col {
+  text-align: center; }
+  .fixed.grid .img.w11col.small-single-16x9 img, .fixed.grid .img.w11col.single-16x9 img, .fixed.grid .img.w11col.small-double-16x9 img, .fixed.grid .img.w11col.double-16x9 img, .fixed.grid .img.w11col.triple-16x9 img, .fixed.grid .img.w11col.quad-16x9 img, .sizetocontainer.grid .img.w11col.small-single-16x9 img, .sizetocontainer.grid .img.w11col.single-16x9 img, .sizetocontainer.grid .img.w11col.small-double-16x9 img, .sizetocontainer.grid .img.w11col.double-16x9 img, .sizetocontainer.grid .img.w11col.triple-16x9 img, .sizetocontainer.grid .img.w11col.quad-16x9 img {
+    width: 1018px;
+    height: 572.625px; }
+
+.grid.fixed.w12col.r16x9 {
+  width: 1112px;
+  height: 625.5px; }
+
+.fixed.grid .img.w12col, .sizetocontainer.grid .img.w12col {
+  text-align: center; }
+  .fixed.grid .img.w12col.small-single-16x9 img, .fixed.grid .img.w12col.single-16x9 img, .fixed.grid .img.w12col.small-double-16x9 img, .fixed.grid .img.w12col.double-16x9 img, .fixed.grid .img.w12col.triple-16x9 img, .fixed.grid .img.w12col.quad-16x9 img, .sizetocontainer.grid .img.w12col.small-single-16x9 img, .sizetocontainer.grid .img.w12col.single-16x9 img, .sizetocontainer.grid .img.w12col.small-double-16x9 img, .sizetocontainer.grid .img.w12col.double-16x9 img, .sizetocontainer.grid .img.w12col.triple-16x9 img, .sizetocontainer.grid .img.w12col.quad-16x9 img {
+    width: 1112px;
+    height: 625.5px; }
+
+.mobile.grid .img.single-4x3 img {
+  width: 280px;
+  height: 210px; }
+
+.grid.fixed.w1col.r4x3 {
+  width: 78px;
+  height: 58.5px; }
+
+.fixed.grid .img.w1col, .sizetocontainer.grid .img.w1col {
+  text-align: center; }
+  .fixed.grid .img.w1col.small-single-4x3 img, .fixed.grid .img.w1col.single-4x3 img, .fixed.grid .img.w1col.small-double-4x3 img, .fixed.grid .img.w1col.double-4x3 img, .fixed.grid .img.w1col.triple-4x3 img, .fixed.grid .img.w1col.quad-4x3 img, .sizetocontainer.grid .img.w1col.small-single-4x3 img, .sizetocontainer.grid .img.w1col.single-4x3 img, .sizetocontainer.grid .img.w1col.small-double-4x3 img, .sizetocontainer.grid .img.w1col.double-4x3 img, .sizetocontainer.grid .img.w1col.triple-4x3 img, .sizetocontainer.grid .img.w1col.quad-4x3 img {
+    width: 78px;
+    height: 58.5px; }
+
+.grid.fixed.w2col.r4x3 {
+  width: 172px;
+  height: 129px; }
+
+.fixed.grid .img.w2col, .sizetocontainer.grid .img.w2col {
+  text-align: center; }
+  .fixed.grid .img.w2col.small-single-4x3 img, .fixed.grid .img.w2col.single-4x3 img, .fixed.grid .img.w2col.small-double-4x3 img, .fixed.grid .img.w2col.double-4x3 img, .fixed.grid .img.w2col.triple-4x3 img, .fixed.grid .img.w2col.quad-4x3 img, .sizetocontainer.grid .img.w2col.small-single-4x3 img, .sizetocontainer.grid .img.w2col.single-4x3 img, .sizetocontainer.grid .img.w2col.small-double-4x3 img, .sizetocontainer.grid .img.w2col.double-4x3 img, .sizetocontainer.grid .img.w2col.triple-4x3 img, .sizetocontainer.grid .img.w2col.quad-4x3 img {
+    width: 172px;
+    height: 129px; }
+
+.grid.fixed.w3col.r4x3 {
+  width: 266px;
+  height: 199.5px; }
+
+.fixed.grid .img.w3col, .sizetocontainer.grid .img.w3col {
+  text-align: center; }
+  .fixed.grid .img.w3col.small-single-4x3 img, .fixed.grid .img.w3col.single-4x3 img, .fixed.grid .img.w3col.small-double-4x3 img, .fixed.grid .img.w3col.double-4x3 img, .fixed.grid .img.w3col.triple-4x3 img, .fixed.grid .img.w3col.quad-4x3 img, .sizetocontainer.grid .img.w3col.small-single-4x3 img, .sizetocontainer.grid .img.w3col.single-4x3 img, .sizetocontainer.grid .img.w3col.small-double-4x3 img, .sizetocontainer.grid .img.w3col.double-4x3 img, .sizetocontainer.grid .img.w3col.triple-4x3 img, .sizetocontainer.grid .img.w3col.quad-4x3 img {
+    width: 266px;
+    height: 199.5px; }
+
+.grid.fixed.w4col.r4x3 {
+  width: 360px;
+  height: 270px; }
+
+.fixed.grid .img.w4col, .sizetocontainer.grid .img.w4col {
+  text-align: center; }
+  .fixed.grid .img.w4col.small-single-4x3 img, .fixed.grid .img.w4col.single-4x3 img, .fixed.grid .img.w4col.small-double-4x3 img, .fixed.grid .img.w4col.double-4x3 img, .fixed.grid .img.w4col.triple-4x3 img, .fixed.grid .img.w4col.quad-4x3 img, .sizetocontainer.grid .img.w4col.small-single-4x3 img, .sizetocontainer.grid .img.w4col.single-4x3 img, .sizetocontainer.grid .img.w4col.small-double-4x3 img, .sizetocontainer.grid .img.w4col.double-4x3 img, .sizetocontainer.grid .img.w4col.triple-4x3 img, .sizetocontainer.grid .img.w4col.quad-4x3 img {
+    width: 360px;
+    height: 270px; }
+
+.grid.fixed.w5col.r4x3 {
+  width: 454px;
+  height: 340.5px; }
+
+.fixed.grid .img.w5col, .sizetocontainer.grid .img.w5col {
+  text-align: center; }
+  .fixed.grid .img.w5col.small-single-4x3 img, .fixed.grid .img.w5col.single-4x3 img, .fixed.grid .img.w5col.small-double-4x3 img, .fixed.grid .img.w5col.double-4x3 img, .fixed.grid .img.w5col.triple-4x3 img, .fixed.grid .img.w5col.quad-4x3 img, .sizetocontainer.grid .img.w5col.small-single-4x3 img, .sizetocontainer.grid .img.w5col.single-4x3 img, .sizetocontainer.grid .img.w5col.small-double-4x3 img, .sizetocontainer.grid .img.w5col.double-4x3 img, .sizetocontainer.grid .img.w5col.triple-4x3 img, .sizetocontainer.grid .img.w5col.quad-4x3 img {
+    width: 454px;
+    height: 340.5px; }
+
+.grid.fixed.w6col.r4x3 {
+  width: 548px;
+  height: 411px; }
+
+.fixed.grid .img.w6col, .sizetocontainer.grid .img.w6col {
+  text-align: center; }
+  .fixed.grid .img.w6col.small-single-4x3 img, .fixed.grid .img.w6col.single-4x3 img, .fixed.grid .img.w6col.small-double-4x3 img, .fixed.grid .img.w6col.double-4x3 img, .fixed.grid .img.w6col.triple-4x3 img, .fixed.grid .img.w6col.quad-4x3 img, .sizetocontainer.grid .img.w6col.small-single-4x3 img, .sizetocontainer.grid .img.w6col.single-4x3 img, .sizetocontainer.grid .img.w6col.small-double-4x3 img, .sizetocontainer.grid .img.w6col.double-4x3 img, .sizetocontainer.grid .img.w6col.triple-4x3 img, .sizetocontainer.grid .img.w6col.quad-4x3 img {
+    width: 548px;
+    height: 411px; }
+
+.grid.fixed.w7col.r4x3 {
+  width: 642px;
+  height: 481.5px; }
+
+.fixed.grid .img.w7col, .sizetocontainer.grid .img.w7col {
+  text-align: center; }
+  .fixed.grid .img.w7col.small-single-4x3 img, .fixed.grid .img.w7col.single-4x3 img, .fixed.grid .img.w7col.small-double-4x3 img, .fixed.grid .img.w7col.double-4x3 img, .fixed.grid .img.w7col.triple-4x3 img, .fixed.grid .img.w7col.quad-4x3 img, .sizetocontainer.grid .img.w7col.small-single-4x3 img, .sizetocontainer.grid .img.w7col.single-4x3 img, .sizetocontainer.grid .img.w7col.small-double-4x3 img, .sizetocontainer.grid .img.w7col.double-4x3 img, .sizetocontainer.grid .img.w7col.triple-4x3 img, .sizetocontainer.grid .img.w7col.quad-4x3 img {
+    width: 642px;
+    height: 481.5px; }
+
+.grid.fixed.w8col.r4x3 {
+  width: 736px;
+  height: 552px; }
+
+.fixed.grid .img.w8col, .sizetocontainer.grid .img.w8col {
+  text-align: center; }
+  .fixed.grid .img.w8col.small-single-4x3 img, .fixed.grid .img.w8col.single-4x3 img, .fixed.grid .img.w8col.small-double-4x3 img, .fixed.grid .img.w8col.double-4x3 img, .fixed.grid .img.w8col.triple-4x3 img, .fixed.grid .img.w8col.quad-4x3 img, .sizetocontainer.grid .img.w8col.small-single-4x3 img, .sizetocontainer.grid .img.w8col.single-4x3 img, .sizetocontainer.grid .img.w8col.small-double-4x3 img, .sizetocontainer.grid .img.w8col.double-4x3 img, .sizetocontainer.grid .img.w8col.triple-4x3 img, .sizetocontainer.grid .img.w8col.quad-4x3 img {
+    width: 736px;
+    height: 552px; }
+
+.grid.fixed.w9col.r4x3 {
+  width: 830px;
+  height: 622.5px; }
+
+.fixed.grid .img.w9col, .sizetocontainer.grid .img.w9col {
+  text-align: center; }
+  .fixed.grid .img.w9col.small-single-4x3 img, .fixed.grid .img.w9col.single-4x3 img, .fixed.grid .img.w9col.small-double-4x3 img, .fixed.grid .img.w9col.double-4x3 img, .fixed.grid .img.w9col.triple-4x3 img, .fixed.grid .img.w9col.quad-4x3 img, .sizetocontainer.grid .img.w9col.small-single-4x3 img, .sizetocontainer.grid .img.w9col.single-4x3 img, .sizetocontainer.grid .img.w9col.small-double-4x3 img, .sizetocontainer.grid .img.w9col.double-4x3 img, .sizetocontainer.grid .img.w9col.triple-4x3 img, .sizetocontainer.grid .img.w9col.quad-4x3 img {
+    width: 830px;
+    height: 622.5px; }
+
+.grid.fixed.w10col.r4x3 {
+  width: 924px;
+  height: 693px; }
+
+.fixed.grid .img.w10col, .sizetocontainer.grid .img.w10col {
+  text-align: center; }
+  .fixed.grid .img.w10col.small-single-4x3 img, .fixed.grid .img.w10col.single-4x3 img, .fixed.grid .img.w10col.small-double-4x3 img, .fixed.grid .img.w10col.double-4x3 img, .fixed.grid .img.w10col.triple-4x3 img, .fixed.grid .img.w10col.quad-4x3 img, .sizetocontainer.grid .img.w10col.small-single-4x3 img, .sizetocontainer.grid .img.w10col.single-4x3 img, .sizetocontainer.grid .img.w10col.small-double-4x3 img, .sizetocontainer.grid .img.w10col.double-4x3 img, .sizetocontainer.grid .img.w10col.triple-4x3 img, .sizetocontainer.grid .img.w10col.quad-4x3 img {
+    width: 924px;
+    height: 693px; }
+
+.grid.fixed.w11col.r4x3 {
+  width: 1018px;
+  height: 763.5px; }
+
+.fixed.grid .img.w11col, .sizetocontainer.grid .img.w11col {
+  text-align: center; }
+  .fixed.grid .img.w11col.small-single-4x3 img, .fixed.grid .img.w11col.single-4x3 img, .fixed.grid .img.w11col.small-double-4x3 img, .fixed.grid .img.w11col.double-4x3 img, .fixed.grid .img.w11col.triple-4x3 img, .fixed.grid .img.w11col.quad-4x3 img, .sizetocontainer.grid .img.w11col.small-single-4x3 img, .sizetocontainer.grid .img.w11col.single-4x3 img, .sizetocontainer.grid .img.w11col.small-double-4x3 img, .sizetocontainer.grid .img.w11col.double-4x3 img, .sizetocontainer.grid .img.w11col.triple-4x3 img, .sizetocontainer.grid .img.w11col.quad-4x3 img {
+    width: 1018px;
+    height: 763.5px; }
+
+.grid.fixed.w12col.r4x3 {
+  width: 1112px;
+  height: 834px; }
+
+.fixed.grid .img.w12col, .sizetocontainer.grid .img.w12col {
+  text-align: center; }
+  .fixed.grid .img.w12col.small-single-4x3 img, .fixed.grid .img.w12col.single-4x3 img, .fixed.grid .img.w12col.small-double-4x3 img, .fixed.grid .img.w12col.double-4x3 img, .fixed.grid .img.w12col.triple-4x3 img, .fixed.grid .img.w12col.quad-4x3 img, .sizetocontainer.grid .img.w12col.small-single-4x3 img, .sizetocontainer.grid .img.w12col.single-4x3 img, .sizetocontainer.grid .img.w12col.small-double-4x3 img, .sizetocontainer.grid .img.w12col.double-4x3 img, .sizetocontainer.grid .img.w12col.triple-4x3 img, .sizetocontainer.grid .img.w12col.quad-4x3 img {
+    width: 1112px;
+    height: 834px; }
+
+.mobile.grid .img.single-5x4 img {
+  width: 280px;
+  height: 224px; }
+
+.grid.fixed.w1col.r5x4 {
+  width: 78px;
+  height: 62.4px; }
+
+.fixed.grid .img.w1col, .sizetocontainer.grid .img.w1col {
+  text-align: center; }
+  .fixed.grid .img.w1col.small-single-5x4 img, .fixed.grid .img.w1col.single-5x4 img, .fixed.grid .img.w1col.small-double-5x4 img, .fixed.grid .img.w1col.double-5x4 img, .fixed.grid .img.w1col.triple-5x4 img, .fixed.grid .img.w1col.quad-5x4 img, .sizetocontainer.grid .img.w1col.small-single-5x4 img, .sizetocontainer.grid .img.w1col.single-5x4 img, .sizetocontainer.grid .img.w1col.small-double-5x4 img, .sizetocontainer.grid .img.w1col.double-5x4 img, .sizetocontainer.grid .img.w1col.triple-5x4 img, .sizetocontainer.grid .img.w1col.quad-5x4 img {
+    width: 78px;
+    height: 62.4px; }
+
+.grid.fixed.w2col.r5x4 {
+  width: 172px;
+  height: 137.6px; }
+
+.fixed.grid .img.w2col, .sizetocontainer.grid .img.w2col {
+  text-align: center; }
+  .fixed.grid .img.w2col.small-single-5x4 img, .fixed.grid .img.w2col.single-5x4 img, .fixed.grid .img.w2col.small-double-5x4 img, .fixed.grid .img.w2col.double-5x4 img, .fixed.grid .img.w2col.triple-5x4 img, .fixed.grid .img.w2col.quad-5x4 img, .sizetocontainer.grid .img.w2col.small-single-5x4 img, .sizetocontainer.grid .img.w2col.single-5x4 img, .sizetocontainer.grid .img.w2col.small-double-5x4 img, .sizetocontainer.grid .img.w2col.double-5x4 img, .sizetocontainer.grid .img.w2col.triple-5x4 img, .sizetocontainer.grid .img.w2col.quad-5x4 img {
+    width: 172px;
+    height: 137.6px; }
+
+.grid.fixed.w3col.r5x4 {
+  width: 266px;
+  height: 212.8px; }
+
+.fixed.grid .img.w3col, .sizetocontainer.grid .img.w3col {
+  text-align: center; }
+  .fixed.grid .img.w3col.small-single-5x4 img, .fixed.grid .img.w3col.single-5x4 img, .fixed.grid .img.w3col.small-double-5x4 img, .fixed.grid .img.w3col.double-5x4 img, .fixed.grid .img.w3col.triple-5x4 img, .fixed.grid .img.w3col.quad-5x4 img, .sizetocontainer.grid .img.w3col.small-single-5x4 img, .sizetocontainer.grid .img.w3col.single-5x4 img, .sizetocontainer.grid .img.w3col.small-double-5x4 img, .sizetocontainer.grid .img.w3col.double-5x4 img, .sizetocontainer.grid .img.w3col.triple-5x4 img, .sizetocontainer.grid .img.w3col.quad-5x4 img {
+    width: 266px;
+    height: 212.8px; }
+
+.grid.fixed.w4col.r5x4 {
+  width: 360px;
+  height: 288px; }
+
+.fixed.grid .img.w4col, .sizetocontainer.grid .img.w4col {
+  text-align: center; }
+  .fixed.grid .img.w4col.small-single-5x4 img, .fixed.grid .img.w4col.single-5x4 img, .fixed.grid .img.w4col.small-double-5x4 img, .fixed.grid .img.w4col.double-5x4 img, .fixed.grid .img.w4col.triple-5x4 img, .fixed.grid .img.w4col.quad-5x4 img, .sizetocontainer.grid .img.w4col.small-single-5x4 img, .sizetocontainer.grid .img.w4col.single-5x4 img, .sizetocontainer.grid .img.w4col.small-double-5x4 img, .sizetocontainer.grid .img.w4col.double-5x4 img, .sizetocontainer.grid .img.w4col.triple-5x4 img, .sizetocontainer.grid .img.w4col.quad-5x4 img {
+    width: 360px;
+    height: 288px; }
+
+.grid.fixed.w5col.r5x4 {
+  width: 454px;
+  height: 363.2px; }
+
+.fixed.grid .img.w5col, .sizetocontainer.grid .img.w5col {
+  text-align: center; }
+  .fixed.grid .img.w5col.small-single-5x4 img, .fixed.grid .img.w5col.single-5x4 img, .fixed.grid .img.w5col.small-double-5x4 img, .fixed.grid .img.w5col.double-5x4 img, .fixed.grid .img.w5col.triple-5x4 img, .fixed.grid .img.w5col.quad-5x4 img, .sizetocontainer.grid .img.w5col.small-single-5x4 img, .sizetocontainer.grid .img.w5col.single-5x4 img, .sizetocontainer.grid .img.w5col.small-double-5x4 img, .sizetocontainer.grid .img.w5col.double-5x4 img, .sizetocontainer.grid .img.w5col.triple-5x4 img, .sizetocontainer.grid .img.w5col.quad-5x4 img {
+    width: 454px;
+    height: 363.2px; }
+
+.grid.fixed.w6col.r5x4 {
+  width: 548px;
+  height: 438.4px; }
+
+.fixed.grid .img.w6col, .sizetocontainer.grid .img.w6col {
+  text-align: center; }
+  .fixed.grid .img.w6col.small-single-5x4 img, .fixed.grid .img.w6col.single-5x4 img, .fixed.grid .img.w6col.small-double-5x4 img, .fixed.grid .img.w6col.double-5x4 img, .fixed.grid .img.w6col.triple-5x4 img, .fixed.grid .img.w6col.quad-5x4 img, .sizetocontainer.grid .img.w6col.small-single-5x4 img, .sizetocontainer.grid .img.w6col.single-5x4 img, .sizetocontainer.grid .img.w6col.small-double-5x4 img, .sizetocontainer.grid .img.w6col.double-5x4 img, .sizetocontainer.grid .img.w6col.triple-5x4 img, .sizetocontainer.grid .img.w6col.quad-5x4 img {
+    width: 548px;
+    height: 438.4px; }
+
+.grid.fixed.w7col.r5x4 {
+  width: 642px;
+  height: 513.6px; }
+
+.fixed.grid .img.w7col, .sizetocontainer.grid .img.w7col {
+  text-align: center; }
+  .fixed.grid .img.w7col.small-single-5x4 img, .fixed.grid .img.w7col.single-5x4 img, .fixed.grid .img.w7col.small-double-5x4 img, .fixed.grid .img.w7col.double-5x4 img, .fixed.grid .img.w7col.triple-5x4 img, .fixed.grid .img.w7col.quad-5x4 img, .sizetocontainer.grid .img.w7col.small-single-5x4 img, .sizetocontainer.grid .img.w7col.single-5x4 img, .sizetocontainer.grid .img.w7col.small-double-5x4 img, .sizetocontainer.grid .img.w7col.double-5x4 img, .sizetocontainer.grid .img.w7col.triple-5x4 img, .sizetocontainer.grid .img.w7col.quad-5x4 img {
+    width: 642px;
+    height: 513.6px; }
+
+.grid.fixed.w8col.r5x4 {
+  width: 736px;
+  height: 588.8px; }
+
+.fixed.grid .img.w8col, .sizetocontainer.grid .img.w8col {
+  text-align: center; }
+  .fixed.grid .img.w8col.small-single-5x4 img, .fixed.grid .img.w8col.single-5x4 img, .fixed.grid .img.w8col.small-double-5x4 img, .fixed.grid .img.w8col.double-5x4 img, .fixed.grid .img.w8col.triple-5x4 img, .fixed.grid .img.w8col.quad-5x4 img, .sizetocontainer.grid .img.w8col.small-single-5x4 img, .sizetocontainer.grid .img.w8col.single-5x4 img, .sizetocontainer.grid .img.w8col.small-double-5x4 img, .sizetocontainer.grid .img.w8col.double-5x4 img, .sizetocontainer.grid .img.w8col.triple-5x4 img, .sizetocontainer.grid .img.w8col.quad-5x4 img {
+    width: 736px;
+    height: 588.8px; }
+
+.grid.fixed.w9col.r5x4 {
+  width: 830px;
+  height: 664px; }
+
+.fixed.grid .img.w9col, .sizetocontainer.grid .img.w9col {
+  text-align: center; }
+  .fixed.grid .img.w9col.small-single-5x4 img, .fixed.grid .img.w9col.single-5x4 img, .fixed.grid .img.w9col.small-double-5x4 img, .fixed.grid .img.w9col.double-5x4 img, .fixed.grid .img.w9col.triple-5x4 img, .fixed.grid .img.w9col.quad-5x4 img, .sizetocontainer.grid .img.w9col.small-single-5x4 img, .sizetocontainer.grid .img.w9col.single-5x4 img, .sizetocontainer.grid .img.w9col.small-double-5x4 img, .sizetocontainer.grid .img.w9col.double-5x4 img, .sizetocontainer.grid .img.w9col.triple-5x4 img, .sizetocontainer.grid .img.w9col.quad-5x4 img {
+    width: 830px;
+    height: 664px; }
+
+.grid.fixed.w10col.r5x4 {
+  width: 924px;
+  height: 739.2px; }
+
+.fixed.grid .img.w10col, .sizetocontainer.grid .img.w10col {
+  text-align: center; }
+  .fixed.grid .img.w10col.small-single-5x4 img, .fixed.grid .img.w10col.single-5x4 img, .fixed.grid .img.w10col.small-double-5x4 img, .fixed.grid .img.w10col.double-5x4 img, .fixed.grid .img.w10col.triple-5x4 img, .fixed.grid .img.w10col.quad-5x4 img, .sizetocontainer.grid .img.w10col.small-single-5x4 img, .sizetocontainer.grid .img.w10col.single-5x4 img, .sizetocontainer.grid .img.w10col.small-double-5x4 img, .sizetocontainer.grid .img.w10col.double-5x4 img, .sizetocontainer.grid .img.w10col.triple-5x4 img, .sizetocontainer.grid .img.w10col.quad-5x4 img {
+    width: 924px;
+    height: 739.2px; }
+
+.grid.fixed.w11col.r5x4 {
+  width: 1018px;
+  height: 814.4px; }
+
+.fixed.grid .img.w11col, .sizetocontainer.grid .img.w11col {
+  text-align: center; }
+  .fixed.grid .img.w11col.small-single-5x4 img, .fixed.grid .img.w11col.single-5x4 img, .fixed.grid .img.w11col.small-double-5x4 img, .fixed.grid .img.w11col.double-5x4 img, .fixed.grid .img.w11col.triple-5x4 img, .fixed.grid .img.w11col.quad-5x4 img, .sizetocontainer.grid .img.w11col.small-single-5x4 img, .sizetocontainer.grid .img.w11col.single-5x4 img, .sizetocontainer.grid .img.w11col.small-double-5x4 img, .sizetocontainer.grid .img.w11col.double-5x4 img, .sizetocontainer.grid .img.w11col.triple-5x4 img, .sizetocontainer.grid .img.w11col.quad-5x4 img {
+    width: 1018px;
+    height: 814.4px; }
+
+.grid.fixed.w12col.r5x4 {
+  width: 1112px;
+  height: 889.6px; }
+
+.fixed.grid .img.w12col, .sizetocontainer.grid .img.w12col {
+  text-align: center; }
+  .fixed.grid .img.w12col.small-single-5x4 img, .fixed.grid .img.w12col.single-5x4 img, .fixed.grid .img.w12col.small-double-5x4 img, .fixed.grid .img.w12col.double-5x4 img, .fixed.grid .img.w12col.triple-5x4 img, .fixed.grid .img.w12col.quad-5x4 img, .sizetocontainer.grid .img.w12col.small-single-5x4 img, .sizetocontainer.grid .img.w12col.single-5x4 img, .sizetocontainer.grid .img.w12col.small-double-5x4 img, .sizetocontainer.grid .img.w12col.double-5x4 img, .sizetocontainer.grid .img.w12col.triple-5x4 img, .sizetocontainer.grid .img.w12col.quad-5x4 img {
+    width: 1112px;
+    height: 889.6px; }
+
+.mobile.grid .img.single-1x1 img {
+  width: 280px;
+  height: 280px; }
+
+.grid.fixed.w1col.r1x1 {
+  width: 78px;
+  height: 78px; }
+
+.fixed.grid .img.w1col, .sizetocontainer.grid .img.w1col {
+  text-align: center; }
+  .fixed.grid .img.w1col.small-single-1x1 img, .fixed.grid .img.w1col.single-1x1 img, .fixed.grid .img.w1col.small-double-1x1 img, .fixed.grid .img.w1col.double-1x1 img, .fixed.grid .img.w1col.triple-1x1 img, .fixed.grid .img.w1col.quad-1x1 img, .sizetocontainer.grid .img.w1col.small-single-1x1 img, .sizetocontainer.grid .img.w1col.single-1x1 img, .sizetocontainer.grid .img.w1col.small-double-1x1 img, .sizetocontainer.grid .img.w1col.double-1x1 img, .sizetocontainer.grid .img.w1col.triple-1x1 img, .sizetocontainer.grid .img.w1col.quad-1x1 img {
+    width: 78px;
+    height: 78px; }
+
+.grid.fixed.w2col.r1x1 {
+  width: 172px;
+  height: 172px; }
+
+.fixed.grid .img.w2col, .sizetocontainer.grid .img.w2col {
+  text-align: center; }
+  .fixed.grid .img.w2col.small-single-1x1 img, .fixed.grid .img.w2col.single-1x1 img, .fixed.grid .img.w2col.small-double-1x1 img, .fixed.grid .img.w2col.double-1x1 img, .fixed.grid .img.w2col.triple-1x1 img, .fixed.grid .img.w2col.quad-1x1 img, .sizetocontainer.grid .img.w2col.small-single-1x1 img, .sizetocontainer.grid .img.w2col.single-1x1 img, .sizetocontainer.grid .img.w2col.small-double-1x1 img, .sizetocontainer.grid .img.w2col.double-1x1 img, .sizetocontainer.grid .img.w2col.triple-1x1 img, .sizetocontainer.grid .img.w2col.quad-1x1 img {
+    width: 172px;
+    height: 172px; }
+
+.grid.fixed.w3col.r1x1 {
+  width: 266px;
+  height: 266px; }
+
+.fixed.grid .img.w3col, .sizetocontainer.grid .img.w3col {
+  text-align: center; }
+  .fixed.grid .img.w3col.small-single-1x1 img, .fixed.grid .img.w3col.single-1x1 img, .fixed.grid .img.w3col.small-double-1x1 img, .fixed.grid .img.w3col.double-1x1 img, .fixed.grid .img.w3col.triple-1x1 img, .fixed.grid .img.w3col.quad-1x1 img, .sizetocontainer.grid .img.w3col.small-single-1x1 img, .sizetocontainer.grid .img.w3col.single-1x1 img, .sizetocontainer.grid .img.w3col.small-double-1x1 img, .sizetocontainer.grid .img.w3col.double-1x1 img, .sizetocontainer.grid .img.w3col.triple-1x1 img, .sizetocontainer.grid .img.w3col.quad-1x1 img {
+    width: 266px;
+    height: 266px; }
+
+.grid.fixed.w4col.r1x1 {
+  width: 360px;
+  height: 360px; }
+
+.fixed.grid .img.w4col, .sizetocontainer.grid .img.w4col {
+  text-align: center; }
+  .fixed.grid .img.w4col.small-single-1x1 img, .fixed.grid .img.w4col.single-1x1 img, .fixed.grid .img.w4col.small-double-1x1 img, .fixed.grid .img.w4col.double-1x1 img, .fixed.grid .img.w4col.triple-1x1 img, .fixed.grid .img.w4col.quad-1x1 img, .sizetocontainer.grid .img.w4col.small-single-1x1 img, .sizetocontainer.grid .img.w4col.single-1x1 img, .sizetocontainer.grid .img.w4col.small-double-1x1 img, .sizetocontainer.grid .img.w4col.double-1x1 img, .sizetocontainer.grid .img.w4col.triple-1x1 img, .sizetocontainer.grid .img.w4col.quad-1x1 img {
+    width: 360px;
+    height: 360px; }
+
+.grid.fixed.w5col.r1x1 {
+  width: 454px;
+  height: 454px; }
+
+.fixed.grid .img.w5col, .sizetocontainer.grid .img.w5col {
+  text-align: center; }
+  .fixed.grid .img.w5col.small-single-1x1 img, .fixed.grid .img.w5col.single-1x1 img, .fixed.grid .img.w5col.small-double-1x1 img, .fixed.grid .img.w5col.double-1x1 img, .fixed.grid .img.w5col.triple-1x1 img, .fixed.grid .img.w5col.quad-1x1 img, .sizetocontainer.grid .img.w5col.small-single-1x1 img, .sizetocontainer.grid .img.w5col.single-1x1 img, .sizetocontainer.grid .img.w5col.small-double-1x1 img, .sizetocontainer.grid .img.w5col.double-1x1 img, .sizetocontainer.grid .img.w5col.triple-1x1 img, .sizetocontainer.grid .img.w5col.quad-1x1 img {
+    width: 454px;
+    height: 454px; }
+
+.grid.fixed.w6col.r1x1 {
+  width: 548px;
+  height: 548px; }
+
+.fixed.grid .img.w6col, .sizetocontainer.grid .img.w6col {
+  text-align: center; }
+  .fixed.grid .img.w6col.small-single-1x1 img, .fixed.grid .img.w6col.single-1x1 img, .fixed.grid .img.w6col.small-double-1x1 img, .fixed.grid .img.w6col.double-1x1 img, .fixed.grid .img.w6col.triple-1x1 img, .fixed.grid .img.w6col.quad-1x1 img, .sizetocontainer.grid .img.w6col.small-single-1x1 img, .sizetocontainer.grid .img.w6col.single-1x1 img, .sizetocontainer.grid .img.w6col.small-double-1x1 img, .sizetocontainer.grid .img.w6col.double-1x1 img, .sizetocontainer.grid .img.w6col.triple-1x1 img, .sizetocontainer.grid .img.w6col.quad-1x1 img {
+    width: 548px;
+    height: 548px; }
+
+.grid.fixed.w7col.r1x1 {
+  width: 642px;
+  height: 642px; }
+
+.fixed.grid .img.w7col, .sizetocontainer.grid .img.w7col {
+  text-align: center; }
+  .fixed.grid .img.w7col.small-single-1x1 img, .fixed.grid .img.w7col.single-1x1 img, .fixed.grid .img.w7col.small-double-1x1 img, .fixed.grid .img.w7col.double-1x1 img, .fixed.grid .img.w7col.triple-1x1 img, .fixed.grid .img.w7col.quad-1x1 img, .sizetocontainer.grid .img.w7col.small-single-1x1 img, .sizetocontainer.grid .img.w7col.single-1x1 img, .sizetocontainer.grid .img.w7col.small-double-1x1 img, .sizetocontainer.grid .img.w7col.double-1x1 img, .sizetocontainer.grid .img.w7col.triple-1x1 img, .sizetocontainer.grid .img.w7col.quad-1x1 img {
+    width: 642px;
+    height: 642px; }
+
+.grid.fixed.w8col.r1x1 {
+  width: 736px;
+  height: 736px; }
+
+.fixed.grid .img.w8col, .sizetocontainer.grid .img.w8col {
+  text-align: center; }
+  .fixed.grid .img.w8col.small-single-1x1 img, .fixed.grid .img.w8col.single-1x1 img, .fixed.grid .img.w8col.small-double-1x1 img, .fixed.grid .img.w8col.double-1x1 img, .fixed.grid .img.w8col.triple-1x1 img, .fixed.grid .img.w8col.quad-1x1 img, .sizetocontainer.grid .img.w8col.small-single-1x1 img, .sizetocontainer.grid .img.w8col.single-1x1 img, .sizetocontainer.grid .img.w8col.small-double-1x1 img, .sizetocontainer.grid .img.w8col.double-1x1 img, .sizetocontainer.grid .img.w8col.triple-1x1 img, .sizetocontainer.grid .img.w8col.quad-1x1 img {
+    width: 736px;
+    height: 736px; }
+
+.grid.fixed.w9col.r1x1 {
+  width: 830px;
+  height: 830px; }
+
+.fixed.grid .img.w9col, .sizetocontainer.grid .img.w9col {
+  text-align: center; }
+  .fixed.grid .img.w9col.small-single-1x1 img, .fixed.grid .img.w9col.single-1x1 img, .fixed.grid .img.w9col.small-double-1x1 img, .fixed.grid .img.w9col.double-1x1 img, .fixed.grid .img.w9col.triple-1x1 img, .fixed.grid .img.w9col.quad-1x1 img, .sizetocontainer.grid .img.w9col.small-single-1x1 img, .sizetocontainer.grid .img.w9col.single-1x1 img, .sizetocontainer.grid .img.w9col.small-double-1x1 img, .sizetocontainer.grid .img.w9col.double-1x1 img, .sizetocontainer.grid .img.w9col.triple-1x1 img, .sizetocontainer.grid .img.w9col.quad-1x1 img {
+    width: 830px;
+    height: 830px; }
+
+.grid.fixed.w10col.r1x1 {
+  width: 924px;
+  height: 924px; }
+
+.fixed.grid .img.w10col, .sizetocontainer.grid .img.w10col {
+  text-align: center; }
+  .fixed.grid .img.w10col.small-single-1x1 img, .fixed.grid .img.w10col.single-1x1 img, .fixed.grid .img.w10col.small-double-1x1 img, .fixed.grid .img.w10col.double-1x1 img, .fixed.grid .img.w10col.triple-1x1 img, .fixed.grid .img.w10col.quad-1x1 img, .sizetocontainer.grid .img.w10col.small-single-1x1 img, .sizetocontainer.grid .img.w10col.single-1x1 img, .sizetocontainer.grid .img.w10col.small-double-1x1 img, .sizetocontainer.grid .img.w10col.double-1x1 img, .sizetocontainer.grid .img.w10col.triple-1x1 img, .sizetocontainer.grid .img.w10col.quad-1x1 img {
+    width: 924px;
+    height: 924px; }
+
+.grid.fixed.w11col.r1x1 {
+  width: 1018px;
+  height: 1018px; }
+
+.fixed.grid .img.w11col, .sizetocontainer.grid .img.w11col {
+  text-align: center; }
+  .fixed.grid .img.w11col.small-single-1x1 img, .fixed.grid .img.w11col.single-1x1 img, .fixed.grid .img.w11col.small-double-1x1 img, .fixed.grid .img.w11col.double-1x1 img, .fixed.grid .img.w11col.triple-1x1 img, .fixed.grid .img.w11col.quad-1x1 img, .sizetocontainer.grid .img.w11col.small-single-1x1 img, .sizetocontainer.grid .img.w11col.single-1x1 img, .sizetocontainer.grid .img.w11col.small-double-1x1 img, .sizetocontainer.grid .img.w11col.double-1x1 img, .sizetocontainer.grid .img.w11col.triple-1x1 img, .sizetocontainer.grid .img.w11col.quad-1x1 img {
+    width: 1018px;
+    height: 1018px; }
+
+.grid.fixed.w12col.r1x1 {
+  width: 1112px;
+  height: 1112px; }
+
+.fixed.grid .img.w12col, .sizetocontainer.grid .img.w12col {
+  text-align: center; }
+  .fixed.grid .img.w12col.small-single-1x1 img, .fixed.grid .img.w12col.single-1x1 img, .fixed.grid .img.w12col.small-double-1x1 img, .fixed.grid .img.w12col.double-1x1 img, .fixed.grid .img.w12col.triple-1x1 img, .fixed.grid .img.w12col.quad-1x1 img, .sizetocontainer.grid .img.w12col.small-single-1x1 img, .sizetocontainer.grid .img.w12col.single-1x1 img, .sizetocontainer.grid .img.w12col.small-double-1x1 img, .sizetocontainer.grid .img.w12col.double-1x1 img, .sizetocontainer.grid .img.w12col.triple-1x1 img, .sizetocontainer.grid .img.w12col.quad-1x1 img {
+    width: 1112px;
+    height: 1112px; }
+
+.mobile.grid .img.single-4x5 img {
+  width: 280px;
+  height: 350px; }
+
+.grid.fixed.w1col.r4x5 {
+  width: 78px;
+  height: 97.5px; }
+
+.fixed.grid .img.w1col, .sizetocontainer.grid .img.w1col {
+  text-align: center; }
+  .fixed.grid .img.w1col.small-single-4x5 img, .fixed.grid .img.w1col.single-4x5 img, .fixed.grid .img.w1col.small-double-4x5 img, .fixed.grid .img.w1col.double-4x5 img, .fixed.grid .img.w1col.triple-4x5 img, .fixed.grid .img.w1col.quad-4x5 img, .sizetocontainer.grid .img.w1col.small-single-4x5 img, .sizetocontainer.grid .img.w1col.single-4x5 img, .sizetocontainer.grid .img.w1col.small-double-4x5 img, .sizetocontainer.grid .img.w1col.double-4x5 img, .sizetocontainer.grid .img.w1col.triple-4x5 img, .sizetocontainer.grid .img.w1col.quad-4x5 img {
+    width: 78px;
+    height: 97.5px; }
+
+.grid.fixed.w2col.r4x5 {
+  width: 172px;
+  height: 215px; }
+
+.fixed.grid .img.w2col, .sizetocontainer.grid .img.w2col {
+  text-align: center; }
+  .fixed.grid .img.w2col.small-single-4x5 img, .fixed.grid .img.w2col.single-4x5 img, .fixed.grid .img.w2col.small-double-4x5 img, .fixed.grid .img.w2col.double-4x5 img, .fixed.grid .img.w2col.triple-4x5 img, .fixed.grid .img.w2col.quad-4x5 img, .sizetocontainer.grid .img.w2col.small-single-4x5 img, .sizetocontainer.grid .img.w2col.single-4x5 img, .sizetocontainer.grid .img.w2col.small-double-4x5 img, .sizetocontainer.grid .img.w2col.double-4x5 img, .sizetocontainer.grid .img.w2col.triple-4x5 img, .sizetocontainer.grid .img.w2col.quad-4x5 img {
+    width: 172px;
+    height: 215px; }
+
+.grid.fixed.w3col.r4x5 {
+  width: 266px;
+  height: 332.5px; }
+
+.fixed.grid .img.w3col, .sizetocontainer.grid .img.w3col {
+  text-align: center; }
+  .fixed.grid .img.w3col.small-single-4x5 img, .fixed.grid .img.w3col.single-4x5 img, .fixed.grid .img.w3col.small-double-4x5 img, .fixed.grid .img.w3col.double-4x5 img, .fixed.grid .img.w3col.triple-4x5 img, .fixed.grid .img.w3col.quad-4x5 img, .sizetocontainer.grid .img.w3col.small-single-4x5 img, .sizetocontainer.grid .img.w3col.single-4x5 img, .sizetocontainer.grid .img.w3col.small-double-4x5 img, .sizetocontainer.grid .img.w3col.double-4x5 img, .sizetocontainer.grid .img.w3col.triple-4x5 img, .sizetocontainer.grid .img.w3col.quad-4x5 img {
+    width: 266px;
+    height: 332.5px; }
+
+.grid.fixed.w4col.r4x5 {
+  width: 360px;
+  height: 450px; }
+
+.fixed.grid .img.w4col, .sizetocontainer.grid .img.w4col {
+  text-align: center; }
+  .fixed.grid .img.w4col.small-single-4x5 img, .fixed.grid .img.w4col.single-4x5 img, .fixed.grid .img.w4col.small-double-4x5 img, .fixed.grid .img.w4col.double-4x5 img, .fixed.grid .img.w4col.triple-4x5 img, .fixed.grid .img.w4col.quad-4x5 img, .sizetocontainer.grid .img.w4col.small-single-4x5 img, .sizetocontainer.grid .img.w4col.single-4x5 img, .sizetocontainer.grid .img.w4col.small-double-4x5 img, .sizetocontainer.grid .img.w4col.double-4x5 img, .sizetocontainer.grid .img.w4col.triple-4x5 img, .sizetocontainer.grid .img.w4col.quad-4x5 img {
+    width: 360px;
+    height: 450px; }
+
+.grid.fixed.w5col.r4x5 {
+  width: 454px;
+  height: 567.5px; }
+
+.fixed.grid .img.w5col, .sizetocontainer.grid .img.w5col {
+  text-align: center; }
+  .fixed.grid .img.w5col.small-single-4x5 img, .fixed.grid .img.w5col.single-4x5 img, .fixed.grid .img.w5col.small-double-4x5 img, .fixed.grid .img.w5col.double-4x5 img, .fixed.grid .img.w5col.triple-4x5 img, .fixed.grid .img.w5col.quad-4x5 img, .sizetocontainer.grid .img.w5col.small-single-4x5 img, .sizetocontainer.grid .img.w5col.single-4x5 img, .sizetocontainer.grid .img.w5col.small-double-4x5 img, .sizetocontainer.grid .img.w5col.double-4x5 img, .sizetocontainer.grid .img.w5col.triple-4x5 img, .sizetocontainer.grid .img.w5col.quad-4x5 img {
+    width: 454px;
+    height: 567.5px; }
+
+.grid.fixed.w6col.r4x5 {
+  width: 548px;
+  height: 685px; }
+
+.fixed.grid .img.w6col, .sizetocontainer.grid .img.w6col {
+  text-align: center; }
+  .fixed.grid .img.w6col.small-single-4x5 img, .fixed.grid .img.w6col.single-4x5 img, .fixed.grid .img.w6col.small-double-4x5 img, .fixed.grid .img.w6col.double-4x5 img, .fixed.grid .img.w6col.triple-4x5 img, .fixed.grid .img.w6col.quad-4x5 img, .sizetocontainer.grid .img.w6col.small-single-4x5 img, .sizetocontainer.grid .img.w6col.single-4x5 img, .sizetocontainer.grid .img.w6col.small-double-4x5 img, .sizetocontainer.grid .img.w6col.double-4x5 img, .sizetocontainer.grid .img.w6col.triple-4x5 img, .sizetocontainer.grid .img.w6col.quad-4x5 img {
+    width: 548px;
+    height: 685px; }
+
+.grid.fixed.w7col.r4x5 {
+  width: 642px;
+  height: 802.5px; }
+
+.fixed.grid .img.w7col, .sizetocontainer.grid .img.w7col {
+  text-align: center; }
+  .fixed.grid .img.w7col.small-single-4x5 img, .fixed.grid .img.w7col.single-4x5 img, .fixed.grid .img.w7col.small-double-4x5 img, .fixed.grid .img.w7col.double-4x5 img, .fixed.grid .img.w7col.triple-4x5 img, .fixed.grid .img.w7col.quad-4x5 img, .sizetocontainer.grid .img.w7col.small-single-4x5 img, .sizetocontainer.grid .img.w7col.single-4x5 img, .sizetocontainer.grid .img.w7col.small-double-4x5 img, .sizetocontainer.grid .img.w7col.double-4x5 img, .sizetocontainer.grid .img.w7col.triple-4x5 img, .sizetocontainer.grid .img.w7col.quad-4x5 img {
+    width: 642px;
+    height: 802.5px; }
+
+.grid.fixed.w8col.r4x5 {
+  width: 736px;
+  height: 920px; }
+
+.fixed.grid .img.w8col, .sizetocontainer.grid .img.w8col {
+  text-align: center; }
+  .fixed.grid .img.w8col.small-single-4x5 img, .fixed.grid .img.w8col.single-4x5 img, .fixed.grid .img.w8col.small-double-4x5 img, .fixed.grid .img.w8col.double-4x5 img, .fixed.grid .img.w8col.triple-4x5 img, .fixed.grid .img.w8col.quad-4x5 img, .sizetocontainer.grid .img.w8col.small-single-4x5 img, .sizetocontainer.grid .img.w8col.single-4x5 img, .sizetocontainer.grid .img.w8col.small-double-4x5 img, .sizetocontainer.grid .img.w8col.double-4x5 img, .sizetocontainer.grid .img.w8col.triple-4x5 img, .sizetocontainer.grid .img.w8col.quad-4x5 img {
+    width: 736px;
+    height: 920px; }
+
+.grid.fixed.w9col.r4x5 {
+  width: 830px;
+  height: 1037.5px; }
+
+.fixed.grid .img.w9col, .sizetocontainer.grid .img.w9col {
+  text-align: center; }
+  .fixed.grid .img.w9col.small-single-4x5 img, .fixed.grid .img.w9col.single-4x5 img, .fixed.grid .img.w9col.small-double-4x5 img, .fixed.grid .img.w9col.double-4x5 img, .fixed.grid .img.w9col.triple-4x5 img, .fixed.grid .img.w9col.quad-4x5 img, .sizetocontainer.grid .img.w9col.small-single-4x5 img, .sizetocontainer.grid .img.w9col.single-4x5 img, .sizetocontainer.grid .img.w9col.small-double-4x5 img, .sizetocontainer.grid .img.w9col.double-4x5 img, .sizetocontainer.grid .img.w9col.triple-4x5 img, .sizetocontainer.grid .img.w9col.quad-4x5 img {
+    width: 830px;
+    height: 1037.5px; }
+
+.grid.fixed.w10col.r4x5 {
+  width: 924px;
+  height: 1155px; }
+
+.fixed.grid .img.w10col, .sizetocontainer.grid .img.w10col {
+  text-align: center; }
+  .fixed.grid .img.w10col.small-single-4x5 img, .fixed.grid .img.w10col.single-4x5 img, .fixed.grid .img.w10col.small-double-4x5 img, .fixed.grid .img.w10col.double-4x5 img, .fixed.grid .img.w10col.triple-4x5 img, .fixed.grid .img.w10col.quad-4x5 img, .sizetocontainer.grid .img.w10col.small-single-4x5 img, .sizetocontainer.grid .img.w10col.single-4x5 img, .sizetocontainer.grid .img.w10col.small-double-4x5 img, .sizetocontainer.grid .img.w10col.double-4x5 img, .sizetocontainer.grid .img.w10col.triple-4x5 img, .sizetocontainer.grid .img.w10col.quad-4x5 img {
+    width: 924px;
+    height: 1155px; }
+
+.grid.fixed.w11col.r4x5 {
+  width: 1018px;
+  height: 1272.5px; }
+
+.fixed.grid .img.w11col, .sizetocontainer.grid .img.w11col {
+  text-align: center; }
+  .fixed.grid .img.w11col.small-single-4x5 img, .fixed.grid .img.w11col.single-4x5 img, .fixed.grid .img.w11col.small-double-4x5 img, .fixed.grid .img.w11col.double-4x5 img, .fixed.grid .img.w11col.triple-4x5 img, .fixed.grid .img.w11col.quad-4x5 img, .sizetocontainer.grid .img.w11col.small-single-4x5 img, .sizetocontainer.grid .img.w11col.single-4x5 img, .sizetocontainer.grid .img.w11col.small-double-4x5 img, .sizetocontainer.grid .img.w11col.double-4x5 img, .sizetocontainer.grid .img.w11col.triple-4x5 img, .sizetocontainer.grid .img.w11col.quad-4x5 img {
+    width: 1018px;
+    height: 1272.5px; }
+
+.grid.fixed.w12col.r4x5 {
+  width: 1112px;
+  height: 1390px; }
+
+.fixed.grid .img.w12col, .sizetocontainer.grid .img.w12col {
+  text-align: center; }
+  .fixed.grid .img.w12col.small-single-4x5 img, .fixed.grid .img.w12col.single-4x5 img, .fixed.grid .img.w12col.small-double-4x5 img, .fixed.grid .img.w12col.double-4x5 img, .fixed.grid .img.w12col.triple-4x5 img, .fixed.grid .img.w12col.quad-4x5 img, .sizetocontainer.grid .img.w12col.small-single-4x5 img, .sizetocontainer.grid .img.w12col.single-4x5 img, .sizetocontainer.grid .img.w12col.small-double-4x5 img, .sizetocontainer.grid .img.w12col.double-4x5 img, .sizetocontainer.grid .img.w12col.triple-4x5 img, .sizetocontainer.grid .img.w12col.quad-4x5 img {
+    width: 1112px;
+    height: 1390px; }
+
+.mobile.grid .img.single-3x4 img {
+  width: 280px;
+  height: 373.333px; }
+
+.grid.fixed.w1col.r3x4 {
+  width: 78px;
+  height: 104px; }
+
+.fixed.grid .img.w1col, .sizetocontainer.grid .img.w1col {
+  text-align: center; }
+  .fixed.grid .img.w1col.small-single-3x4 img, .fixed.grid .img.w1col.single-3x4 img, .fixed.grid .img.w1col.small-double-3x4 img, .fixed.grid .img.w1col.double-3x4 img, .fixed.grid .img.w1col.triple-3x4 img, .fixed.grid .img.w1col.quad-3x4 img, .sizetocontainer.grid .img.w1col.small-single-3x4 img, .sizetocontainer.grid .img.w1col.single-3x4 img, .sizetocontainer.grid .img.w1col.small-double-3x4 img, .sizetocontainer.grid .img.w1col.double-3x4 img, .sizetocontainer.grid .img.w1col.triple-3x4 img, .sizetocontainer.grid .img.w1col.quad-3x4 img {
+    width: 78px;
+    height: 104px; }
+
+.grid.fixed.w2col.r3x4 {
+  width: 172px;
+  height: 229.333px; }
+
+.fixed.grid .img.w2col, .sizetocontainer.grid .img.w2col {
+  text-align: center; }
+  .fixed.grid .img.w2col.small-single-3x4 img, .fixed.grid .img.w2col.single-3x4 img, .fixed.grid .img.w2col.small-double-3x4 img, .fixed.grid .img.w2col.double-3x4 img, .fixed.grid .img.w2col.triple-3x4 img, .fixed.grid .img.w2col.quad-3x4 img, .sizetocontainer.grid .img.w2col.small-single-3x4 img, .sizetocontainer.grid .img.w2col.single-3x4 img, .sizetocontainer.grid .img.w2col.small-double-3x4 img, .sizetocontainer.grid .img.w2col.double-3x4 img, .sizetocontainer.grid .img.w2col.triple-3x4 img, .sizetocontainer.grid .img.w2col.quad-3x4 img {
+    width: 172px;
+    height: 229.333px; }
+
+.grid.fixed.w3col.r3x4 {
+  width: 266px;
+  height: 354.667px; }
+
+.fixed.grid .img.w3col, .sizetocontainer.grid .img.w3col {
+  text-align: center; }
+  .fixed.grid .img.w3col.small-single-3x4 img, .fixed.grid .img.w3col.single-3x4 img, .fixed.grid .img.w3col.small-double-3x4 img, .fixed.grid .img.w3col.double-3x4 img, .fixed.grid .img.w3col.triple-3x4 img, .fixed.grid .img.w3col.quad-3x4 img, .sizetocontainer.grid .img.w3col.small-single-3x4 img, .sizetocontainer.grid .img.w3col.single-3x4 img, .sizetocontainer.grid .img.w3col.small-double-3x4 img, .sizetocontainer.grid .img.w3col.double-3x4 img, .sizetocontainer.grid .img.w3col.triple-3x4 img, .sizetocontainer.grid .img.w3col.quad-3x4 img {
+    width: 266px;
+    height: 354.667px; }
+
+.grid.fixed.w4col.r3x4 {
+  width: 360px;
+  height: 480px; }
+
+.fixed.grid .img.w4col, .sizetocontainer.grid .img.w4col {
+  text-align: center; }
+  .fixed.grid .img.w4col.small-single-3x4 img, .fixed.grid .img.w4col.single-3x4 img, .fixed.grid .img.w4col.small-double-3x4 img, .fixed.grid .img.w4col.double-3x4 img, .fixed.grid .img.w4col.triple-3x4 img, .fixed.grid .img.w4col.quad-3x4 img, .sizetocontainer.grid .img.w4col.small-single-3x4 img, .sizetocontainer.grid .img.w4col.single-3x4 img, .sizetocontainer.grid .img.w4col.small-double-3x4 img, .sizetocontainer.grid .img.w4col.double-3x4 img, .sizetocontainer.grid .img.w4col.triple-3x4 img, .sizetocontainer.grid .img.w4col.quad-3x4 img {
+    width: 360px;
+    height: 480px; }
+
+.grid.fixed.w5col.r3x4 {
+  width: 454px;
+  height: 605.333px; }
+
+.fixed.grid .img.w5col, .sizetocontainer.grid .img.w5col {
+  text-align: center; }
+  .fixed.grid .img.w5col.small-single-3x4 img, .fixed.grid .img.w5col.single-3x4 img, .fixed.grid .img.w5col.small-double-3x4 img, .fixed.grid .img.w5col.double-3x4 img, .fixed.grid .img.w5col.triple-3x4 img, .fixed.grid .img.w5col.quad-3x4 img, .sizetocontainer.grid .img.w5col.small-single-3x4 img, .sizetocontainer.grid .img.w5col.single-3x4 img, .sizetocontainer.grid .img.w5col.small-double-3x4 img, .sizetocontainer.grid .img.w5col.double-3x4 img, .sizetocontainer.grid .img.w5col.triple-3x4 img, .sizetocontainer.grid .img.w5col.quad-3x4 img {
+    width: 454px;
+    height: 605.333px; }
+
+.grid.fixed.w6col.r3x4 {
+  width: 548px;
+  height: 730.667px; }
+
+.fixed.grid .img.w6col, .sizetocontainer.grid .img.w6col {
+  text-align: center; }
+  .fixed.grid .img.w6col.small-single-3x4 img, .fixed.grid .img.w6col.single-3x4 img, .fixed.grid .img.w6col.small-double-3x4 img, .fixed.grid .img.w6col.double-3x4 img, .fixed.grid .img.w6col.triple-3x4 img, .fixed.grid .img.w6col.quad-3x4 img, .sizetocontainer.grid .img.w6col.small-single-3x4 img, .sizetocontainer.grid .img.w6col.single-3x4 img, .sizetocontainer.grid .img.w6col.small-double-3x4 img, .sizetocontainer.grid .img.w6col.double-3x4 img, .sizetocontainer.grid .img.w6col.triple-3x4 img, .sizetocontainer.grid .img.w6col.quad-3x4 img {
+    width: 548px;
+    height: 730.667px; }
+
+.grid.fixed.w7col.r3x4 {
+  width: 642px;
+  height: 856px; }
+
+.fixed.grid .img.w7col, .sizetocontainer.grid .img.w7col {
+  text-align: center; }
+  .fixed.grid .img.w7col.small-single-3x4 img, .fixed.grid .img.w7col.single-3x4 img, .fixed.grid .img.w7col.small-double-3x4 img, .fixed.grid .img.w7col.double-3x4 img, .fixed.grid .img.w7col.triple-3x4 img, .fixed.grid .img.w7col.quad-3x4 img, .sizetocontainer.grid .img.w7col.small-single-3x4 img, .sizetocontainer.grid .img.w7col.single-3x4 img, .sizetocontainer.grid .img.w7col.small-double-3x4 img, .sizetocontainer.grid .img.w7col.double-3x4 img, .sizetocontainer.grid .img.w7col.triple-3x4 img, .sizetocontainer.grid .img.w7col.quad-3x4 img {
+    width: 642px;
+    height: 856px; }
+
+.grid.fixed.w8col.r3x4 {
+  width: 736px;
+  height: 981.333px; }
+
+.fixed.grid .img.w8col, .sizetocontainer.grid .img.w8col {
+  text-align: center; }
+  .fixed.grid .img.w8col.small-single-3x4 img, .fixed.grid .img.w8col.single-3x4 img, .fixed.grid .img.w8col.small-double-3x4 img, .fixed.grid .img.w8col.double-3x4 img, .fixed.grid .img.w8col.triple-3x4 img, .fixed.grid .img.w8col.quad-3x4 img, .sizetocontainer.grid .img.w8col.small-single-3x4 img, .sizetocontainer.grid .img.w8col.single-3x4 img, .sizetocontainer.grid .img.w8col.small-double-3x4 img, .sizetocontainer.grid .img.w8col.double-3x4 img, .sizetocontainer.grid .img.w8col.triple-3x4 img, .sizetocontainer.grid .img.w8col.quad-3x4 img {
+    width: 736px;
+    height: 981.333px; }
+
+.grid.fixed.w9col.r3x4 {
+  width: 830px;
+  height: 1106.667px; }
+
+.fixed.grid .img.w9col, .sizetocontainer.grid .img.w9col {
+  text-align: center; }
+  .fixed.grid .img.w9col.small-single-3x4 img, .fixed.grid .img.w9col.single-3x4 img, .fixed.grid .img.w9col.small-double-3x4 img, .fixed.grid .img.w9col.double-3x4 img, .fixed.grid .img.w9col.triple-3x4 img, .fixed.grid .img.w9col.quad-3x4 img, .sizetocontainer.grid .img.w9col.small-single-3x4 img, .sizetocontainer.grid .img.w9col.single-3x4 img, .sizetocontainer.grid .img.w9col.small-double-3x4 img, .sizetocontainer.grid .img.w9col.double-3x4 img, .sizetocontainer.grid .img.w9col.triple-3x4 img, .sizetocontainer.grid .img.w9col.quad-3x4 img {
+    width: 830px;
+    height: 1106.667px; }
+
+.grid.fixed.w10col.r3x4 {
+  width: 924px;
+  height: 1232px; }
+
+.fixed.grid .img.w10col, .sizetocontainer.grid .img.w10col {
+  text-align: center; }
+  .fixed.grid .img.w10col.small-single-3x4 img, .fixed.grid .img.w10col.single-3x4 img, .fixed.grid .img.w10col.small-double-3x4 img, .fixed.grid .img.w10col.double-3x4 img, .fixed.grid .img.w10col.triple-3x4 img, .fixed.grid .img.w10col.quad-3x4 img, .sizetocontainer.grid .img.w10col.small-single-3x4 img, .sizetocontainer.grid .img.w10col.single-3x4 img, .sizetocontainer.grid .img.w10col.small-double-3x4 img, .sizetocontainer.grid .img.w10col.double-3x4 img, .sizetocontainer.grid .img.w10col.triple-3x4 img, .sizetocontainer.grid .img.w10col.quad-3x4 img {
+    width: 924px;
+    height: 1232px; }
+
+.grid.fixed.w11col.r3x4 {
+  width: 1018px;
+  height: 1357.333px; }
+
+.fixed.grid .img.w11col, .sizetocontainer.grid .img.w11col {
+  text-align: center; }
+  .fixed.grid .img.w11col.small-single-3x4 img, .fixed.grid .img.w11col.single-3x4 img, .fixed.grid .img.w11col.small-double-3x4 img, .fixed.grid .img.w11col.double-3x4 img, .fixed.grid .img.w11col.triple-3x4 img, .fixed.grid .img.w11col.quad-3x4 img, .sizetocontainer.grid .img.w11col.small-single-3x4 img, .sizetocontainer.grid .img.w11col.single-3x4 img, .sizetocontainer.grid .img.w11col.small-double-3x4 img, .sizetocontainer.grid .img.w11col.double-3x4 img, .sizetocontainer.grid .img.w11col.triple-3x4 img, .sizetocontainer.grid .img.w11col.quad-3x4 img {
+    width: 1018px;
+    height: 1357.333px; }
+
+.grid.fixed.w12col.r3x4 {
+  width: 1112px;
+  height: 1482.667px; }
+
+.fixed.grid .img.w12col, .sizetocontainer.grid .img.w12col {
+  text-align: center; }
+  .fixed.grid .img.w12col.small-single-3x4 img, .fixed.grid .img.w12col.single-3x4 img, .fixed.grid .img.w12col.small-double-3x4 img, .fixed.grid .img.w12col.double-3x4 img, .fixed.grid .img.w12col.triple-3x4 img, .fixed.grid .img.w12col.quad-3x4 img, .sizetocontainer.grid .img.w12col.small-single-3x4 img, .sizetocontainer.grid .img.w12col.single-3x4 img, .sizetocontainer.grid .img.w12col.small-double-3x4 img, .sizetocontainer.grid .img.w12col.double-3x4 img, .sizetocontainer.grid .img.w12col.triple-3x4 img, .sizetocontainer.grid .img.w12col.quad-3x4 img {
+    width: 1112px;
+    height: 1482.667px; }
+
+.smallscreen.mobile .cover.fixed.w3col.grid, .smallscreen.mobile .cover.fixed.w3col.grid * {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  height: 333.333px;
+  min-width: 250px;
+  min-height: 333.333px; }
+  .smallscreen.mobile .cover.fixed.w3col.grid .img, .smallscreen.mobile .cover.fixed.w3col.grid * .img {
+    top: 0; }
+.smallscreen.mobile .cover.fixed.w2col.grid, .smallscreen.mobile .cover.fixed.w2col.grid * {
+  margin: 0;
+  padding: 0;
+  width: 125px;
+  height: 166.667px;
+  min-width: 125px;
+  min-height: 166.667px; }
+  .smallscreen.mobile .cover.fixed.w2col.grid .img, .smallscreen.mobile .cover.fixed.w2col.grid * .img {
+    top: 0; }
+.smallscreen.mobile .cover.grid {
+  margin: 0 -8.75px; }
+.smallscreen.mobile .fixed.grid, .smallscreen.mobile .sizetocontainer.grid {
+  max-width: none;
+  max-height: none;
+  min-width: none;
+  min-height: none; }
+.smallscreen.mobile .mobile.grid .keeptogether.fallback img {
+  width: 40px;
+  height: 40px; }
