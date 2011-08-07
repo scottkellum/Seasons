@@ -193,6 +193,27 @@ mark
   font-weight: bold
 
 
+// MODULAR SCALE (https://github.com/scottkellum/modular-scale)
+=modular-scale($attribute, $value, $ratio, $multiple)
+  $modular-scale: $value
+  @if $multiple > 0
+  @for $i from 1 through $multiple
+    $modular-scale: $modular-scale * $ratio
+  @if $multiple < 0
+    @for $i from 1 through ($multiple * -1)
+      $modular-scale: $modular-scale / $ratio
+  #{$attribute}: $modular-scale
+
+
+// VENDOR PREFIXR (https://github.com/scottkellum/vendor-prefixer)
+=prefix($attribute, $value)
+  -webkit-#{$attribute}: $value
+  -moz-#{$attribute}: $value
+  -ms-#{$attribute}: $value
+  -o-#{$attribute}: $value
+  #{$attribute}: $value
+
+
 // TYPOGRAPHIC TOOLS
 =type($size, $line-height)
   font-size: $size
@@ -211,37 +232,6 @@ mark
 
 =letterpress($color)
   text-shadow: 0 -1px 0 darken($color, 15%), 0 1px 0 lighten($color, 15%)
-
-// DO NOT USE, WORK IN PROGRESS
-=text-extrude($color, $distance, $angle, $blur: 0)
-
-
-=columns($colcount, $colgutter, $colrulewidth: 0, $colrulecolor: #000, $colrulestyle: solid)
-  -webkit-column-count: $colcount
-  -webkit-column-gap: $colgutter
-  -webkit-column-rule-color: $colrulecolor
-  -webkit-column-rule-style: $colrulestyle
-  -webkit-column-rule-width: $colrulewidth
-  -moz-column-count: $colcount
-  -moz-column-gap: $colgutter
-  -moz-column-rule-color: $colrulecolor
-  -moz-column-rule-style: $colrulestyle
-  -moz-column-rule-width: $colrulewidth
-  -ms-column-count: $colcount
-  -ms-column-gap: $colgutter
-  -ms-column-rule-color: $colrulecolor
-  -ms-column-rule-style: $colrulestyle
-  -ms-column-rule-width: $colrulewidth
-  -o-column-count: $colcount
-  -o-column-gap: $colgutter
-  -o-column-rule-color: $colrulecolor
-  -o-column-rule-style: $colrulestyle
-  -o-column-rule-width: $colrulewidth
-  column-count: $colcount
-  column-gap: $colgutter
-  column-rule-color: $colrulecolor
-  column-rule-style: $colrulestyle
-  column-rule-width: $colrulewidth
 
 
 // @FONT-FACE (FONTSPRING SYNTAX)
@@ -266,11 +256,7 @@ mark
 
 // STANDARDIZE VENDOR-SPECIFIC PROPERTIES
 =border-radius($borderradius)
-  -webkit-border-radius: $borderradius
-  -moz-border-radius: $borderradius
-  -ms-border-radius: $borderradius
-  -o-border-radius: $borderradius
-  border-radius: $borderradius
+  +prefix(border-radius, $borderradius)
 
 =corner-radius($top, $left, $borderradius)
   -moz-border-radius-#{$top}#{$left}: $borderradius
@@ -279,11 +265,7 @@ mark
   border-#{$top}-#{$left}-radius: $borderradius
 
 =box-shadow($boxshadow)
-  -webkit-box-shadow: $boxshadow
-  -moz-box-shadow: $boxshadow
-  -ms-box-shadow: $boxshadow
-  -o-box-shadow: $boxshadow
-  box-shadow: $boxshadow
+  +prefix(box-shadow, $boxshadow)
 
 =gradient($top, $bottom)
   background-color: $top / 2 + $bottom / 2
@@ -317,18 +299,10 @@ mark
   background-image: linear-gradient(top, lighten($color, 15%) 0%, $color 50%, darken($color, 5%) 51%, darken($color, 5%) 100%)
 
 =transform($transform)
-  -webkit-transform: $transform
-  -moz-transform: $transform
-  -ms-transform: $transform
-  -o-transform: $transform
-  transform: $transform
+  +prefix(transform, $transform)
 
 =transition($transition: all 1s)
-  -webkit-transition: $transition
-  -moz-transition: $transition
-  -ms-transition: $transition
-  -o-transition: $transition
-  transition: $transition
+  +prefix(transition, $transition)
 
 
 // FORCE HARDWARE ACCELERATE
@@ -339,11 +313,7 @@ mark
 
 // ROTATION
 =transform-origin($origin)
-  -webkit-transform-origin: $origin
-  -moz-transform-origin: $origin
-  -ms-transform-origin: $origin
-  -o-transform-origin: $origin
-  transform-origin: $origin
+  +prefix(transform-origin, $origin)
 
 =rotate($deg)
   display: block
@@ -355,11 +325,7 @@ mark
       filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2)
     @if $deg == 270
       filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3)
-  -webkit-transform: rotate($deg+deg)
-  -moz-transform: rotate($deg+deg)
-  -ms-transform: rotate($deg+deg)
-  -o-transform: rotate($deg+deg)
-  transform: rotate($deg+deg)
+  +prefix(transform, rotate($deg+deg))
 
 .r90
   +rotate(90)
