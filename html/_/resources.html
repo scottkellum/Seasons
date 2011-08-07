@@ -10,7 +10,43 @@
 
 
 		<div class="chrome">
+		  
+		  <!--PAGES ARE PLACED IN THE VIEWER-->
 			<div class="viewer"></div>
+			
+			<!--NAVIGATION "CHROME" BELOW-->
+      <nav>
+        
+        <!--SIDEBAR GENERATED FROM "_/toc.json"-->
+        <div class="sidebar contents">
+          <!--A CLASS OF SCROLL ADDS TOUCH BASED SCROLLING SUPPORT-->
+          <div class="content scroll" data-template="index">
+            {{#children}}
+              {{^hidden}}
+                <a href="{{url}}">
+                  <span class="title">{{title}}</span>
+                </a>
+              {{/hidden}}
+            {{/children}}
+          </div>
+          <!--SHOW OR HIDE CONTENTS-->
+          <button class="open-sidebar">Show Contents</button>
+          <button class="close-sidebar">Hide Contents</button>
+        </div>
+        
+        <!--PAGE NUMBERS-->
+        <div class="numbering" data-template="position">{{pagenumber}}/{{pagecount}}</div>
+        
+        <!--MENU-->
+        <div class="menu">
+          <button>Menu</button>
+          <ul class="content">          
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+          </ul>
+        </div>
+      </nav>
 		</div>
 
     <div class="lightbox">

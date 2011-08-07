@@ -285,6 +285,16 @@ body {
     left: 0;
     z-index: 0; }
 
+nav {
+  display: block;
+  position: absolute;
+  z-index: 1; }
+
+.sidebar .content, .menu .content {
+  display: none; }
+.sidebar.sidebar-active .content, .sidebar.menu-active .content, .menu.sidebar-active .content, .menu.menu-active .content {
+  display: block; }
+
 .lightbox {
   position: absolute;
   overflow: hidden;

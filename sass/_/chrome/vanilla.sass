@@ -30,6 +30,18 @@ body
     left: 0
     z-index: 0
 
+nav
+  display: block
+  position: absolute
+  z-index: 1
+
+.sidebar, .menu
+  .content
+    display: none
+  &.sidebar-active, &.menu-active
+    .content
+      display: block
+
 
 // LIGHTBOX
 

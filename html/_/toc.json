@@ -1,11 +1,13 @@
 [
   {
     "url": "index.html",
+    "title": "title",
     "publication": "publication",
     "timestamp": "timestamp"
   },
   {
     "url": "article.html",
+    "title": "title",
     "publication": "publication",
     "section": "section",
     "subject": "subject",
