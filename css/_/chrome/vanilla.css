@@ -29,6 +29,20 @@ body {
   z-index: 0;
 }
 
+/* Make sure the nav stays above the pages */
+nav {
+  display: block;
+  position: absolute;
+  z-index: 1; }
+
+/* Show and hide navigation elements and sidebars */
+.sidebar .content, .menu .content {
+  display: none;
+}
+.sidebar.sidebar-active .content, .sidebar.menu-active .content, .menu.sidebar-active .content, .menu.menu-active .content {
+  display: block;
+}
+
 /* LIGHTBOX */
 .lightbox {
   position: absolute;
