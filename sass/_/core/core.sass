@@ -53,18 +53,17 @@
 
 // DESKTOP SCROLLING CONTAINER SUPPORT
 
-.no-touch
-  .scroll-container
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    overflow: auto
-    overflow-x: hidden
+.scroll-container
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  overflow: auto
+  overflow-x: hidden
 
 // GRADIENT TO INDICATE OVERFLOW
-.container.scroll:after
+.container.scroll:before
   content: "\0020"
   position: absolute
   left: 0
