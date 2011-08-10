@@ -53,22 +53,18 @@
 
 // DESKTOP SCROLLING CONTAINER SUPPORT
 
-.scroll-container
+.container.scroll
   position: absolute
-  top: 0
-  left: 0
-  right: 0
-  bottom: 0
   overflow: auto
   overflow-x: hidden
 
 // GRADIENT TO INDICATE OVERFLOW
-.container.scroll:before
+.grid .scroll-fade:after
   content: "\0020"
   position: absolute
+  bottom: 0
   left: 0
   right: 0
-  bottom: 0
   height: 40px
   z-index: 3
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba($page, 0)), to(rgba($page, 1)))
@@ -78,8 +74,24 @@
   background-image: -o-linear-gradient(top, rgba($page, 0), rgba($page, 1))
   background-image: linear-gradient(top, rgba($page, 0), rgba($page, 1))
 
-.scroll-container
+.container .scroll
+  overflow: auto
+  width: 100%
+  height: 100%
   padding-bottom: 40px
+
+// FORCE SCROLLBAR FOR SAFARI IN LION -- http://simurai.com/post/8083942390/force-lion-scrollbar
+::-webkit-scrollbar
+  -webkit-appearance: none
+  width: 6px
+::-webkit-scrollbar-thumb
+  border-radius: 3px
+  background-color: rgba(0,0,0,.5)
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5)
+
+// Make The Scrollbars Smaller On Touch Devices
+.touch ::-webkit-scrollbar
+  width: 3px
 
 // TYPOGRAPHY RESET
 html, body
