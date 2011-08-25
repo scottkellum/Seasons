@@ -1,5 +1,3 @@
-/*--              SEASONS                -- */
-/*--  the design framework for treesaver -- */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -166,51 +164,6 @@ mark {
   font-style: italic;
   font-weight: bold; }
 
-.r90 {
-  display: block;
-  -webkit-transform-origin: 0% 100%;
-  -moz-transform-origin: 0% 100%;
-  -ms-transform-origin: 0% 100%;
-  -o-transform-origin: 0% 100%;
-  transform-origin: 0% 100%;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg); }
-  .no-csstransforms .r90 {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); }
-
-.r180 {
-  display: block;
-  -webkit-transform-origin: 0% 100%;
-  -moz-transform-origin: 0% 100%;
-  -ms-transform-origin: 0% 100%;
-  -o-transform-origin: 0% 100%;
-  transform-origin: 0% 100%;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg); }
-  .no-csstransforms .r180 {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); }
-
-.r270 {
-  display: block;
-  -webkit-transform-origin: 0% 100%;
-  -moz-transform-origin: 0% 100%;
-  -ms-transform-origin: 0% 100%;
-  -o-transform-origin: 0% 100%;
-  transform-origin: 0% 100%;
-  -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-  transform: rotate(270deg); }
-  .no-csstransforms .r270 {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
-
 .r {
   background: #ff9999 !important; }
 
@@ -220,21 +173,19 @@ mark {
 .b {
   background: #9999ff !important; }
 
-.y {
-  background: #ffff99 !important; }
-
 .c {
   background: #99ffff !important; }
 
 .m {
   background: #ff99ff !important; }
 
+.y {
+  background: #ffff99 !important; }
+
 .column {
   width: 266px;
   font-size: 14px;
   line-height: 20px; }
-  .department .column {
-    width: 266px; }
 
 p {
   font-size: 14px;
@@ -252,10 +203,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 20px;
-  line-height: 20px;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-style: normal; }
+  line-height: 20px; }
 
 .grid {
   padding: 0 20px;
@@ -296,7 +244,7 @@ nav {
   display: block; }
 
 .lightbox {
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   top: 0;
   right: 0;
@@ -310,7 +258,7 @@ nav {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 10px;
+    padding: 8px;
     background: black; }
 
 .r16x9.w1 {
@@ -726,7 +674,8 @@ nav {
   overflow: hidden;
   z-index: 1;
   -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000; }
+  -webkit-perspective: 1000;
+  -webkit-font-smoothing: subpixel-antialiased; }
 
 .fixed.grid, .sizetocontainer.grid {
   max-width: none;
@@ -734,21 +683,17 @@ nav {
   min-width: none;
   min-height: none; }
 
-.no-touch .scroll-container {
+.container.scroll {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   overflow: auto;
   overflow-x: hidden; }
 
-.container.scroll:after {
+.grid .scroll-fade:after {
   content: "\0020";
   position: absolute;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
   height: 40px;
   z-index: 3;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
@@ -758,11 +703,26 @@ nav {
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0), white);
   background-image: linear-gradient(top, rgba(255, 255, 255, 0), white); }
 
-.scroll-container {
+.container .scroll {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
   padding-bottom: 40px; }
 
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
+
+.touch ::-webkit-scrollbar {
+  width: 3px; }
+
 html, body {
-  font-family: Verdana, serif;
+  font-family: serif;
   font-size: 14px;
   line-height: 20px; }
 
@@ -830,13 +790,7 @@ figure {
   overflow: visible; }
 
 .error, .loading {
-  position: absolute;
-  width: 160px;
-  height: 100px;
-  letter-spacing: 2px;
-  margin: 0 0 0 20px; }
-  .error img, .loading img {
-    display: inline; }
+  position: absolute; }
 
 .hidden, .microdata {
   display: none; }

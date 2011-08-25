@@ -7,7 +7,7 @@
 
 // Make sure iPad grids don't show up for desktop users.
 .grid.ipad
-  +over9000
+  +remove
   margin: 0
   +border-radius(0)
   +box-shadow(none)
@@ -15,7 +15,7 @@
 // Force sizing and remove standard desktop grids.
 .os-ipad
   .grid
-    +over9000
+    +remove
     opacity: 1 !important
   .grid.fixed
     &.ipad.horizontal

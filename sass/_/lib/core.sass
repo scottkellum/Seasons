@@ -6,12 +6,12 @@
 =ratio($width, $height, $cols)
   @for $i from 1 through $cols
     .r#{$width}x#{$height}.w#{$i}
-      height: ($column * $i + $gutter * ( $i - 1 )) * ( $height / $width )
+      height: grid($i) * ( $height / $width )
     .img.w#{$i}
       &.single-#{$width}x#{$height}, &.double-#{$width}x#{$height}, &.triple-#{$width}x#{$height}, &.quad-#{$width}x#{$height}
         img
-          +width($i)
-          height: ($column * $i + $gutter * ( $i - 1 )) * ( $height / $width )
+          width: grid($i)
+          height: grid($i) * ( $height / $width )
 
 // Run the code above. Ratios are defined in the skin
 +ratios
@@ -20,9 +20,9 @@
 =columns($cols)
   @for $i from 1 through $cols
     .c#{$i}
-      margin-left: ($column + $gutter) * ( $i - 1 )
+      margin-left: grid($i) - $column
     .w#{$i}
-      +width($i)
+      width: grid($i)
 
 // Run the code above. Columns are defined in the skin
 +columns($columns)
@@ -33,7 +33,7 @@
   position: absolute
   overflow: hidden
   z-index: 1
-  // helps reduce flickr when paging
+  // Helps reduce flickr when paging
   -webkit-backface-visibility: hidden
   -webkit-perspective: 1000
   -webkit-font-smoothing: subpixel-antialiased
@@ -164,12 +164,6 @@ figure
 // RESOURCES
 .error, .loading
   position: absolute
-  width: 160px
-  height: 100px
-  letter-spacing: 2px
-  margin: 0 0 0 20px
-  img
-    display: inline
 
 .hidden, .microdata
   display: none

@@ -1,0 +1,531 @@
+// VENDOR PREFIXR
+$prefixes: -webkit- -moz- -ms- -o-
+
+=prefix($attribute, $value, $prefixes)
+  @each $prefix in $prefixes
+    #{$prefix}#{$attribute}: $value
+
+
+// STANDARDIZE VENDOR-SPECIFIC PROPERTIES
+=animation
+  +prefix(animation, $value)
+
+=animation-delay
+  +prefix(animation-delay, $value)
+
+=animation-direction
+  +prefix(animation-direction, $value)
+
+=animation-duration
+  +prefix(animation-duration, $value)
+
+=animation-fill-mode
+  +prefix(animation-fill-mode, $value)
+
+=animation-iteration-count
+  +prefix(animation-iteration-count, $value)
+
+=animation-name
+  +prefix(animation-name, $value)
+
+=animation-play-state
+  +prefix(animation-play-state, $value)
+
+=animation-timing-function
+  +prefix(animation-timing-function, $value)
+
+=appearance
+  +prefix(appearance, $value)
+
+=backface-visibility
+  +prefix(backface-visibility, $value)
+
+=background-clip
+  +prefix(background-clip, $value)
+
+=background-composite
+  +prefix(background-composite, $value)
+
+=background-origin
+  +prefix(background-origin, $value)
+
+=background-size
+  +prefix(background-size, $value)
+
+=border-after
+  +prefix(border-after, $value)
+
+=border-after-color
+  +prefix(border-after-color, $value)
+
+=border-after-style
+  +prefix(border-after-style, $value)
+
+=border-after-width
+  +prefix(border-after-width, $value)
+
+=border-before
+  +prefix(border-before, $value)
+
+=border-before-color
+  +prefix(border-before-color, $value)
+
+=border-before-style
+  +prefix(border-before-style, $value)
+
+=border-before-width
+  +prefix(border-before-width, $value)
+
+=border-bottom-left-radius
+  +prefix(border-bottom-left-radius, $value)
+
+=border-bottom-right-radius
+  +prefix(border-bottom-right-radius, $value)
+
+=border-end
+  +prefix(border-end, $value)
+
+=border-end-color
+  +prefix(border-end-color, $value)
+
+=border-end-style
+  +prefix(border-end-style, $value)
+
+=border-end-width
+  +prefix(border-end-width, $value)
+
+=border-fit
+  +prefix(border-fit, $value)
+
+=border-horizontal-spacing
+  +prefix(border-horizontal-spacing, $value)
+
+=border-image
+  +prefix(border-image, $value)
+
+=border-radius
+  +prefix(border-radius, $value)
+
+=border-start
+  +prefix(border-start, $value)
+
+=border-start-color
+  +prefix(border-start-color, $value)
+
+=border-start-style
+  +prefix(border-start-style, $value)
+
+=border-start-width
+  +prefix(border-start-width, $value)
+
+=border-top-left-radius
+  +prefix(border-top-left-radius, $value)
+
+=border-top-right-radius
+  +prefix(border-top-right-radius, $value)
+
+=border-vertical-spacing
+  +prefix(border-vertical-spacing, $value)
+
+=box-align
+  +prefix(box-align, $value)
+
+=box-direction
+  +prefix(box-direction, $value)
+
+=box-flex
+  +prefix(box-flex, $value)
+
+=box-flex-group
+  +prefix(box-flex-group, $value)
+
+=box-lines
+  +prefix(box-lines, $value)
+
+=box-ordinal-group
+  +prefix(box-ordinal-group, $value)
+
+=box-orient
+  +prefix(box-orient, $value)
+
+=box-pack
+  +prefix(box-pack, $value)
+
+=box-reflect
+  +prefix(box-reflect, $value)
+
+=box-shadow
+  +prefix(box-shadow, $value)
+
+=box-sizing
+  +prefix(box-sizing, $value)
+
+=color-correction
+  +prefix(color-correction, $value)
+
+=column-break-after
+  +prefix(column-break-after, $value)
+
+=column-break-before
+  +prefix(column-break-before, $value)
+
+=column-break-inside
+  +prefix(column-break-inside, $value)
+
+=column-count
+  +prefix(column-count, $value)
+
+=column-gap
+  +prefix(column-gap, $value)
+
+=column-rule
+  +prefix(column-rule, $value)
+
+=column-rule-color
+  +prefix(column-rule-color, $value)
+
+=column-rule-style
+  +prefix(column-rule-style, $value)
+
+=column-rule-width
+  +prefix(column-rule-width, $value)
+
+=column-span
+  +prefix(column-span, $value)
+
+=column-width
+  +prefix(column-width, $value)
+
+=columns
+  +prefix(columns, $value)
+
+=content-order
+  +prefix(content-order, $value)
+
+=dashboard-region
+  +prefix(dashboard-region, $value)
+
+=flex-order
+  +prefix(flex-order, $value)
+
+=flex-pack
+  +prefix(flex-pack, $value)
+
+=flow
+  +prefix(flow, $value)
+
+=font-feature-settings
+  +prefix(font-feature-settings, $value)
+
+=font-size-delta
+  +prefix(font-size-delta, $value)
+
+=font-smoothing
+  +prefix(font-smoothing, $value)
+
+=highlight
+  +prefix(highlight, $value)
+
+=hyphenate-character
+  +prefix(hyphenate-character, $value)
+
+=hyphenate-limit-after
+  +prefix(hyphenate-limit-after, $value)
+
+=hyphenate-limit-before
+  +prefix(hyphenate-limit-before, $value)
+
+=line-box-contain
+  +prefix(line-box-contain, $value)
+
+=line-break
+  +prefix(line-break, $value)
+
+=line-clamp
+  +prefix(line-clamp, $value)
+
+=locale
+  +prefix(locale, $value)
+
+=logical-height
+  +prefix(logical-height, $value)
+
+=logical-width
+  +prefix(logical-width, $value)
+
+=margin-after
+  +prefix(margin-after, $value)
+
+=margin-after-collapse
+  +prefix(margin-after-collapse, $value)
+
+=margin-before
+  +prefix(margin-before, $value)
+
+=margin-before-collapse
+  +prefix(margin-before-collapse, $value)
+
+=margin-bottom-collapse
+  +prefix(margin-bottom-collapse, $value)
+
+=margin-collapse
+  +prefix(margin-collapse, $value)
+
+=margin-end
+  +prefix(margin-end, $value)
+
+=margin-start
+  +prefix(margin-start, $value)
+
+=margin-top-collapse
+  +prefix(margin-top-collapse, $value)
+
+=marquee
+  +prefix(marquee, $value)
+
+=marquee-direction
+  +prefix(marquee-direction, $value)
+
+=marquee-increment
+  +prefix(marquee-increment, $value)
+
+=marquee-repetition
+  +prefix(marquee-repetition, $value)
+
+=marquee-speed
+  +prefix(marquee-speed, $value)
+
+=marquee-style
+  +prefix(marquee-style, $value)
+
+=mask
+  +prefix(mask, $value)
+
+=mask-attachment
+  +prefix(mask-attachment, $value)
+
+=mask-box-image
+  +prefix(mask-box-image, $value)
+
+=mask-clip
+  +prefix(mask-clip, $value)
+
+=mask-composite
+  +prefix(mask-composite, $value)
+
+=mask-image
+  +prefix(mask-image, $value)
+
+=mask-origin
+  +prefix(mask-origin, $value)
+
+=mask-position
+  +prefix(mask-position, $value)
+
+=mask-position-x
+  +prefix(mask-position-x, $value)
+
+=mask-position-y
+  +prefix(mask-position-y, $value)
+
+=mask-repeat
+  +prefix(mask-repeat, $value)
+
+=mask-repeat-x
+  +prefix(mask-repeat-x, $value)
+
+=mask-repeat-y
+  +prefix(mask-repeat-y, $value)
+
+=mask-size
+  +prefix(mask-size, $value)
+
+=match-nearest-mail-blockquote-color
+  +prefix(match-nearest-mail-blockquote-color, $value)
+
+=max-logical-height
+  +prefix(max-logical-height, $value)
+
+=max-logical-width
+  +prefix(max-logical-width, $value)
+
+=min-logical-height
+  +prefix(min-logical-height, $value)
+
+=min-logical-width
+  +prefix(min-logical-width, $value)
+
+=nbsp-mode
+  +prefix(nbsp-mode, $value)
+
+=opacity
+  +prefix(opacity, $value)
+
+=padding-after
+  +prefix(padding-after, $value)
+
+=padding-before
+  +prefix(padding-before, $value)
+
+=padding-end
+  +prefix(padding-end, $value)
+
+=padding-start
+  +prefix(padding-start, $value)
+
+=perspective
+  +prefix(perspective, $value)
+
+=perspective-origin
+  +prefix(perspective-origin, $value)
+
+=perspective-origin-x
+  +prefix(perspective-origin-x, $value)
+
+=perspective-origin-y
+  +prefix(perspective-origin-y, $value)
+
+=region-break-after
+  +prefix(region-break-after, $value)
+
+=region-break-before
+  +prefix(region-break-before, $value)
+
+=region-break-inside
+  +prefix(region-break-inside, $value)
+
+=region-overflow
+  +prefix(region-overflow, $value)
+
+=rtl-ordering
+  +prefix(rtl-ordering, $value)
+
+=svg-shadow
+  +prefix(svg-shadow, $value)
+
+=tap-highlight-color
+  +prefix(tap-highlight-color, $value)
+
+=text-decorations-in-effect
+  +prefix(text-decorations-in-effect, $value)
+
+=text-emphasis-position
+  +prefix(text-emphasis-position, $value)
+
+=text-fill-color
+  +prefix(text-fill-color, $value)
+
+=text-security
+  +prefix(text-security, $value)
+
+=text-size-adjust
+  +prefix(text-size-adjust, $value)
+
+=text-stroke
+  +prefix(text-stroke, $value)
+
+=text-stroke-color
+  +prefix(text-stroke-color, $value)
+
+=text-stroke-width
+  +prefix(text-stroke-width, $value)
+
+=touch-callout
+  +prefix(touch-callout, $value)
+
+=transform
+  +prefix(transform, $value)
+
+=transform-origin
+  +prefix(transform-origin, $value)
+
+=transform-origin-x
+  +prefix(transform-origin-x, $value)
+
+=transform-origin-y
+  +prefix(transform-origin-y, $value)
+
+=transform-origin-z
+  +prefix(transform-origin-z, $value)
+
+=transform-style
+  +prefix(transform-style, $value)
+
+=transition($value: all 1s)
+  +prefix(transition, $value)
+
+=transition-delay
+  +prefix(transition-delay, $value)
+
+=transition-duration
+  +prefix(transition-duration, $value)
+
+=transition-property
+  +prefix(transition-property, $value)
+
+=transition-timing-function
+  +prefix(transition-timing-function, $value)
+
+=user-drag
+  +prefix(user-drag, $value)
+
+=user-modify
+  +prefix(user-modify, $value)
+
+=user-select
+  +prefix(user-select, $value)
+
+=wrap-shape
+  +prefix(wrap-shape, $value)
+
+
+// OTHER CSS3 TOOLS
+=corner-radius($top, $left, $borderradius)
+  -moz-border-radius-#{$top}#{$left}: $borderradius
+  -webkit-border-#{$top}-#{$left}-radius: $borderradius
+  -o-border-#{$top}-#{$left}-radius: $borderradius
+  border-#{$top}-#{$left}-radius: $borderradius
+
+=gradient($top, $bottom)
+  background-color: $top / 2 + $bottom / 2
+  filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='")#{$top}unquote("', endColorstr='")#{$bottom}unquote("')")
+  -ms-filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$top}', endColorstr='#{$bottom}')")
+  background-image: -webkit-gradient(linear, left top, left bottom, from($top), to($bottom))
+  background-image: -webkit-linear-gradient(top, $top, $bottom)
+  background-image: -moz-linear-gradient(top, $top, $bottom)
+  background-image: -ms-linear-gradient(top, $top, $bottom)
+  background-image: -o-linear-gradient(top, $top, $bottom)
+  background-image: linear-gradient(top, $top, $bottom)
+
+=hgradient($left, $right)
+  background-color: $left / 2 + $right / 2
+  filter: unquote("progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='")#{$left}unquote("', endColorstr='")#{$right}unquote("')")
+  -ms-filter: unquote("progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#{$left}', endColorstr='#{$right}')")
+  background-image: -webkit-gradient(linear, left top, right top, from($left), to($right))
+  background-image: -webkit-linear-gradient(left, $left, $right)
+  background-image: -moz-linear-gradient(left, $left, $right)
+  background-image: -ms-linear-gradient(left, $left, $right)
+  background-image: -o-linear-gradient(left, $left, $right)
+  background-image: linear-gradient(left, $left, $right)
+
+=gloss($color)
+  background-color: $color
+  filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='")#{lighten($color, 5%)}unquote("', endColorstr='")#{darken($color, 5%)}unquote("')")
+  -ms-filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='#{lighten($color, 5%)}', endColorstr='#{darken($color, 5%)}')")
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(1, lighten($color, 15%)), color-stop(0.5, $color), color-stop(0.49, darken($color, 5%)))
+  background-image: -webkit-linear-gradient(top, lighten($color, 15%) 0%, $color 50%, darken($color, 5%) 51%, darken($color, 5%) 100%)
+  background-image: -moz-linear-gradient(top, lighten($color, 15%) 0%, $color 50%, darken($color, 5%) 51%, darken($color, 5%) 100%)
+  background-image: linear-gradient(top, lighten($color, 15%) 0%, $color 50%, darken($color, 5%) 51%, darken($color, 5%) 100%)
+
+// ROTATION
+=rotate($deg)
+  display: block
+  +transform-origin(0% 100%)
+  .no-csstransforms &
+    @if $deg == 90
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1)
+    @if $deg == 180
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2)
+    @if $deg == 270
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3)
+  +prefix(transform, rotate($deg+deg))

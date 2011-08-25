@@ -11,18 +11,16 @@ $top: $line-height * 2
 $bottom: $line-height * 2
 
 // COLORS
-$primary: #D81010
-$secondary: #f50019
-$tertiary: #ccc4b7
+$primary: #f66
+$secondary: #6f6
+$tertiary: #66f
 $text: #333
 $page: #fff
 $body: #333
 
 // FONTS
-$font: Verdana, serif
+$font: serif
 $headline: sans-serif
-$headline-weight: bold
-$headline-style: normal
 $subhead: sans-serif
 
 // IMAGE/PAGE RATIOS
@@ -34,20 +32,12 @@ $subhead: sans-serif
   +ratio(4, 5, $columns)
   +ratio(3, 4, $columns)
 
-=headline
-  font-family: $headline
-  font-weight: $headline-weight
-  font-style: $headline-style
-
-
 // COLUMN WIDTHS
 // If you have a set of grids with a different column width, define it here. The department grid is here as an example but it is only nessisary to list the ones with a different size column from the standard width.
 // Column widths are measured by grid columns. The default should usually be 3 as that is what the image sizes are based on.
 .column
-  +width(3)
+  width: grid(3)
   +type($size, $line-height)
-  .department &
-    +width(3)
 
 // TYPOGRAPHIC STYLES
 // Keep vertical spacing and all line-height attrubutes a multiple of your line-height to avoid text flow bugs. Do not use "!important" on any measurements here
@@ -67,7 +57,6 @@ h1, h2, h3, h4 ,h5 ,h6
 
 h1
   +solid($line-height)
-  +headline
 
 
 // GENERAL GRID STYLES

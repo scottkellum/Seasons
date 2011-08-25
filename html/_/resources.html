@@ -20,14 +20,12 @@
         <!--SIDEBAR GENERATED FROM "_/toc.json"-->
         <div class="sidebar contents">
           <!--A CLASS OF SCROLL ADDS TOUCH BASED SCROLLING SUPPORT-->
-          <div class="content scroll" data-template="index">
-            {{#children}}
-              {{^hidden}}
+          <div class="content scroll" data-template="publication">
+            {{#contents}}
                 <a href="{{url}}">
                   <span class="title">{{title}}</span>
                 </a>
-              {{/hidden}}
-            {{/children}}
+            {{/contents}}
           </div>
           <!--SHOW OR HIDE CONTENTS-->
           <button class="open-sidebar">Show Contents</button>
