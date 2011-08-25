@@ -17,7 +17,7 @@
 +ratios
 
 // COLUMNS and GRID WIDTHS
-=columns($cols)
+=grid-widths($cols)
   @for $i from 1 through $cols
     .c#{$i}
       margin-left: grid($i) - $column
@@ -25,7 +25,7 @@
       width: grid($i)
 
 // Run the code above. Columns are defined in the skin
-+columns($columns)
++grid-widths($columns)
 
 
 // GRID+FIGURE MEASUREMENTS

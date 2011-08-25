@@ -4,478 +4,479 @@ $prefixes: -webkit- -moz- -ms- -o-
 =prefix($attribute, $value, $prefixes)
   @each $prefix in $prefixes
     #{$prefix}#{$attribute}: $value
+  #{$attribute}: $value
 
 
 // STANDARDIZE VENDOR-SPECIFIC PROPERTIES
-=animation
+=animation($value)
   +prefix(animation, $value)
 
-=animation-delay
+=animation-delay($value)
   +prefix(animation-delay, $value)
 
-=animation-direction
+=animation-direction($value)
   +prefix(animation-direction, $value)
 
-=animation-duration
+=animation-duration($value)
   +prefix(animation-duration, $value)
 
-=animation-fill-mode
+=animation-fill-mode($value)
   +prefix(animation-fill-mode, $value)
 
-=animation-iteration-count
+=animation-iteration-count($value)
   +prefix(animation-iteration-count, $value)
 
-=animation-name
+=animation-name($value)
   +prefix(animation-name, $value)
 
-=animation-play-state
+=animation-play-state($value)
   +prefix(animation-play-state, $value)
 
-=animation-timing-function
+=animation-timing-function($value)
   +prefix(animation-timing-function, $value)
 
-=appearance
+=appearance($value)
   +prefix(appearance, $value)
 
-=backface-visibility
+=backface-visibility($value)
   +prefix(backface-visibility, $value)
 
-=background-clip
+=background-clip($value)
   +prefix(background-clip, $value)
 
-=background-composite
+=background-composite($value)
   +prefix(background-composite, $value)
 
-=background-origin
+=background-origin($value)
   +prefix(background-origin, $value)
 
-=background-size
+=background-size($value)
   +prefix(background-size, $value)
 
-=border-after
+=border-after($value)
   +prefix(border-after, $value)
 
-=border-after-color
+=border-after-color($value)
   +prefix(border-after-color, $value)
 
-=border-after-style
+=border-after-style($value)
   +prefix(border-after-style, $value)
 
-=border-after-width
+=border-after-width($value)
   +prefix(border-after-width, $value)
 
-=border-before
+=border-before($value)
   +prefix(border-before, $value)
 
-=border-before-color
+=border-before-color($value)
   +prefix(border-before-color, $value)
 
-=border-before-style
+=border-before-style($value)
   +prefix(border-before-style, $value)
 
-=border-before-width
+=border-before-width($value)
   +prefix(border-before-width, $value)
 
-=border-bottom-left-radius
+=border-bottom-left-radius($value)
   +prefix(border-bottom-left-radius, $value)
 
-=border-bottom-right-radius
+=border-bottom-right-radius($value)
   +prefix(border-bottom-right-radius, $value)
 
-=border-end
+=border-end($value)
   +prefix(border-end, $value)
 
-=border-end-color
+=border-end-color($value)
   +prefix(border-end-color, $value)
 
-=border-end-style
+=border-end-style($value)
   +prefix(border-end-style, $value)
 
-=border-end-width
+=border-end-width($value)
   +prefix(border-end-width, $value)
 
-=border-fit
+=border-fit($value)
   +prefix(border-fit, $value)
 
-=border-horizontal-spacing
+=border-horizontal-spacing($value)
   +prefix(border-horizontal-spacing, $value)
 
-=border-image
+=border-image($value)
   +prefix(border-image, $value)
 
-=border-radius
+=border-radius($value)
   +prefix(border-radius, $value)
 
-=border-start
+=border-start($value)
   +prefix(border-start, $value)
 
-=border-start-color
+=border-start-color($value)
   +prefix(border-start-color, $value)
 
-=border-start-style
+=border-start-style($value)
   +prefix(border-start-style, $value)
 
-=border-start-width
+=border-start-width($value)
   +prefix(border-start-width, $value)
 
-=border-top-left-radius
+=border-top-left-radius($value)
   +prefix(border-top-left-radius, $value)
 
-=border-top-right-radius
+=border-top-right-radius($value)
   +prefix(border-top-right-radius, $value)
 
-=border-vertical-spacing
+=border-vertical-spacing($value)
   +prefix(border-vertical-spacing, $value)
 
-=box-align
+=box-align($value)
   +prefix(box-align, $value)
 
-=box-direction
+=box-direction($value)
   +prefix(box-direction, $value)
 
-=box-flex
+=box-flex($value)
   +prefix(box-flex, $value)
 
-=box-flex-group
+=box-flex-group($value)
   +prefix(box-flex-group, $value)
 
-=box-lines
+=box-lines($value)
   +prefix(box-lines, $value)
 
-=box-ordinal-group
+=box-ordinal-group($value)
   +prefix(box-ordinal-group, $value)
 
-=box-orient
+=box-orient($value)
   +prefix(box-orient, $value)
 
-=box-pack
+=box-pack($value)
   +prefix(box-pack, $value)
 
-=box-reflect
+=box-reflect($value)
   +prefix(box-reflect, $value)
 
-=box-shadow
+=box-shadow($value)
   +prefix(box-shadow, $value)
 
-=box-sizing
+=box-sizing($value)
   +prefix(box-sizing, $value)
 
-=color-correction
+=color-correction($value)
   +prefix(color-correction, $value)
 
-=column-break-after
+=column-break-after($value)
   +prefix(column-break-after, $value)
 
-=column-break-before
+=column-break-before($value)
   +prefix(column-break-before, $value)
 
-=column-break-inside
+=column-break-inside($value)
   +prefix(column-break-inside, $value)
 
-=column-count
+=column-count($value)
   +prefix(column-count, $value)
 
-=column-gap
+=column-gap($value)
   +prefix(column-gap, $value)
 
-=column-rule
+=column-rule($value)
   +prefix(column-rule, $value)
 
-=column-rule-color
+=column-rule-color($value)
   +prefix(column-rule-color, $value)
 
-=column-rule-style
+=column-rule-style($value)
   +prefix(column-rule-style, $value)
 
-=column-rule-width
+=column-rule-width($value)
   +prefix(column-rule-width, $value)
 
-=column-span
+=column-span($value)
   +prefix(column-span, $value)
 
-=column-width
+=column-width($value)
   +prefix(column-width, $value)
 
-=columns
+=columns($value)
   +prefix(columns, $value)
 
-=content-order
+=content-order($value)
   +prefix(content-order, $value)
 
-=dashboard-region
+=dashboard-region($value)
   +prefix(dashboard-region, $value)
 
-=flex-order
+=flex-order($value)
   +prefix(flex-order, $value)
 
-=flex-pack
+=flex-pack($value)
   +prefix(flex-pack, $value)
 
-=flow
+=flow($value)
   +prefix(flow, $value)
 
-=font-feature-settings
+=font-feature-settings($value)
   +prefix(font-feature-settings, $value)
 
-=font-size-delta
+=font-size-delta($value)
   +prefix(font-size-delta, $value)
 
-=font-smoothing
+=font-smoothing($value)
   +prefix(font-smoothing, $value)
 
-=highlight
+=highlight($value)
   +prefix(highlight, $value)
 
-=hyphenate-character
+=hyphenate-character($value)
   +prefix(hyphenate-character, $value)
 
-=hyphenate-limit-after
+=hyphenate-limit-after($value)
   +prefix(hyphenate-limit-after, $value)
 
-=hyphenate-limit-before
+=hyphenate-limit-before($value)
   +prefix(hyphenate-limit-before, $value)
 
-=line-box-contain
+=line-box-contain($value)
   +prefix(line-box-contain, $value)
 
-=line-break
+=line-break($value)
   +prefix(line-break, $value)
 
-=line-clamp
+=line-clamp($value)
   +prefix(line-clamp, $value)
 
-=locale
+=locale($value)
   +prefix(locale, $value)
 
-=logical-height
+=logical-height($value)
   +prefix(logical-height, $value)
 
-=logical-width
+=logical-width($value)
   +prefix(logical-width, $value)
 
-=margin-after
+=margin-after($value)
   +prefix(margin-after, $value)
 
-=margin-after-collapse
+=margin-after-collapse($value)
   +prefix(margin-after-collapse, $value)
 
-=margin-before
+=margin-before($value)
   +prefix(margin-before, $value)
 
-=margin-before-collapse
+=margin-before-collapse($value)
   +prefix(margin-before-collapse, $value)
 
-=margin-bottom-collapse
+=margin-bottom-collapse($value)
   +prefix(margin-bottom-collapse, $value)
 
-=margin-collapse
+=margin-collapse($value)
   +prefix(margin-collapse, $value)
 
-=margin-end
+=margin-end($value)
   +prefix(margin-end, $value)
 
-=margin-start
+=margin-start($value)
   +prefix(margin-start, $value)
 
-=margin-top-collapse
+=margin-top-collapse($value)
   +prefix(margin-top-collapse, $value)
 
-=marquee
+=marquee($value)
   +prefix(marquee, $value)
 
-=marquee-direction
+=marquee-direction($value)
   +prefix(marquee-direction, $value)
 
-=marquee-increment
+=marquee-increment($value)
   +prefix(marquee-increment, $value)
 
-=marquee-repetition
+=marquee-repetition($value)
   +prefix(marquee-repetition, $value)
 
-=marquee-speed
+=marquee-speed($value)
   +prefix(marquee-speed, $value)
 
-=marquee-style
+=marquee-style($value)
   +prefix(marquee-style, $value)
 
-=mask
+=mask($value)
   +prefix(mask, $value)
 
-=mask-attachment
+=mask-attachment($value)
   +prefix(mask-attachment, $value)
 
-=mask-box-image
+=mask-box-image($value)
   +prefix(mask-box-image, $value)
 
-=mask-clip
+=mask-clip($value)
   +prefix(mask-clip, $value)
 
-=mask-composite
+=mask-composite($value)
   +prefix(mask-composite, $value)
 
-=mask-image
+=mask-image($value)
   +prefix(mask-image, $value)
 
-=mask-origin
+=mask-origin($value)
   +prefix(mask-origin, $value)
 
-=mask-position
+=mask-position($value)
   +prefix(mask-position, $value)
 
-=mask-position-x
+=mask-position-x($value)
   +prefix(mask-position-x, $value)
 
-=mask-position-y
+=mask-position-y($value)
   +prefix(mask-position-y, $value)
 
-=mask-repeat
+=mask-repeat($value)
   +prefix(mask-repeat, $value)
 
-=mask-repeat-x
+=mask-repeat-x($value)
   +prefix(mask-repeat-x, $value)
 
-=mask-repeat-y
+=mask-repeat-y($value)
   +prefix(mask-repeat-y, $value)
 
-=mask-size
+=mask-size($value)
   +prefix(mask-size, $value)
 
-=match-nearest-mail-blockquote-color
+=match-nearest-mail-blockquote-color($value)
   +prefix(match-nearest-mail-blockquote-color, $value)
 
-=max-logical-height
+=max-logical-height($value)
   +prefix(max-logical-height, $value)
 
-=max-logical-width
+=max-logical-width($value)
   +prefix(max-logical-width, $value)
 
-=min-logical-height
+=min-logical-height($value)
   +prefix(min-logical-height, $value)
 
-=min-logical-width
+=min-logical-width($value)
   +prefix(min-logical-width, $value)
 
-=nbsp-mode
+=nbsp-mode($value)
   +prefix(nbsp-mode, $value)
 
-=opacity
+=opacity($value)
   +prefix(opacity, $value)
 
-=padding-after
+=padding-after($value)
   +prefix(padding-after, $value)
 
-=padding-before
+=padding-before($value)
   +prefix(padding-before, $value)
 
-=padding-end
+=padding-end($value)
   +prefix(padding-end, $value)
 
-=padding-start
+=padding-start($value)
   +prefix(padding-start, $value)
 
-=perspective
+=perspective($value)
   +prefix(perspective, $value)
 
-=perspective-origin
+=perspective-origin($value)
   +prefix(perspective-origin, $value)
 
-=perspective-origin-x
+=perspective-origin-x($value)
   +prefix(perspective-origin-x, $value)
 
-=perspective-origin-y
+=perspective-origin-y($value)
   +prefix(perspective-origin-y, $value)
 
-=region-break-after
+=region-break-after($value)
   +prefix(region-break-after, $value)
 
-=region-break-before
+=region-break-before($value)
   +prefix(region-break-before, $value)
 
-=region-break-inside
+=region-break-inside($value)
   +prefix(region-break-inside, $value)
 
-=region-overflow
+=region-overflow($value)
   +prefix(region-overflow, $value)
 
-=rtl-ordering
+=rtl-ordering($value)
   +prefix(rtl-ordering, $value)
 
-=svg-shadow
+=svg-shadow($value)
   +prefix(svg-shadow, $value)
 
-=tap-highlight-color
+=tap-highlight-color($value)
   +prefix(tap-highlight-color, $value)
 
-=text-decorations-in-effect
+=text-decorations-in-effect($value)
   +prefix(text-decorations-in-effect, $value)
 
-=text-emphasis-position
+=text-emphasis-position($value)
   +prefix(text-emphasis-position, $value)
 
-=text-fill-color
+=text-fill-color($value)
   +prefix(text-fill-color, $value)
 
-=text-security
+=text-security($value)
   +prefix(text-security, $value)
 
-=text-size-adjust
+=text-size-adjust($value)
   +prefix(text-size-adjust, $value)
 
-=text-stroke
+=text-stroke($value)
   +prefix(text-stroke, $value)
 
-=text-stroke-color
+=text-stroke-color($value)
   +prefix(text-stroke-color, $value)
 
-=text-stroke-width
+=text-stroke-width($value)
   +prefix(text-stroke-width, $value)
 
-=touch-callout
+=touch-callout($value)
   +prefix(touch-callout, $value)
 
-=transform
+=transform($value)
   +prefix(transform, $value)
 
-=transform-origin
+=transform-origin($value)
   +prefix(transform-origin, $value)
 
-=transform-origin-x
+=transform-origin-x($value)
   +prefix(transform-origin-x, $value)
 
-=transform-origin-y
+=transform-origin-y($value)
   +prefix(transform-origin-y, $value)
 
-=transform-origin-z
+=transform-origin-z($value)
   +prefix(transform-origin-z, $value)
 
-=transform-style
+=transform-style($value)
   +prefix(transform-style, $value)
 
 =transition($value: all 1s)
   +prefix(transition, $value)
 
-=transition-delay
+=transition-delay($value)
   +prefix(transition-delay, $value)
 
-=transition-duration
+=transition-duration($value)
   +prefix(transition-duration, $value)
 
-=transition-property
+=transition-property($value)
   +prefix(transition-property, $value)
 
-=transition-timing-function
+=transition-timing-function($value)
   +prefix(transition-timing-function, $value)
 
-=user-drag
+=user-drag($value)
   +prefix(user-drag, $value)
 
-=user-modify
+=user-modify($value)
   +prefix(user-modify, $value)
 
-=user-select
+=user-select($value)
   +prefix(user-select, $value)
 
-=wrap-shape
+=wrap-shape($value)
   +prefix(wrap-shape, $value)
 
 
