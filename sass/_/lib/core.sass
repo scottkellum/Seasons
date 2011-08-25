@@ -3,7 +3,7 @@
 ///////////////////////////
 
 // IMAGE + PAGE RATIOS
-=ratio($width, $height, $cols)
+=ratio($width, $height, $cols: $columns)
   @for $i from 1 through $cols
     .r#{$width}x#{$height}.w#{$i}
       height: grid($i) * ( $height / $width )
@@ -50,6 +50,15 @@
 // GENERAL FUNCTIONALITY //
 ///////////////////////////
 
+// Positioning of Chrome
+.chrome, .viewer
+  position: absolute
+  display: block
+  bottom: 0
+  top: 0
+  left: 0
+  right: 0
+
 
 // DESKTOP SCROLLING CONTAINER SUPPORT
 
@@ -95,14 +104,17 @@
 
 // TYPOGRAPHY RESET
 html, body
+  +solid($base-size)
   font-family: $font
-  +type($size, $line-height)
+  color: $text
+  background-color: $body
+  overflow: hidden
 
 h1, h2, h3, h4, h5, h6
   text-rendering: optimizeLegibility
   word-wrap: break-word
 
-p
+p, h1, h2, h3, h4, h5, h6
   -webkit-hyphens: auto
   -moz-hyphens: auto
   -ms-hyphens: auto

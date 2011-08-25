@@ -1,14 +1,36 @@
+// SKIN //
+
+// Style the pages themselves here.
+// To keep things tidy it is reccomended that only pages get styled here.
+// UI elements should be styled in the "chrome" directory.
+
+
+// BASE SIZE TO BE USED THROUGHOUT STYLES
+// This must be a fixed unit of measurement, usually coorilating to your text size.
+$base-size: 16px
+// Choose a ratio you wish to use with the modular scale.
+$ratio: $fourth
+
+
 // TYPE
-$size: 14px
-$line-height: 20px
+// Set the default size and leading for columns. Everything line-height in your columns needs to be a multiple of the line-height defined here.
+$size: 1em
+// Basing the modular scale off of ems for this.
+$line-height: ms(1, 1em)
+
 
 // METRICS
+// Number of columns you want to calculate:
 $columns: 12
-$column: 78px
-$gutter: 16px
-$margin: 20px
-$top: $line-height * 2
-$bottom: $line-height * 2
+
+// Page measurements:
+// ms(n) refers to the position on a built-in modular scale where "n" is the position. However you can use any value you like.
+$column: ms(5)
+$gutter: ms(1)
+$margin: ms(1)
+$top: ms(2)
+$bottom: ms(3)
+
 
 // COLORS
 $primary: #f66
@@ -18,19 +40,21 @@ $text: #333
 $page: #fff
 $body: #333
 
+
 // FONTS
 $font: serif
 $headline: sans-serif
 $subhead: sans-serif
 
+
 // IMAGE/PAGE RATIOS
 // If you wish to scale images and have fixed page sizes image ratios are a must. This allows images sizes to be measured for Treesaver.
 // Image sizes still need to be hard coded for lightboxes.
 =ratios
-  +ratio(16, 9, $columns)
-  +ratio(5, 4, $columns)
-  +ratio(4, 5, $columns)
-  +ratio(3, 4, $columns)
+  +ratio(16, 9)
+  +ratio(5, 4)
+  +ratio(4, 5)
+  +ratio(3, 4)
 
 // COLUMN WIDTHS
 // If you have a set of grids with a different column width, define it here. The department grid is here as an example but it is only nessisary to list the ones with a different size column from the standard width.
@@ -43,7 +67,6 @@ $subhead: sans-serif
 // Keep vertical spacing and all line-height attrubutes a multiple of your line-height to avoid text flow bugs. Do not use "!important" on any measurements here
 // Only use system fonts for paragraphs and other large bodies of text. If web fonts are used line endings will be missing or duplicated.
 p
-  +type($size, $line-height)
   color: $text
   text-indent: $line-height
   &.noindent, &.caption, .keeptogether &
@@ -62,6 +85,7 @@ h1
 // GENERAL GRID STYLES
 // Styles here apply to every grid in your publication
 .grid
+  margin: $gutter
   padding: 0 $margin
   background: $page
 
