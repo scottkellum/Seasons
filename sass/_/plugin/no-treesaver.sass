@@ -21,9 +21,8 @@ $nav-height: 35px
     padding: 0 ($margin + 6px) 0 ($margin - 6px)
     max-width: grid(6)
     list-style: none
-    +gradient(lighten($chrome, 10%), darken($chrome, 10%))
+    +gradient(#444, #111)
     color: #fff
-    +text-shadow(0 0 4px darken($chrome, 20%))
     height: $nav-height
     li
       float: left
@@ -32,18 +31,14 @@ $nav-height: 35px
         display: block
         height: $nav-height - (6*2)
         padding: 6px
-        &:hover
-          +gradient(lighten($chrome, 20%), $chrome)
       ul
         position: absolute
         top: $nav-height
-        +gradient(lighten($chrome, 10%), darken($chrome, 10%))
         li
           position: relative
           float: none
           width: 100px
           a
-            +gradient(lighten($chrome, 10%), darken($chrome, 10%))
           ul
             left: 100%
             top: 0px
