@@ -5,7 +5,7 @@
 
 =solid($lineheight)
   font-size: $lineheight
-  line-height: $lineheight
+  line-height: 1em
 
 =caps($letterspace: 0.1em)
   text-transform: uppercase
@@ -15,6 +15,13 @@
   text-shadow: 0 -1px 0 darken($color, 15%), 0 1px 0 lighten($color, 15%)
 
 
+// CENTER AND FILL BACKGROUND
+=background-fill
+  background-repeat: no-repeat
+  background-position: center center fixed
+  +prefix(background-size, cover)
+
+
 // @FONT-FACE (FONTSPRING SYNTAX)
 =font($name, $url, $weight: normal, $style: normal)
   @font-face
@@ -22,11 +29,6 @@
     font-weight: $weight
     font-style: $style
     src: url('#{$url}.eot?') format('eot'), url('#{$url}.woff') format('woff'), url('#{$url}.ttf')  format('truetype')
-
-
-// FORCE HARDWARE ACCELERATE
-=hwaccel
-  +transform(translateZ(0))
 
 
 // REMOVE GRID

@@ -1,0 +1,96 @@
+// SUPPORT FOR NON-TREESAVER PAGES
+
+$nav-height: 35px
+
+.no-treesaver
+  overflow: auto
+  h1.headder, ul.nav, ul.footer, article
+    +box-shadow(0 0 10px darken($body, 20%))
+  h1.headder
+    background: $page
+    margin: 0 auto
+    padding: $margin $margin 0 $margin
+    max-width: grid(6)
+  figure
+    padding: 0
+    margin: 0
+  ul.nav, ul.footer
+    position: relative
+    font-family: $subhed
+    margin: 0 auto 0 auto
+    padding: 0 ($margin + 6px) 0 ($margin - 6px)
+    max-width: grid(6)
+    list-style: none
+    +gradient(lighten($chrome, 10%), darken($chrome, 10%))
+    color: #fff
+    +text-shadow(0 0 4px darken($chrome, 20%))
+    height: $nav-height
+    li
+      float: left
+      list-style: none
+      a
+        display: block
+        height: $nav-height - (6*2)
+        padding: 6px
+        &:hover
+          +gradient(lighten($chrome, 20%), $chrome)
+      ul
+        position: absolute
+        top: $nav-height
+        +gradient(lighten($chrome, 10%), darken($chrome, 10%))
+        li
+          position: relative
+          float: none
+          width: 100px
+          a
+            +gradient(lighten($chrome, 10%), darken($chrome, 10%))
+          ul
+            left: 100%
+            top: 0px
+  // SUCKERFISH
+  ul.nav
+    li
+      ul
+        display: none
+    li:hover
+      ul
+        display: block
+        li
+          ul
+            display: none
+        li:hover
+          ul
+            display: block
+            li
+              ul
+                display: none
+            li:hover
+              ul
+                display: block
+                li
+                  ul
+                    display: none
+                li:hover
+                  ul
+                    display: block
+  article
+    display: block
+    margin: 0 auto
+    margin-top: 0
+    background-color: $page
+    padding: $margin $margin $margin*3 $margin
+    max-width: grid(6)
+    h1
+      margin: 0
+    hgroup
+      margin-bottom: $line-height
+    // remove extranious figures
+    figure
+      div
+        display: none
+      div.no-js
+        display: block
+        margin: $line-height 0
+        img
+          width: 100%
+          height: auto

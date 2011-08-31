@@ -8,7 +8,7 @@
     .r#{$width}x#{$height}.w#{$i}
       height: grid($i) * ( $height / $width )
     .img.w#{$i}
-      &.single-#{$width}x#{$height}, &.double-#{$width}x#{$height}, &.triple-#{$width}x#{$height}, &.quad-#{$width}x#{$height}
+      &[class*="#{$width}x#{$height}"]
         img
           width: grid($i)
           height: grid($i) * ( $height / $width )
@@ -16,7 +16,7 @@
 // Run the code above. Ratios are defined in the skin
 +ratios
 
-// COLUMNS and GRID WIDTHS
+// GRID MEASURMENTS
 =grid-widths($cols)
   @for $i from 1 through $cols
     .c#{$i}
@@ -27,6 +27,17 @@
 // Run the code above. Columns are defined in the skin
 +grid-widths($columns)
 
+// Lightbox sizes
+.lightbox .container
+  &[class*="single"]
+    width: grid(3)
+  &[class*="double"]
+    width: grid(6)
+  &[class*="triple"]
+    width: grid(9)
+  &[class*="quad"]
+    width: grid(12)
+
 
 // GRID+FIGURE MEASUREMENTS
 .grid
@@ -35,7 +46,7 @@
   z-index: 1
   // Helps reduce flickr when paging
   -webkit-backface-visibility: hidden
-  -webkit-perspective: 1000
+  // Sometimes Safari forgets this one
   -webkit-font-smoothing: subpixel-antialiased
  
 // CLEAR MIN-MAX FOR FIXED GRIDS
@@ -49,6 +60,12 @@
 ///////////////////////////
 // GENERAL FUNCTIONALITY //
 ///////////////////////////
+
+
+// Hide things
+html.js, html.no-js
+  .hidden
+    display: none
 
 // Positioning of Chrome
 .chrome, .viewer
@@ -98,7 +115,6 @@
 ::-webkit-scrollbar-thumb
   border-radius: 3px
   background-color: rgba(0,0,0,.5)
-  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5)
 
 // Make The Scrollbars Smaller On Touch Devices
 .touch ::-webkit-scrollbar
@@ -112,16 +128,14 @@ html, body
   background-color: $body
   overflow: hidden
 
+// Make sure headlines look good and always fit
 h1, h2, h3, h4, h5, h6
   text-rendering: optimizeLegibility
   word-wrap: break-word
 
-p, h1, h2, h3, h4, h5, h6
-  -webkit-hyphens: auto
-  -moz-hyphens: auto
-  -ms-hyphens: auto
-  -o-hyphens: auto
-  hyphens: auto
+// Hyphenate text
+p
+  +hyphens(auto)
 
 
 // COLUMNS
@@ -131,21 +145,14 @@ p, h1, h2, h3, h4, h5, h6
   top: $top
   bottom: $bottom
 
+// Set min height so no one-line columns appear
+.column
+  min-height: $line-height * 3
+
 // GRID MODS
 #previousPage, #nextPage
   z-index: -1
   opacity: 0.5
-
-.spread
-  &.odd
-    z-index: 2
-    &#previousPage
-      opacity: 1
-      z-index: 1
-  &.even
-    margin-left: 0
-    &#nextPage
-      opacity: 1
 
 // TRIM LEFT OR RIGHT PAGE MARGINS
 .grid.trimleft
@@ -245,11 +252,35 @@ figure
     min-width: 100%
 
 
-// iPAD
+// MOBILE OPTIMIZATIONS
+// Tweaks to make things run more smoothly on mobile devices
+.mobile
+  &, .grid
+    // removes subpixle AA to make things a little faster.
+    -webkit-font-smoothing: antialiased
+
+
+// Online/offline elements
+html.offline
+  .no-offline, [data-requires~="no-offline"]
+    display: none
+  [data-requires~="offline"]
+    display: block
+
+html.no-offline
+  [data-requires~="no-offline"]
+    display: block
+  [data-requires~="offline"]
+    display: none
+
+
+// DEVICE SPECIFIC TWEAKS
+
+// iPad
 .browser-os-ipad .chrome
   bottom: 77px
 
-// iPHONE
+// iPhone
 .browser-os-iphone .chrome
   bottom: 63px
 

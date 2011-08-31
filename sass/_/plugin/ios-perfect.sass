@@ -11,6 +11,7 @@
   margin: 0
   +border-radius(0)
   +box-shadow(none)
+  border: none
 
 // Force sizing and remove standard desktop grids.
 .os-ipad
@@ -20,14 +21,14 @@
   .grid.fixed
     &.ipad.horizontal
       height: 690px
-      +width(9)
-      +min-width(9)
-      padding: 0 ((1024px - ($column * 9 + $gutter * (9 - 1))) / 2)
+      width: grid(9)
+      min-width: grid(9)
+      padding: 0 ((1024px - (grid(9))) / 2)
     &.ipad.vertical
       height: 946px
-      +width(6)
-      +min-width(6)
-      padding: 0 ((768px - ($column * 6 + $gutter * (6 - 1))) / 2)
+      width: grid(6)
+      min-width: grid(6)
+      padding: 0 ((768px - (grid(6))) / 2)
 
 .os-ipad.fullscreen
   .grid.fixed
