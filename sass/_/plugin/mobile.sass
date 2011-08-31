@@ -16,8 +16,9 @@ $cover_width: 250px
 
 // All the mobile grid styles here.
 .smallscreen.mobile
-  .grid
+  .grid:not(.fixed)
     +remove
+  .grid
     opacity: 1 !important
   .mobile.grid
     width: 280px
@@ -31,22 +32,9 @@ $cover_width: 250px
 // SHRINK IMAGES + PAGES
 =ratio($width, $height, $cols: $columns)
   // Force resize images
-  .mobile.grid
-    .img
-      &[class*="#{$width}x#{$height}"]
-        img
-          width: 280px
-          height: 280px * ( $height / $width )
-  // Fixed page ratios
-  @for $i from 1 through $cols
-    .grid.fixed
-      &.w#{$i}col.r#{$width}x#{$height}
-        width: grid($i)
-        height: grid($i) * ( $height / $width )
-      // Force resize images
-    .fixed.grid, .sizetocontainer.grid
-      .img.w#{$i}col
-        text-align: center
+  .mobile.grid .img[class*="#{$width}x#{$height}"] img
+    width: 280px
+    height: 280px * ( $height / $width )
 
 // Pull in the ratios defined in the skin
 +ratios

@@ -5,13 +5,9 @@
 // IMAGE + PAGE RATIOS
 =ratio($width, $height, $cols: $columns)
   @for $i from 1 through $cols
-    .r#{$width}x#{$height}.w#{$i}
+    .r#{$width}x#{$height}.w#{$i}, .img.w#{$i}[class*="#{$width}x#{$height}"] img
+      width: grid($i)
       height: grid($i) * ( $height / $width )
-    .img.w#{$i}
-      &[class*="#{$width}x#{$height}"]
-        img
-          width: grid($i)
-          height: grid($i) * ( $height / $width )
 
 // Run the code above. Ratios are defined in the skin
 +ratios
