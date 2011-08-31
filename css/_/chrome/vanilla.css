@@ -4,30 +4,12 @@ body {
   overflow: hidden;
 }
 
-/* GRIDS */
-.grid {
-  margin: 16px;
-  background-color: white;
-}
-
-/* Basic metrics for chrome */
-.chrome {
-  position: absolute;
-  display: block;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-.chrome .viewer {
-  position: absolute;
-  display: block;
+/* Basic metrics for the viewer */
+.viewer {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
-  z-index: 0;
-}
+  left: 0; }
 
 /* Make sure the nav stays above the pages */
 nav {
@@ -37,29 +19,26 @@ nav {
 
 /* Show and hide navigation elements and sidebars */
 .sidebar .content, .menu .content {
-  display: none;
-}
+  display: none; }
 .sidebar.sidebar-active .content, .sidebar.menu-active .content, .menu.sidebar-active .content, .menu.menu-active .content {
-  display: block;
-}
+  display: block; }
+
 
 /* LIGHTBOX */
 .lightbox {
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 99;
-}
-.lightbox .container {
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 10px;
-  background: black;
-}
+  z-index: 99; }
+  .lightbox .container {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 8px;
+    background: black; }

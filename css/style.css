@@ -13,7 +13,7 @@ It creates a flexable yet solid foundation for building templates.
 */
 
 /* BASIC FUNCTIONS AND CSS RESET: */
-@import url("_/core/functions.css");
+@import url("_/core/reset.css");
 
 
 

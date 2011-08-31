@@ -6,8 +6,8 @@
  */
 
 .grid.ipad {
-  min-width: 9999px;
-  width: 9999px;
+  min-width: 99999px;
+  width: 99999px;
   margin: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -18,22 +18,23 @@
   -moz-box-shadow: none;
   -ms-box-shadow: none;
   -o-box-shadow: none;
-  box-shadow: none; }
+  box-shadow: none;
+  border: none; }
 
 .os-ipad .grid {
-  min-width: 9999px;
-  width: 9999px;
+  min-width: 99999px;
+  width: 99999px;
   opacity: 1 !important; }
 .os-ipad .grid.fixed.ipad.horizontal {
   height: 690px;
-  width: 830px;
-  min-width: 830px;
-  padding: 0 97px; }
+  width: 777.481px;
+  min-width: 777.481px;
+  padding: 0 123.259px; }
 .os-ipad .grid.fixed.ipad.vertical {
   height: 946px;
-  width: 548px;
-  min-width: 548px;
-  padding: 0 110px; }
+  width: 511.21px;
+  min-width: 511.21px;
+  padding: 0 128.395px; }
 
 .os-ipad.fullscreen .grid.fixed.ipad.horizontal {
   height: 748px; }

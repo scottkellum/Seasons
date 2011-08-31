@@ -4,9 +4,10 @@ If you have a set of grids with a different column width, define it here. The de
 Column widths are measured by grid columns. The default should usually be 3 as that is what the image sizes are based on.
 */
 .column {
-  width: 266px;
-  font-size: 14px;
-  line-height: 20px; }
+  width: 244.938px;
+  font-size: 1em;
+  line-height: 1.333em;
+  }
 
 
 /*
@@ -15,30 +16,26 @@ Keep vertical spacing and all line-height attrubutes a multiple of your line-hei
 Only use system fonts for paragraphs and other large bodies of text. If web fonts are used line endings will be missing or duplicated.
 */
 p {
-  font-size: 14px;
-  line-height: 20px;
   color: #333333;
-  text-indent: 20px;
-}
+  text-indent: 1.333em;
+  }
 p.noindent, p.caption, .keeptogether p {
   text-indent: 0;
-}
+  }
 p.caption {
   text-align: left;
-}
+  }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
   font-weight: bold;
-}
+  }
 
 h1 {
-  font-size: 20px;
-  line-height: 20px;
   font-family: sans-serif;
-  font-weight: bold;
-  font-style: normal;
-}
+  font-size: 1.333em;
+  line-height: 1em;
+  }
 
 
 /*
@@ -46,9 +43,10 @@ GENERAL GRID STYLES
 Styles here apply to every grid in your publication
 */
 .grid {
-  padding: 0 20px;
+  margin: 21.333px;
+  padding: 0 21.333px;
   background: white;
-}
+  }
 
 
 /*
@@ -57,4 +55,4 @@ Styles to spefic grids in your publication, for example the department grid.
 */
 .department.grid {
   
-}
+  }
