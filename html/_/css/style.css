@@ -963,7 +963,6 @@ html.no-offline [data-requires~="offline"] {
     padding: 0 21px; }
   .no-treesaver #nav li, .no-treesaver .nav li {
     display: inline;
-    display: inline-block;
     color: white;
     position: relative; }
     .no-treesaver #nav li ol, .no-treesaver #nav li ul, .no-treesaver .nav li ol, .no-treesaver .nav li ul {
@@ -987,26 +986,20 @@ html.no-offline [data-requires~="offline"] {
     font-size: 16px;
     line-height: 38px;
     padding: 9px 21px; }
-  .no-treesaver article {
-    line-height: 1.333em;
+  .no-treesaver #content div, .no-treesaver #content iframe, .no-treesaver #content object {
+    display: none; }
+  .no-treesaver #content div.no-treesaver, .no-treesaver #content iframe.no-treesaver, .no-treesaver #content object.no-treesaver {
+    overflow: visible;
     display: block;
-    background: none; }
-  .no-treesaver figure {
-    display: block;
-    overflow: visible; }
-    .no-treesaver figure div, .no-treesaver figure iframe, .no-treesaver figure object {
-      display: none; }
-    .no-treesaver figure div.no-treesaver, .no-treesaver figure iframe.no-treesaver, .no-treesaver figure object.no-treesaver {
-      display: block;
-      float: right;
-      padding: 1em 0 1em 1em;
-      width: 507px;
-      max-width: 100%; }
-      .no-treesaver figure div.no-treesaver img, .no-treesaver figure div.no-treesaver iframe, .no-treesaver figure div.no-treesaver video, .no-treesaver figure iframe.no-treesaver img, .no-treesaver figure iframe.no-treesaver iframe, .no-treesaver figure iframe.no-treesaver video, .no-treesaver figure object.no-treesaver img, .no-treesaver figure object.no-treesaver iframe, .no-treesaver figure object.no-treesaver video {
-        max-width: 100%;
-        width: 507px;
-        max-width: 100%;
-        height: auto; }
+    float: right;
+    padding-left: 1em;
+    width: 100%;
+    max-width: 507px; }
+    .no-treesaver #content div.no-treesaver img, .no-treesaver #content div.no-treesaver iframe, .no-treesaver #content div.no-treesaver video, .no-treesaver #content iframe.no-treesaver img, .no-treesaver #content iframe.no-treesaver iframe, .no-treesaver #content iframe.no-treesaver video, .no-treesaver #content object.no-treesaver img, .no-treesaver #content object.no-treesaver iframe, .no-treesaver #content object.no-treesaver video {
+      max-width: 100%;
+      width: 100%;
+      max-width: 507px;
+      height: auto; }
   .no-treesaver #footer .nav li ol, .no-treesaver #footer .nav li ul {
     top: auto;
     bottom: 100%; }

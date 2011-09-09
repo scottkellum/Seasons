@@ -1,7 +1,5 @@
 // SUPPORT FOR NON-TREESAVER PAGES
 
-$nav-height: 35px
-
 .no-treesaver
   overflow: auto
   overflow-y: scroll
@@ -24,7 +22,6 @@ $nav-height: 35px
       padding: 0 $margin
     li
       display: inline
-      display: inline-block
       color: $page
       position: relative
       // SUCKERFISH MENUS
@@ -48,26 +45,21 @@ $nav-height: 35px
       background: darken($page, 40%)
       +type(ms(0), ms(3))
       padding: ms(-2) ms(1)
-  article
-    line-height: $line-height
-    display: block
-    background: none
-  figure
-    display: block
-    overflow: visible
+  #content
     div, iframe, object
       display: none
     div, iframe, object
       &.no-treesaver
+        overflow: visible
         display: block
         float: right
-        padding: 1em 0 1em 1em
-        width: grid(6)
-        max-width: 100%
+        padding-left: 1em
+        width: 100%
+        max-width: grid(6)
         img, iframe, video
           max-width: 100%
-          width: grid(6)
-          max-width: 100%
+          width: 100%
+          max-width: grid(6)
           height: auto
   #footer
     .nav li
