@@ -16,11 +16,20 @@ $cover_width: 250px
 
 // All the mobile grid styles here.
 .smallscreen.mobile
+  .viewer
+    padding: 0
+    margin: 0
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background: $page
   .grid:not(.fixed)
     +remove
   .grid
     opacity: 1 !important
   .mobile.grid
+    margin: 0
     width: 280px
     min-width: 280px
     padding: 20px
