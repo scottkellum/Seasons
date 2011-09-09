@@ -28,17 +28,30 @@
   </head>
   <body>
 
-  <!--NO-JS HEADDER+NAV-->
-	<header>
+  <!-- NO-TREESAVER HEADDER+NAV -->
+  <!-- Note that HTML5 tags are not used because this will usually be viewed on old and incompatible browsers. -->
+	<div id="header">
 		<h1><a href="index.html">Page Title</a></h1>
-			<nav>
+	  <div id="nav">
 			<ol>
-				<li><a href="">Nav Link 1</a></li>
-				<li><a href="">Nav Link 2</a></li>
-				<li><a href="">Nav Link 3</a></li>
+				<li><a href="#">Nav Link 1</a></li>
+				<li><a href="#">Nav Link 2</a></li>
+				<li><a href="#">Articles</a>
+				  <ol>
+				    <li><a href="#">Article link 1</a></li>
+				    <li><a href="#">Article link 2</a></li>
+				    <li><a href="#">Article link 3</a></li>
+				    <li><a href="#">Article link 4</a></li>
+				    <li><a href="#">Article link 5</a></li>
+				    <li><a href="#">Article link 6</a></li>
+				    <li><a href="#">Article link 7</a></li>
+				  </ol>
+				</li>
 			</ol>
-		</nav>
-	</header>
+		</div>
+	</div>
+
+	<div id="content">
 
   <!--======================== CONTENT ========================-->
   <article data-grids="department">
@@ -53,6 +66,29 @@
   </figure>
   
   <p class="noindent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non eros ac augue eleifend malesuada. Praesent sagittis nisl eu elit ultrices adipiscing. Maecenas lectus ligula, mollis rutrum sagittis nec, pretium et neque. Praesent sit amet justo ut diam mollis laoreet sit amet sed dui. Nulla id nunc non tortor semper tincidunt nec nec elit. Maecenas convallis nisi in eros interdum euismod. Cras laoreet consequat eros, vel posuere est hendrerit sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at sapien eros, et blandit ipsum. Aliquam elementum orci eget tortor feugiat eu eleifend elit volutpat. Mauris auctor velit eget nisl tincidunt elementum. Fusce dignissim urna ut augue accumsan at aliquam mauris vulputate. Fusce facilisis lorem ac nunc sollicitudin ultrices. Vestibulum egestas placerat orci, eget egestas dui pretium eu. Aenean vel neque egestas dolor molestie tincidunt. Cras id nulla ante, quis pulvinar magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ut eros lectus.</p>
+  
+  <!--A sample image-->
+  <figure class="required">
+    <!-- USE DIFFERENT SIZED IMAGES TO HELP LOAD TIME -->
+    <div data-sizes="single-4x3">
+      <img data-src="img/cover.jpg" />
+      <p class="caption">Caption congue eu sollicitudin ac, fringilla vitae elit. <span class="credit">John Smith</span></p>
+    </div>
+    <!--Using regular "src" and the class "no-treesaver" so this displays on old browsers or without JavaScript.-->
+    <div data-sizes="double-4x3" class="no-treesaver">
+      <img src="img/cover.jpg" />
+      <p class="caption">Caption congue eu sollicitudin ac, fringilla vitae elit. <span class="credit">John Smith</span></p>
+    </div>
+    <div data-sizes="triple-4x3">
+      <img data-src="img/cover.jpg" />
+      <p class="caption">Caption congue eu sollicitudin ac, fringilla vitae elit. <span class="credit">John Smith</span></p>
+    </div>
+    <div data-sizes="quad-4x3">
+      <img data-src="img/cover.jpg" />
+      <p class="caption">Caption congue eu sollicitudin ac, fringilla vitae elit. <span class="credit">John Smith</span></p>
+    </div>
+  </figure>
+  
   <p>Integer ultrices sodales nibh, sed convallis mauris accumsan vitae. Proin libero ipsum, congue eu dignissim nec, malesuada eu ante. Nulla sit amet odio nec risus tempor ultricies. Nunc sit amet risus lectus. Aliquam est lorem, congue eu sollicitudin ac, fringilla vitae elit. Nam sollicitudin, urna at pellentesque tempus, tellus diam ultricies tellus, sagittis pretium nulla risus ut quam. Donec cursus enim vel orci imperdiet egestas. Donec porttitor, risus at ornare condimentum, metus felis pulvinar magna, eu mollis lorem dui convallis sem. Aliquam elementum diam ut quam tempus imperdiet. Etiam egestas, dolor a ullamcorper feugiat, diam orci facilisis tortor, eget scelerisque sem nunc nec nisl. Nullam aliquam egestas porttitor. Donec convallis, lectus eget consequat bibendum, tellus eros semper leo, vel vehicula risus diam sed urna. Ut viverra justo ut purus posuere malesuada. Quisque nec nunc dui. Nunc consectetur, felis ac ultrices bibendum, elit sapien tristique lorem, nec facilisis felis mi vel est. Donec nec nisi ac sapien consectetur tempor. Nunc interdum felis et erat tincidunt id luctus tortor fermentum. Suspendisse vehicula odio in mi auctor sed pellentesque felis varius. Proin fermentum nunc vel risus dictum non eleifend dui feugiat.</p>
   <h5>Subhed one</h5>
   <p>Aliquam rutrum, turpis sit amet iaculis tincidunt, lorem elit porttitor risus, ut elementum arcu urna et odio. Quisque adipiscing diam non velit dapibus hendrerit. In hac habitasse platea dictumst. Proin egestas, lectus vitae pharetra eleifend, ipsum dolor eleifend arcu, quis suscipit augue metus eu tellus. Morbi felis nisi, accumsan ac tincidunt eleifend, ornare nec magna. Duis eget accumsan sem. Morbi eu tellus turpis. Duis sagittis velit in justo pulvinar eget congue justo mollis. Nulla varius rhoncus lacinia. Ut lobortis tempor laoreet. Nam sollicitudin aliquam nulla, in bibendum risus dictum id. Donec ultricies adipiscing tortor, vitae facilisis arcu accumsan sed. Donec nec augue at justo dignissim tempor sed eget justo. Cras justo lorem, porta eget vulputate tempor, scelerisque ut dolor. Donec nec porttitor risus. Nunc vitae urna in orci placerat cursus non eu nunc.</p>
@@ -62,11 +98,29 @@
 
   </article>
   <!--====================== END CONTENT ======================-->
-
+  
+  </div>
 
   <!--NO-JS FOOTER-->
-  <footer>
-  </footer>
+  <div id="footer">
+	  <div class="nav">
+			<ol>
+				<li><a href="#">Nav Link 1</a></li>
+				<li><a href="#">Nav Link 2</a></li>
+				<li><a href="#">Articles</a>
+				  <ol>
+				    <li><a href="#">Article link 1</a></li>
+				    <li><a href="#">Article link 2</a></li>
+				    <li><a href="#">Article link 3</a></li>
+				    <li><a href="#">Article link 4</a></li>
+				    <li><a href="#">Article link 5</a></li>
+				    <li><a href="#">Article link 6</a></li>
+				    <li><a href="#">Article link 7</a></li>
+				  </ol>
+				</li>
+			</ol>
+		</div>
+  </div>
 
 </body>
 </html>

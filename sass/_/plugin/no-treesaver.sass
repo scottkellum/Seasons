@@ -4,88 +4,73 @@ $nav-height: 35px
 
 .no-treesaver
   overflow: auto
-  h1.headder, ul.nav, ul.footer, article
-    +box-shadow(0 0 10px darken($body, 20%))
-  h1.headder
+  overflow-y: scroll
+  body
+    width: 100%
+    max-width: grid(9)
+    margin: 0 auto
     background: $page
-    margin: 0 auto
-    padding: $margin $margin 0 $margin
-    max-width: grid(6)
-  figure
-    padding: 0
-    margin: 0
-  ul.nav, ul.footer
-    position: relative
-    font-family: $subhed
-    margin: 0 auto 0 auto
-    padding: 0 ($margin + 6px) 0 ($margin - 6px)
-    max-width: grid(6)
-    list-style: none
-    +gradient(#444, #111)
-    color: #fff
-    height: $nav-height
-    li
-      float: left
-      list-style: none
-      a
-        display: block
-        height: $nav-height - (6*2)
-        padding: 6px
-      ul
-        position: absolute
-        top: $nav-height
-        li
-          position: relative
-          float: none
-          width: 100px
-          a
-          ul
-            left: 100%
-            top: 0px
-  // SUCKERFISH
-  ul.nav
-    li
-      ul
-        display: none
-    li:hover
-      ul
-        display: block
-        li
-          ul
-            display: none
-        li:hover
-          ul
-            display: block
-            li
-              ul
-                display: none
-            li:hover
-              ul
-                display: block
-                li
-                  ul
-                    display: none
-                li:hover
-                  ul
-                    display: block
-  article
-    display: block
-    margin: 0 auto
-    margin-top: 0
-    background-color: $page
-    padding: $margin $margin $margin*3 $margin
-    max-width: grid(6)
+  #header, #content, #footer
+    padding: $line-height $margin
+  #header
     h1
-      margin: 0
-    hgroup
-      margin-bottom: $line-height
-    // remove extranious figures
-    figure
-      div
+      +solid($line-height)
+      margin-bottom: ms(-2)
+  #nav, .nav
+    ol, ul
+      list-style: none
+      background-color: darken($page, 20%)
+      margin: 0 (-$margin)
+      padding: 0 $margin
+    li
+      display: inline
+      display: inline-block
+      color: $page
+      position: relative
+      // SUCKERFISH MENUS
+      ol, ul
         display: none
-      div.no-js
+        position: absolute
+        top: 100%
+        left: 0
+        margin: 0
+        padding: 0
+      li
+        width: auto
         display: block
-        margin: $line-height 0
-        img
-          width: 100%
+        a
+          display: block
+          width: 160px
+          padding: 0 ms(-2)
+      &:hover ol, ul
+        display: block
+    a
+      background: darken($page, 40%)
+      +type(ms(0), ms(3))
+      padding: ms(-2) ms(1)
+  article
+    line-height: $line-height
+    display: block
+    background: none
+  figure
+    display: block
+    overflow: visible
+    div, iframe, object
+      display: none
+    div, iframe, object
+      &.no-treesaver
+        display: block
+        float: right
+        padding: 1em 0 1em 1em
+        width: grid(6)
+        max-width: 100%
+        img, iframe, video
+          max-width: 100%
+          width: grid(6)
+          max-width: 100%
           height: auto
+  #footer
+    .nav li
+      ol, ul
+        top: auto
+        bottom: 100%
