@@ -1,0 +1,45 @@
+// CHROME //
+
+// All UI elements that don't belong on pages gets styled here.
+// It keeps everything seperate and tidy.
+// Vartiables you defined in you skin will carry over to this file.
+
+// Position the viewer. The viewer is the area in which pages can be displayed.
+.viewer
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+
+nav
+  display: block
+  position: absolute
+  z-index: 1
+
+.sidebar, .menu
+  .content
+    display: none
+  &.sidebar-active, &.menu-active
+    .content
+      display: block
+
+
+// LIGHTBOX
+
+.lightbox
+  position: fixed
+  overflow: hidden
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 99
+  .container
+    position: absolute
+    overflow: hidden
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    padding: 8px
+    background: #000

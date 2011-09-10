@@ -1,0 +1,8 @@
+// GRID MEASUREMENTS
+@function grid($unit, $measure: $column)
+  @return (($measure * $unit) + ($gutter * ($unit - 1)))
+
+=location($down, $across, $module-height: $column, $module-width: $column, $gutter:$gutter)
+  margin-left: grid($across, $module-width) - $module-width
+  top: grid($down, $module-height) - $module-height
+  position: absolute

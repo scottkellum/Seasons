@@ -1,0 +1,281 @@
+///////////////////////////
+//        METRICS        //
+///////////////////////////
+
+// IMAGE + PAGE RATIOS
+=ratio($width, $height, $cols: $columns)
+  @for $i from 1 through $cols
+    .r#{$width}x#{$height}.w#{$i}, .img.w#{$i}[class*="#{$width}x#{$height}"] img
+      width: grid($i)
+      height: round(grid($i) * ( $height / $width ))
+
+// Run the code above. Ratios are defined in the skin
++ratios
+
+// GRID MEASURMENTS
+=grid-widths($cols: $columns)
+  @for $i from 1 through $cols
+    .c#{$i}
+      margin-left: grid($i) - $column
+    .w#{$i}
+      width: grid($i)
+
+// Run the code above. Columns are defined in the skin
++grid-widths($columns)
+
+// Lightbox sizes
+.lightbox .container
+  &[class*="single"]
+    width: grid(3)
+  &[class*="double"]
+    width: grid(6)
+  &[class*="triple"]
+    width: grid(9)
+  &[class*="quad"]
+    width: grid(12)
+
+
+// GRID+FIGURE MEASUREMENTS
+.grid
+  position: absolute
+  overflow: hidden
+  z-index: 1
+  // Helps reduce flickr when paging
+  -webkit-backface-visibility: hidden
+  // Sometimes Safari forgets this one
+  -webkit-font-smoothing: subpixel-antialiased
+ 
+// CLEAR MIN-MAX FOR FIXED GRIDS
+.fixed.grid, .sizetocontainer.grid
+  max-width: none
+  max-height: none
+  min-width: none
+  min-height: none
+
+
+///////////////////////////
+// GENERAL FUNCTIONALITY //
+///////////////////////////
+
+
+// Hide things
+html.js, html.no-js
+  .hidden
+    display: none
+
+// Positioning of Chrome
+.chrome, .viewer
+  position: absolute
+  display: block
+
+.chrome
+  bottom: 0
+  top: 0
+  left: 0
+  right: 0
+
+
+// DESKTOP SCROLLING CONTAINER SUPPORT
+
+.container.scroll
+  position: absolute
+  overflow: auto
+  overflow-x: hidden
+
+// GRADIENT TO INDICATE OVERFLOW
+.grid .scroll-fade:after
+  content: "\0020"
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  height: 40px
+  z-index: 3
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba($page, 0)), to(rgba($page, 1)))
+  background-image: -webkit-linear-gradient(top, rgba($page, 0), rgba($page, 1))
+  background-image: -moz-linear-gradient(top, rgba($page, 0), rgba($page, 1))
+  background-image: -ms-linear-gradient(top, rgba($page, 0), rgba($page, 1))
+  background-image: -o-linear-gradient(top, rgba($page, 0), rgba($page, 1))
+  background-image: linear-gradient(top, rgba($page, 0), rgba($page, 1))
+
+.container .scroll
+  overflow: auto
+  width: 100%
+  height: 100%
+  padding-bottom: 40px
+
+// FORCE SCROLLBAR FOR SAFARI IN LION -- http://simurai.com/post/8083942390/force-lion-scrollbar
+::-webkit-scrollbar
+  -webkit-appearance: none
+  width: 6px
+::-webkit-scrollbar-thumb
+  border-radius: 3px
+  background-color: rgba(0,0,0,.5)
+
+// Make The Scrollbars Smaller On Touch Devices
+.touch ::-webkit-scrollbar
+  width: 3px
+
+// TYPOGRAPHY RESET
+html, body
+  +type($base-size, $line-height)
+  font-family: $font
+  color: $text
+  background-color: $body
+  overflow: hidden
+
+// Make sure headlines look good and always fit
+h1, h2, h3, h4, h5, h6
+  text-rendering: optimizeLegibility
+  word-wrap: break-word
+
+// Hyphenate text
+p
+  +hyphens(auto)
+
+
+// COLUMNS
+.column, .container
+  position: absolute
+  overflow: hidden
+  top: $top
+  bottom: $bottom
+
+// Set min height so no one-line columns appear
+.column
+  min-height: $line-height * 3
+
+// GRID MODS
+#previousPage, #nextPage
+  z-index: -1
+  opacity: 0.5
+
+// TRIM LEFT OR RIGHT PAGE MARGINS
+.grid.trimleft
+  padding-left: 0
+.grid.trimright
+  padding-right: 0
+
+// FIGURE PLACEMENT
+figure
+  display: block
+
+.colapsed
+  position: absolute
+.topfix
+  top: 0
+.rightfix
+  right: 0
+.bottomfix
+  bottom: 0
+  top: auto
+.leftfix
+  left: 0
+
+.overflow
+  overflow: visible
+
+// RESOURCES
+.error, .loading
+  position: absolute
+  &#nextPage, &#previousPage
+    display: none
+
+.hidden, .microdata
+  display: none
+
+.group
+  position: absolute
+  top: 0
+  bottom: 0
+  padding: 0
+
+// CENTER CONTENT
+.center, .center *
+  text-align: center
+
+// DISABLES CAPTIONS FOR CONTAINER
+.nocap .caption
+  display: none
+
+// Add padding to captions when in a fill grid
+.fill .caption
+  padding-left: $margin
+  padding-right: $margin
+
+// INSET CAPTION ADVANCED PLACEMENT
+.caption
+  &.left
+    text-align: left
+  &.right
+    right: 0
+    text-align: right
+
+.insetcap
+  .caption
+    position: absolute
+  &.ul .caption
+    top: 0
+    left: 0
+  &.ur .caption
+    top: 0
+    right: 0
+  &.ll .caption
+    bottom: 0
+    left: 0
+  &.lr .caption
+    bottom: 0
+    right: 0
+
+
+// SUPPORT FULL-BLEED IMAGES *ABITRARY CROPS BEWARE*
+// !IMPORTANT FLAGS NESSISARY TO OVERRIDE TREESAVER
+
+.fullbleed
+  position: absolute
+  bottom: 0 !important
+  top: 0 !important
+  left: 0 !important
+  right: 0 !important
+  width: auto
+  img
+    width: auto !important
+    height: auto !important
+    min-height: 100%
+    min-width: 100%
+
+
+// MOBILE OPTIMIZATIONS
+// Tweaks to make things run more smoothly on mobile devices
+.mobile
+  &, .grid
+    // removes subpixle AA to make things a little faster.
+    -webkit-font-smoothing: antialiased
+
+
+// Online/offline elements
+html.offline
+  .no-offline, [data-requires~="no-offline"]
+    display: none
+  [data-requires~="offline"]
+    display: block
+
+html.no-offline
+  [data-requires~="no-offline"]
+    display: block
+  [data-requires~="offline"]
+    display: none
+
+
+// DEVICE SPECIFIC TWEAKS
+
+// iPad
+.browser-os-ipad .chrome
+  bottom: 77px
+
+// iPhone
+.browser-os-iphone .chrome
+  bottom: 63px
+
+.fullScreen .chrome
+  bottom: 19px
