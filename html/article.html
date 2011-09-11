@@ -68,25 +68,28 @@
   <p class="noindent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non eros ac augue eleifend malesuada. Praesent sagittis nisl eu elit ultrices adipiscing. Maecenas lectus ligula, mollis rutrum sagittis nec, pretium et neque. Praesent sit amet justo ut diam mollis laoreet sit amet sed dui. Nulla id nunc non tortor semper tincidunt nec nec elit. Maecenas convallis nisi in eros interdum euismod. Cras laoreet consequat eros, vel posuere est hendrerit sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at sapien eros, et blandit ipsum. Aliquam elementum orci eget tortor feugiat eu eleifend elit volutpat. Mauris auctor velit eget nisl tincidunt elementum. Fusce dignissim urna ut augue accumsan at aliquam mauris vulputate. Fusce facilisis lorem ac nunc sollicitudin ultrices. Vestibulum egestas placerat orci, eget egestas dui pretium eu. Aenean vel neque egestas dolor molestie tincidunt. Cras id nulla ante, quis pulvinar magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ut eros lectus.</p>
   
   <!--A sample image-->
-  <figure class="required">
+  <figure class="zoomable">
     <!-- USE DIFFERENT SIZED IMAGES TO HELP LOAD TIME -->
-    <div data-sizes="single-4x3">
-      <img data-src="img/cover.jpg" />
+    <!-- data-minWidth is used to let Treesaver know the minimum space required for figures to fit in grids and lightboxes -->
+    <div data-sizes="single" data-minWidth="243" data-minHeight="202" ratio="4x3">
+      <img data-src="img/cover.jpg" width="243" height="182" />
       <p class="caption">Caption congue eu sollicitudin ac, fringilla vitae elit. <span class="credit">John Smith</span></p>
     </div>
     <!--Using regular "src" and the class "no-treesaver" so this displays on old browsers or without JavaScript.-->
-    <div data-sizes="double-4x3" class="no-treesaver">
-      <img src="img/cover.jpg" />
+    <div data-sizes="double" data-minWidth="507" data-minHeight="400" ratio="4x3" class="no-treesaver">
+      <img src="img/cover.jpg" width="507" height="380" />
       <p class="caption">Caption congue eu sollicitudin ac, fringilla vitae elit. <span class="credit">John Smith</span></p>
     </div>
-    <div data-sizes="triple-4x3">
-      <img data-src="img/cover.jpg" />
+    <div data-sizes="triple" data-minWidth="771" data-minHeight="598" ratio="4x3">
+      <img data-src="img/cover.jpg" width="771" height="578" />
       <p class="caption">Caption congue eu sollicitudin ac, fringilla vitae elit. <span class="credit">John Smith</span></p>
     </div>
-    <div data-sizes="quad-4x3">
-      <img data-src="img/cover.jpg" />
+    <div data-sizes="quad" data-minWidth="1035" data-minHeight="796" ratio="4x3">
+      <img data-src="img/cover.jpg" width="1035" height="776" />
       <p class="caption">Caption congue eu sollicitudin ac, fringilla vitae elit. <span class="credit">John Smith</span></p>
     </div>
+    <!-- Fallback content will be run into the column if a figure doesn’t place -->
+    <div data-sizes="fallback"><p>Figure didn’t place, click to view.</p></div>
   </figure>
   
   <p>Integer ultrices sodales nibh, sed convallis mauris accumsan vitae. Proin libero ipsum, congue eu dignissim nec, malesuada eu ante. Nulla sit amet odio nec risus tempor ultricies. Nunc sit amet risus lectus. Aliquam est lorem, congue eu sollicitudin ac, fringilla vitae elit. Nam sollicitudin, urna at pellentesque tempus, tellus diam ultricies tellus, sagittis pretium nulla risus ut quam. Donec cursus enim vel orci imperdiet egestas. Donec porttitor, risus at ornare condimentum, metus felis pulvinar magna, eu mollis lorem dui convallis sem. Aliquam elementum diam ut quam tempus imperdiet. Etiam egestas, dolor a ullamcorper feugiat, diam orci facilisis tortor, eget scelerisque sem nunc nec nisl. Nullam aliquam egestas porttitor. Donec convallis, lectus eget consequat bibendum, tellus eros semper leo, vel vehicula risus diam sed urna. Ut viverra justo ut purus posuere malesuada. Quisque nec nunc dui. Nunc consectetur, felis ac ultrices bibendum, elit sapien tristique lorem, nec facilisis felis mi vel est. Donec nec nisi ac sapien consectetur tempor. Nunc interdum felis et erat tincidunt id luctus tortor fermentum. Suspendisse vehicula odio in mi auctor sed pellentesque felis varius. Proin fermentum nunc vel risus dictum non eleifend dui feugiat.</p>
