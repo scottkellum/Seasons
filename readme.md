@@ -43,3 +43,5 @@ Three folders, one containing the HTML project, one containing a CSS framework a
 
 ## Licence
 Proprietary for now.
+
+Dual-licensed under MIT and GPLv2 on launch.
