@@ -41,7 +41,7 @@ $cover_width: 250px
 // SHRINK IMAGES + PAGES
 =ratio($width, $height, $cols: $columns)
   // Force resize images
-  .mobile.grid .img[class*="#{$width}x#{$height}"] img
+  .mobile.grid .img[ratio="#{$width}x#{$height}"] img
     width: 280px
     height: 280px * ( $height / $width )
 

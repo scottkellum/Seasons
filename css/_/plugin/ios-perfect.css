@@ -27,14 +27,14 @@
   opacity: 1 !important; }
 .os-ipad .grid.fixed.ipad.horizontal {
   height: 690px;
-  width: 777.481px;
-  min-width: 777.481px;
-  padding: 0 123.259px; }
+  width: 771px;
+  min-width: 771px;
+  padding: 0 126.5px; }
 .os-ipad .grid.fixed.ipad.vertical {
   height: 946px;
-  width: 511.21px;
-  min-width: 511.21px;
-  padding: 0 128.395px; }
+  width: 507px;
+  min-width: 507px;
+  padding: 0 130.5px; }
 
 .os-ipad.fullscreen .grid.fixed.ipad.horizontal {
   height: 748px; }
