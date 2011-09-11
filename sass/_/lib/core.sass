@@ -5,7 +5,7 @@
 // IMAGE + PAGE RATIOS
 =ratio($width, $height, $cols: $columns)
   @for $i from 1 through $cols
-    .r#{$width}x#{$height}.w#{$i}, .img.w#{$i} [ratio="#{$width}x#{$height}"] img
+    .r#{$width}x#{$height}.w#{$i}, .container.w#{$i} [ratio="#{$width}x#{$height}"] img
       width: grid($i)
       height: round(grid($i) * ( $height / $width ))
 
