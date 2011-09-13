@@ -5,7 +5,7 @@
 // IMAGE + PAGE RATIOS
 =ratio($width, $height, $cols: $columns)
   @for $i from 1 through $cols
-    .r#{$width}x#{$height}.w#{$i}, .img.w#{$i}[class*="#{$width}x#{$height}"] img
+    .r#{$width}x#{$height}.w#{$i}, .container.w#{$i} [ratio="#{$width}x#{$height}"] img
       width: grid($i)
       height: round(grid($i) * ( $height / $width ))
 
@@ -228,7 +228,7 @@ figure
     right: 0
 
 
-// SUPPORT FULL-BLEED IMAGES *ABITRARY CROPS BEWARE*
+// SUPPORT FULL-BLEED FIGURES *ABITRARY CROPS BEWARE*
 // !IMPORTANT FLAGS NESSISARY TO OVERRIDE TREESAVER
 
 .fullbleed
@@ -238,11 +238,6 @@ figure
   left: 0 !important
   right: 0 !important
   width: auto
-  img
-    width: auto !important
-    height: auto !important
-    min-height: 100%
-    min-width: 100%
 
 
 // MOBILE OPTIMIZATIONS

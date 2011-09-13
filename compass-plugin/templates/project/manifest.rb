@@ -1,4 +1,3 @@
-stylesheet 'chrome.sass', :media => "screen, projection"
 stylesheet 'style.sass', :media => "screen, projection"
 
 description "Seasons styling framework for the Treesaver JavaScript framework."
