@@ -13,20 +13,20 @@ It creates a flexable yet solid foundation for building templates.
 */
 
 /* BASIC FUNCTIONS AND CSS RESET: */
-@import url("_/core/reset.css");
+@import url("lib/reset.css");
 
 
 
 /* Select the skin you wish to use - */
-@import url("_/skin/vanilla.css");
+@import url("skin/vanilla.css");
 
 /* Select the chrome style you wish to use - */
-@import url("_/chrome/vanilla.css");
+@import url("chrome/vanilla.css");
 
 
 
 /* CORE TREESAVER FUNCTIONALITY: */
-@import url("_/core/core.css");
+@import url("lib/core.css");
 
 /* PLUGINS */
 /* @import url("_/plugin/mobile.css"); */
