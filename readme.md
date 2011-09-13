@@ -46,5 +46,5 @@ Proprietary for now.
 
 Dual-licensed under MIT and GPLv2 ON LAUNCH with the following exceptions:
 
-* _modular-scale.sass — [Copyright (c) 2011](https://github.com/scottkellum/modular-scale)
+* _modular-scale.sass — [Copyright © 2011](https://github.com/scottkellum/modular-scale)
 * _reset.sass — [BSD License](http://html5reset.org/#acknowledgements)
