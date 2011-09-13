@@ -45,4 +45,5 @@ Three folders, one containing the HTML project, one containing a CSS framework a
 Proprietary for now.
 
 Dual-licensed under MIT and GPLv2 ON LAUNCH with the following exceptions:
-sass/lib/tools/_modular-scale.sass — Copyright (c) 2011 — https://github.com/scottkellum/modular-scale
+
+* sass/lib/tools/_modular-scale.sass — Copyright (c) 2011 — https://github.com/scottkellum/modular-scale
