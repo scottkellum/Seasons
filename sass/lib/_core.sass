@@ -242,9 +242,9 @@ figure
 
 // MOBILE OPTIMIZATIONS
 // Tweaks to make things run more smoothly on mobile devices
-.mobile
+.os-ipad, .os-iphone
   &, .grid
-    // removes subpixle AA to make things a little faster.
+    // iOS doesn't subpixel AA anyway, defining as normal AA speeds things up.
     -webkit-font-smoothing: antialiased
 
 
@@ -260,17 +260,3 @@ html.no-offline
     display: block
   [data-requires~="offline"]
     display: none
-
-
-// DEVICE SPECIFIC TWEAKS
-
-// iPad
-.browser-os-ipad .chrome
-  bottom: 77px
-
-// iPhone
-.browser-os-iphone .chrome
-  bottom: 63px
-
-.fullScreen .chrome
-  bottom: 19px
