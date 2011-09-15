@@ -18,10 +18,10 @@ It creates a flexable yet solid foundation for building templates.
 
 
 /* Select the skin you wish to use - */
-@import url("skin/vanilla.css");
+@import url("skin.css");
 
 /* Select the chrome style you wish to use - */
-@import url("chrome/vanilla.css");
+@import url("chrome.css");
 
 
 
@@ -29,4 +29,6 @@ It creates a flexable yet solid foundation for building templates.
 @import url("lib/core.css");
 
 /* PLUGINS */
-/* @import url("_/plugin/mobile.css"); */
+/* @import url("plugin/ios-perfect.css"); */
+/* @import url("plugin/mobile.css"); */
+/* @import url("plugin/no-treesaver.css"); */
