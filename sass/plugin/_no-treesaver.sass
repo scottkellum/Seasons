@@ -17,12 +17,10 @@ html.no-treesaver
   #nav, .nav
     ol, ul
       list-style: none
-      background-color: darken($page, 20%)
       margin: 0 (-$margin)
       padding: 0 $margin
     li
       display: inline
-      color: $page
       position: relative
       // SUCKERFISH MENUS
       ol, ul
@@ -37,14 +35,8 @@ html.no-treesaver
         display: block
         a
           display: block
-          width: 160px
-          padding: 0 ms(-2)
       &:hover ol, ul
         display: block
-    a
-      background: darken($page, 40%)
-      +type(ms(0), ms(3))
-      padding: ms(-2) ms(1)
   #content
     div, iframe, object
       display: none
