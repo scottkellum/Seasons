@@ -1,5 +1,14 @@
 // SUPPORT FOR NON-TREESAVER PAGES
 
+// Hide no-treesaver elements unless they are in a placed figure
+html.treesaver
+  .no-treesaver
+    display: none
+  .container, .fallback
+    .no-treesaver
+      display: block
+  
+// No-treesaver styles
 html.no-treesaver
   overflow: auto
   overflow-y: scroll
@@ -7,6 +16,7 @@ html.no-treesaver
     width: 100%
     max-width: grid(9)
     margin: 0 auto
+    overflow: visible
     background: $page
   #header, #content, #footer
     padding: $line-height $margin
@@ -24,6 +34,7 @@ html.no-treesaver
       position: relative
       // SUCKERFISH MENUS
       ol, ul
+        z-index: 1
         display: none
         position: absolute
         top: 100%
@@ -40,7 +51,6 @@ html.no-treesaver
   #content
     div, iframe, object
       display: none
-    div, iframe, object
       &.no-treesaver
         overflow: visible
         display: block
@@ -48,13 +58,14 @@ html.no-treesaver
         padding-left: 1em
         width: 100%
         max-width: grid(6)
+        div
+          display: block
         img, iframe, video
-          max-width: 100%
           width: 100%
-          max-width: grid(6)
           height: auto
   #footer
     clear: both
+    padding-bottom: 0
     .nav li
       ol, ul
         top: auto
