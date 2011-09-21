@@ -26,9 +26,8 @@ $cover_width: 250px
     background: $page
   .grid:not(.fixed)
     +remove
-  .grid
-    opacity: 1 !important
   .mobile.grid
+    opacity: 1 !important
     margin: 0
     width: 280px
     min-width: 280px
@@ -41,7 +40,7 @@ $cover_width: 250px
 // SHRINK IMAGES + PAGES
 =ratio($width, $height, $cols: $columns)
   // Force resize images
-  .mobile.grid .container[ratio="#{$width}x#{$height}"] img
+  .mobile.grid .container [ratio="#{$width}x#{$height}"] img
     width: 280px
     height: 280px * ( $height / $width )
 

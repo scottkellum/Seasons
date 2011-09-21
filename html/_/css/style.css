@@ -789,7 +789,7 @@ figure {
   right: 0 !important;
   width: auto; }
 
-.browser-os-ipad, .browser-os-ipad .grid, .browser-os-iphone, .browser-os-iphone .grid {
+.os-ipad, .os-ipad .grid, .os-iphone, .os-iphone .grid {
   -webkit-font-smoothing: antialiased; }
 
 html.offline .no-offline, html.offline [data-requires~="no-offline"] {
@@ -801,12 +801,3 @@ html.no-offline [data-requires~="no-offline"] {
   display: block; }
 html.no-offline [data-requires~="offline"] {
   display: none; }
-
-.browser-os-ipad .chrome {
-  bottom: 77px; }
-
-.browser-os-iphone .chrome {
-  bottom: 63px; }
-
-.fullScreen .chrome {
-  bottom: 19px; }
