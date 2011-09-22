@@ -1,8 +1,7 @@
 /* BODY COLOR */
 body {
   background: #333333;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 /* Basic metrics for the viewer */
 .viewer {
@@ -22,7 +21,6 @@ nav {
   display: none; }
 .sidebar.sidebar-active .content, .sidebar.menu-active .content, .menu.sidebar-active .content, .menu.menu-active .content {
   display: block; }
-
 
 /* LIGHTBOX */
 .lightbox {

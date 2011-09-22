@@ -542,25 +542,3 @@ figure {
   left: 0 !important;
   right: 0 !important;
   width: auto; }
-
-.mobile, .mobile .grid {
-  -webkit-font-smoothing: antialiased; }
-
-html.offline .no-offline, html.offline [data-requires~="no-offline"] {
-  display: none; }
-html.offline [data-requires~="offline"] {
-  display: block; }
-
-html.no-offline [data-requires~="no-offline"] {
-  display: block; }
-html.no-offline [data-requires~="offline"] {
-  display: none; }
-
-.browser-os-ipad .chrome {
-  bottom: 77px; }
-
-.browser-os-iphone .chrome {
-  bottom: 63px; }
-
-.fullScreen .chrome {
-  bottom: 19px; }

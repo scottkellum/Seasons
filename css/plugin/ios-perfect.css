@@ -5,6 +5,19 @@
  Margins will be over-written.
  */
 
+.os-ipad, .os-ipad .grid, .os-iphone, .os-iphone .grid {
+  -webkit-font-smoothing: antialiased; }
+
+html.offline .no-offline, html.offline [data-requires~="no-offline"] {
+  display: none; }
+html.offline [data-requires~="offline"] {
+  display: block; }
+
+html.no-offline [data-requires~="no-offline"] {
+  display: block; }
+html.no-offline [data-requires~="offline"] {
+  display: none; }
+
 .grid.ipad {
   min-width: 99999px;
   width: 99999px;
