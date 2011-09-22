@@ -16,7 +16,7 @@
 =grid-widths($cols: $columns)
   @for $i from 1 through $cols
     .c#{$i}
-      margin-left: grid($i) - $column
+      margin-left: grid($i) - $module-w
     .w#{$i}
       width: grid($i)
 
