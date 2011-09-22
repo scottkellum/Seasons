@@ -16,14 +16,16 @@ $size: 1em
 $line-height: ms(1, 1em)
 
 // GRID MEASUREMENTS
-$columns: 12 // # of columns you want to calculate for
-$grid-module: ms(5) ms(4) // See Mark Boulton’s write up on grids http://www.markboulton.co.uk/journal/comments/rethinking-css-grids
-$module-w: nth($grid-module, 1) // column width
-$module-h: nth($grid-module, 2) // row height
+// Grid module measurements. See Mark Boulton’s write up on grids http://www.markboulton.co.uk/journal/comments/rethinking-css-grids
+$module-w: ms(5) // module width
+$module-h: ms(4) // module height
 $gutter: ms(1) // gutters
+// grid margins:
 $margin: ms(1) // side margins
 $top: ms(2) // default top margin (for text and containers)
 $bottom: ms(3) // default bottom margin (for text and containers)
+// number of modules across to calculate:
+$columns: 12 // # of columns you want to calculate for
 
 // COLORS
 $primary: #f66
