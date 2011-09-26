@@ -5,23 +5,31 @@
 // IMAGE + PAGE RATIOS
 =ratio($width, $height, $cols: $columns)
   @for $i from 1 through $cols
-    .r#{$width}x#{$height}.w#{$i}, .container.w#{$i} [ratio="#{$width}x#{$height}"] img
-      width: grid($i)
-      height: round(grid($i) * ( $height / $width ))
+    .r#{$width}x#{$height}.w#{$i}, .container.w#{$i} [ratio="#{$width}x#{$height}"] img // Grid ratio, figure ratio.
+      width: grid($i) // Width spans all columns
+      height: round(grid($i) * ( $height / $width )) // Height is the proportion of the width.
 
-// Run the code above. Ratios are defined in the skin
-+ratios
++ratios // Run the code above. Ratios are defined in _config.sass
 
 // GRID MEASURMENTS
-=grid-widths($cols: $columns)
-  @for $i from 1 through $cols
-    .c#{$i}
-      margin-left: grid($i) - $module-w
-    .w#{$i}
-      width: grid($i)
+@for $i from 1 through $columns // loop defines columns. c1, c2, c3 . . .
+  .c#{$i}
+    margin-left: grid($i) - $module-w
+@for $i from 1 through $columns // loop defines widths. w1, w2, w3 . . .
+  .w#{$i}
+    width: grid($i)
 
-// Run the code above. Columns are defined in the skin
-+grid-widths($columns)
+// Vertical grid
+$vertical-grid: false !default
+$rows: 10 !default
+@if $vertical-grid // Generate only if $vertical-grid is true. This code is usually not nessisary.
+  @for $i from 1 through $rows // loop defines rows. r1, r2, r3 . . .
+    .r#{$i}
+      position: absolute
+      top: (grid($i, $module-h) - $module-h) + $top
+  @for $i from 1 through $rows // loop defines heights. h1, h2, h3 . . .
+    .h#{$i}
+      height: grid($i, $module-h)
 
 // Lightbox sizes
 .lightbox .container
@@ -59,7 +67,7 @@
 
 
 // Hide things
-html.js, html.no-js
+html.js, html.no-js // Using this to up the priority of .hidden down the cascade.
   .hidden
     display: none
 
@@ -76,45 +84,41 @@ html.js, html.no-js
 
 
 // DESKTOP SCROLLING CONTAINER SUPPORT
-
-.container.scroll
-  position: absolute
-  overflow: auto
-  overflow-x: hidden
-
-// GRADIENT TO INDICATE OVERFLOW
-.grid .scroll-fade:after
-  content: "\0020"
-  position: absolute
-  bottom: 0
-  left: 0
-  right: 0
-  height: 40px
-  z-index: 3
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba($page, 0)), to(rgba($page, 1)))
-  background-image: -webkit-linear-gradient(top, rgba($page, 0), rgba($page, 1))
-  background-image: -moz-linear-gradient(top, rgba($page, 0), rgba($page, 1))
-  background-image: -ms-linear-gradient(top, rgba($page, 0), rgba($page, 1))
-  background-image: -o-linear-gradient(top, rgba($page, 0), rgba($page, 1))
-  background-image: linear-gradient(top, rgba($page, 0), rgba($page, 1))
-
-.container .scroll
-  overflow: auto
-  width: 100%
-  height: 100%
-  padding-bottom: 40px
-
-// FORCE SCROLLBAR FOR SAFARI IN LION -- http://simurai.com/post/8083942390/force-lion-scrollbar
-::-webkit-scrollbar
-  -webkit-appearance: none
-  width: 6px
-::-webkit-scrollbar-thumb
-  border-radius: 3px
-  background-color: rgba(0,0,0,.5)
-
-// Make The Scrollbars Smaller On Touch Devices
-.touch ::-webkit-scrollbar
-  width: 3px
+$scroll-support: true !default
+@if $scroll-support
+  .container.scroll
+    position: absolute
+    overflow: auto
+    overflow-x: hidden
+  .grid .scroll-fade:after // gradient to indicate overflow
+    content: "\0020"
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 40px
+    z-index: 3
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba($page, 0)), to(rgba($page, 1)))
+    background-image: -webkit-linear-gradient(top, rgba($page, 0), rgba($page, 1))
+    background-image: -moz-linear-gradient(top, rgba($page, 0), rgba($page, 1))
+    background-image: -ms-linear-gradient(top, rgba($page, 0), rgba($page, 1))
+    background-image: -o-linear-gradient(top, rgba($page, 0), rgba($page, 1))
+    background-image: linear-gradient(top, rgba($page, 0), rgba($page, 1))
+  .container .scroll // allow scrolling
+    overflow: auto
+    width: 100%
+    height: 100%
+    padding-bottom: 40px
+  // FORCE SCROLLBAR FOR SAFARI IN LION -- http://simurai.com/post/8083942390/force-lion-scrollbar
+  ::-webkit-scrollbar
+    -webkit-appearance: none
+    width: 6px
+  ::-webkit-scrollbar-thumb
+    border-radius: 3px
+    background-color: rgba(0,0,0,.5)
+  // Make The Scrollbars Smaller On Touch Devices
+  .touch ::-webkit-scrollbar
+    width: 3px
 
 // TYPOGRAPHY RESET
 html, body
@@ -129,9 +133,11 @@ h1, h2, h3, h4, h5, h6
   text-rendering: optimizeLegibility
   word-wrap: break-word
 
-// Hyphenate text
-p
-  +hyphens(auto)
+// Hyphenate paragraphs
+$hyphenate: true !default
+@if $hyphenate
+  p
+    +hyphens(auto)
 
 
 // COLUMNS
@@ -145,10 +151,11 @@ p
 .column
   min-height: $line-height * 3
 
-// GRID MODS
-#previousPage, #nextPage
-  z-index: -1
-  opacity: 0.5
+// Page Opacity
+$page-opacity: true !default
+@if $page-opacity
+  #previousPage, #nextPage
+    opacity: 0.5
 
 // TRIM LEFT OR RIGHT PAGE MARGINS
 .grid.trimleft
@@ -198,46 +205,47 @@ figure
 .nocap .caption
   display: none
 
-// Add padding to captions when in a fill grid
-.fill .caption
-  padding-left: $margin
-  padding-right: $margin
-
-// INSET CAPTION ADVANCED PLACEMENT
-.caption
-  &.left
-    text-align: left
-  &.right
-    right: 0
-    text-align: right
-
-.insetcap
+// Caption placement
+$caption-placement: true !default
+@if $caption-placement
+  // Add padding to captions when in a fill grid
+  .fill .caption
+    padding-left: $margin
+    padding-right: $margin
+  // INSET CAPTION ADVANCED PLACEMENT
   .caption
-    position: absolute
-  &.ul .caption
-    top: 0
-    left: 0
-  &.ur .caption
-    top: 0
-    right: 0
-  &.ll .caption
-    bottom: 0
-    left: 0
-  &.lr .caption
-    bottom: 0
-    right: 0
-
+    &.left
+      text-align: left
+    &.right
+      right: 0
+      text-align: right
+  .insetcap
+    .caption
+      position: absolute
+    &.ul .caption
+      top: 0
+      left: 0
+    &.ur .caption
+      top: 0
+      right: 0
+    &.ll .caption
+      bottom: 0
+      left: 0
+    &.lr .caption
+      bottom: 0
+      right: 0
 
 // SUPPORT FULL-BLEED FIGURES *ABITRARY CROPS BEWARE*
 // !IMPORTANT FLAGS NESSISARY TO OVERRIDE TREESAVER
-
-.fullbleed
-  position: absolute
-  bottom: 0 !important
-  top: 0 !important
-  left: 0 !important
-  right: 0 !important
-  width: auto
+$fullbleed: true !default
+@if $fullbleed
+  .fullbleed
+    position: absolute
+    bottom: 0 !important
+    top: 0 !important
+    left: 0 !important
+    right: 0 !important
+    width: auto
 
 
 // MOBILE OPTIMIZATIONS
@@ -249,6 +257,8 @@ figure
 
 
 // Online/offline elements
+$offline-elements: true !default
+@if $offline-elements
 html.offline
   .no-offline, [data-requires~="no-offline"]
     display: none
@@ -260,3 +270,32 @@ html.no-offline
     display: block
   [data-requires~="offline"]
     display: none
+
+// Debug tools
+// used to highlihgt elements for placement.
+$debug: true !default
+@if $debug
+  =r
+    background: #ff9999 !important
+  =g
+    background: #99ff99 !important
+  =b
+    background: #9999ff !important
+  =c
+    background: #99ffff !important
+  =m
+    background: #ff99ff !important
+  =y
+    background: #ffff99 !important
+  .r
+    +r
+  .g
+    +g
+  .b
+    +b
+  .c
+    +c
+  .m
+    +m
+  .y
+    +y

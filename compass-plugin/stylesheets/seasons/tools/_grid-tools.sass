@@ -2,9 +2,16 @@
 @function grid($unit, $measure: $module-w)
   @return (($measure * $unit) + ($gutter * ($unit - 1)))
 
-=location($across: 0, $down: 0, $width: 1, $height: 1)
+=location($across: 1, $down: 1, $width: 1, $height: 1)
   position: absolute
-  margin-left: grid(($across + 1), $module-w) - $module-w
-  top: grid(($down + 1), $module-h) - $module-h
-  width: grid($width, $module-w)
-  height: grid($height, $module-h)
+  margin-left: grid($across, $module-w) - $module-w
+  position: absolute
+  top: (grid($down, $module-h) - $module-h) + $top
+  @if $width == "auto"
+    width: auto
+  @else
+    width: grid($width, $module-w)
+  @if $height == "auto"
+    height: auto
+  @else
+    height: grid($height, $module-h)

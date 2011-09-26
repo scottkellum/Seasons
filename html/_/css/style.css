@@ -164,24 +164,6 @@ mark {
   font-style: italic;
   font-weight: bold; }
 
-.r {
-  background: #ff9999 !important; }
-
-.g {
-  background: #99ff99 !important; }
-
-.b {
-  background: #9999ff !important; }
-
-.c {
-  background: #99ffff !important; }
-
-.m {
-  background: #ff99ff !important; }
-
-.y {
-  background: #ffff99 !important; }
-
 .column {
   width: 243px;
   font-size: 1em;
@@ -705,7 +687,6 @@ p {
   min-height: 4em; }
 
 #previousPage, #nextPage {
-  z-index: -1;
   opacity: 0.5; }
 
 .grid.trimleft {
@@ -801,6 +782,24 @@ html.no-offline [data-requires~="no-offline"] {
   display: block; }
 html.no-offline [data-requires~="offline"] {
   display: none; }
+
+.r {
+  background: #ff9999 !important; }
+
+.g {
+  background: #99ff99 !important; }
+
+.b {
+  background: #9999ff !important; }
+
+.c {
+  background: #99ffff !important; }
+
+.m {
+  background: #ff99ff !important; }
+
+.y {
+  background: #ffff99 !important; }
 
 .grid.ipad {
   min-width: 99999px;

@@ -1,4 +1,4 @@
-// CONFIGURATION
+// CONFIGURATION //
 
 // BASE SIZE TO BE USED THROUGHOUT STYLES
 // This must be a fixed unit of measurement, usually correlating to your text size.
@@ -16,14 +16,16 @@ $size: 1em
 $line-height: ms(1, 1em)
 
 // GRID MEASUREMENTS
-$columns: 12 // # of columns you want to calculate for
-$grid-module: ms(5) ms(4) // See Mark Boulton’s write up on grids http://www.markboulton.co.uk/journal/comments/rethinking-css-grids
-$module-w: nth($grid-module, 1) // column width
-$module-h: nth($grid-module, 2) // row height
+// Grid module measurements. See Mark Boulton’s write up on grids http://www.markboulton.co.uk/journal/comments/rethinking-css-grids
+$module-w: ms(5) // module width
+$module-h: ms(4) // module height
 $gutter: ms(1) // gutters
+// grid margins:
 $margin: ms(1) // side margins
 $top: ms(2) // default top margin (for text and containers)
 $bottom: ms(3) // default bottom margin (for text and containers)
+// number of modules across to calculate:
+$columns: 12 // # of columns you want to calculate for
 
 // COLORS
 $primary: #f66
@@ -48,3 +50,35 @@ $subhed: sans-serif
   +ratio(1, 1)
   +ratio(4, 5)
   +ratio(3, 4)
+
+
+// Debug tools adds element highlihgting using one-letter classes and mixins.
+// @include r, @include g, @include b, @include c, @include m, @include y
+// .r, .g, .b, .c, .m, .y
+// red, green, blue, cyan, magenta, yellow
+$debug: true
+
+
+// EXTRAS (optional) //
+
+// Vertical grid
+//$vertical-grid: true // Compile vertical grid (true/false)
+//$rows: 20 // # of rows to calculate on the vertical grid
+
+// Scrollable figure styles
+//$scroll-support: false
+
+// Hyphenate paragraphs (via CSS3 hyphenation)
+//$hyphenate: false
+
+// Page Opacity (prev, next page at 50% opacity)
+//$page-opacity: false
+
+// Caption placement tools
+//$caption-placement: false
+
+// Fullbleed figure support
+//$fullbleed: false
+
+// Online/offline elements. The ability to show/hide based on network status.
+//$offline-elements: false

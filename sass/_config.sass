@@ -1,4 +1,4 @@
-// CONFIGURATION
+// CONFIGURATION //
 
 // BASE SIZE TO BE USED THROUGHOUT STYLES
 // This must be a fixed unit of measurement, usually correlating to your text size.
@@ -51,6 +51,34 @@ $subhed: sans-serif
   +ratio(4, 5)
   +ratio(3, 4)
 
-// VERTICAL GRID
-$vertical-grid: false // Compile vertical grid (true/false)
-$rows: 20 // # of rows to calculate on the vertical grid
+
+// Debug tools adds element highlihgting using one-letter classes and mixins.
+// @include r, @include g, @include b, @include c, @include m, @include y
+// .r, .g, .b, .c, .m, .y
+// red, green, blue, cyan, magenta, yellow
+$debug: true
+
+
+// EXTRAS (optional) //
+
+// Vertical grid
+//$vertical-grid: true // Compile vertical grid (true/false)
+//$rows: 20 // # of rows to calculate on the vertical grid
+
+// Scrollable figure styles
+//$scroll-support: false
+
+// Hyphenate paragraphs (via CSS3 hyphenation)
+//$hyphenate: false
+
+// Page Opacity (prev, next page at 50% opacity)
+//$page-opacity: false
+
+// Caption placement tools
+//$caption-placement: false
+
+// Fullbleed figure support
+//$fullbleed: false
+
+// Online/offline elements. The ability to show/hide based on network status.
+//$offline-elements: false
