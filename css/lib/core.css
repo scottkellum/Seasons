@@ -289,74 +289,214 @@
 .c1 {
   margin-left: 0px; }
 
-.w1 {
-  width: 67px; }
-
 .c2 {
   margin-left: 88px; }
-
-.w2 {
-  width: 155px; }
 
 .c3 {
   margin-left: 176px; }
 
-.w3 {
-  width: 243px; }
-
 .c4 {
   margin-left: 264px; }
-
-.w4 {
-  width: 331px; }
 
 .c5 {
   margin-left: 352px; }
 
-.w5 {
-  width: 419px; }
-
 .c6 {
   margin-left: 440px; }
-
-.w6 {
-  width: 507px; }
 
 .c7 {
   margin-left: 528px; }
 
-.w7 {
-  width: 595px; }
-
 .c8 {
   margin-left: 616px; }
-
-.w8 {
-  width: 683px; }
 
 .c9 {
   margin-left: 704px; }
 
-.w9 {
-  width: 771px; }
-
 .c10 {
   margin-left: 792px; }
-
-.w10 {
-  width: 859px; }
 
 .c11 {
   margin-left: 880px; }
 
-.w11 {
-  width: 947px; }
-
 .c12 {
   margin-left: 968px; }
 
+.w1 {
+  width: 67px; }
+
+.w2 {
+  width: 155px; }
+
+.w3 {
+  width: 243px; }
+
+.w4 {
+  width: 331px; }
+
+.w5 {
+  width: 419px; }
+
+.w6 {
+  width: 507px; }
+
+.w7 {
+  width: 595px; }
+
+.w8 {
+  width: 683px; }
+
+.w9 {
+  width: 771px; }
+
+.w10 {
+  width: 859px; }
+
+.w11 {
+  width: 947px; }
+
 .w12 {
   width: 1035px; }
+
+.r1 {
+  position: absolute;
+  top: 28px; }
+
+.r2 {
+  position: absolute;
+  top: 100px; }
+
+.r3 {
+  position: absolute;
+  top: 172px; }
+
+.r4 {
+  position: absolute;
+  top: 244px; }
+
+.r5 {
+  position: absolute;
+  top: 316px; }
+
+.r6 {
+  position: absolute;
+  top: 388px; }
+
+.r7 {
+  position: absolute;
+  top: 460px; }
+
+.r8 {
+  position: absolute;
+  top: 532px; }
+
+.r9 {
+  position: absolute;
+  top: 604px; }
+
+.r10 {
+  position: absolute;
+  top: 676px; }
+
+.r11 {
+  position: absolute;
+  top: 748px; }
+
+.r12 {
+  position: absolute;
+  top: 820px; }
+
+.r13 {
+  position: absolute;
+  top: 892px; }
+
+.r14 {
+  position: absolute;
+  top: 964px; }
+
+.r15 {
+  position: absolute;
+  top: 1036px; }
+
+.r16 {
+  position: absolute;
+  top: 1108px; }
+
+.r17 {
+  position: absolute;
+  top: 1180px; }
+
+.r18 {
+  position: absolute;
+  top: 1252px; }
+
+.r19 {
+  position: absolute;
+  top: 1324px; }
+
+.r20 {
+  position: absolute;
+  top: 1396px; }
+
+.h1 {
+  height: 51px; }
+
+.h2 {
+  height: 123px; }
+
+.h3 {
+  height: 195px; }
+
+.h4 {
+  height: 267px; }
+
+.h5 {
+  height: 339px; }
+
+.h6 {
+  height: 411px; }
+
+.h7 {
+  height: 483px; }
+
+.h8 {
+  height: 555px; }
+
+.h9 {
+  height: 627px; }
+
+.h10 {
+  height: 699px; }
+
+.h11 {
+  height: 771px; }
+
+.h12 {
+  height: 843px; }
+
+.h13 {
+  height: 915px; }
+
+.h14 {
+  height: 987px; }
+
+.h15 {
+  height: 1059px; }
+
+.h16 {
+  height: 1131px; }
+
+.h17 {
+  height: 1203px; }
+
+.h18 {
+  height: 1275px; }
+
+.h19 {
+  height: 1347px; }
+
+.h20 {
+  height: 1419px; }
 
 .lightbox .container[class*="single"] {
   width: 243px; }

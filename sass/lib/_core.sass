@@ -13,15 +13,23 @@
 +ratios
 
 // GRID MEASURMENTS
-=grid-widths($cols: $columns)
-  @for $i from 1 through $cols
-    .c#{$i}
-      margin-left: grid($i) - $module-w
-    .w#{$i}
-      width: grid($i)
+@for $i from 1 through $columns
+  .c#{$i}
+    margin-left: grid($i) - $module-w
+@for $i from 1 through $columns
+  .w#{$i}
+    width: grid($i)
 
-// Run the code above. Columns are defined in the skin
-+grid-widths($columns)
+// Vertical grid
+$vertical-grid: false !default
+@if $vertical-grid
+  @for $i from 1 through $rows
+    .r#{$i}
+      position: absolute
+      top: (grid($i, $module-h) - $module-h) + $top
+  @for $i from 1 through $rows
+    .h#{$i}
+      height: grid($i, $module-h)
 
 // Lightbox sizes
 .lightbox .container
