@@ -2,6 +2,21 @@
 //        METRICS        //
 ///////////////////////////
 
+
+// DEFAULT GRID METRICS
+$base-size: 16px !default
+$size: 1em !default
+$line-height: 1.2em !default
+$module-w: 280px !default
+$module-h: 280px !default
+$gutter: 14px !default
+// grid margins:
+$margin: 20px !default
+$top: 20px !default
+$bottom: 20px !default
+$columns: 12 !default
+
+
 // IMAGE + PAGE RATIOS
 =ratio($width, $height, $cols: $columns)
   @for $i from 1 through $cols
@@ -42,6 +57,10 @@ $rows: 10 !default
   &[class*="quad"]
     width: grid(12)
 
+// COLUMN WIDTHS
+.column
+  width: grid(3)
+  @include type($size, $line-height)
 
 // GRID+FIGURE MEASUREMENTS
 .grid

@@ -5,14 +5,6 @@
 // UI elements should be styled in the "chrome" directory.
 
 
-// COLUMN WIDTHS
-// If you have a set of grids with a different column width, define it here. The department grid is here as an example but it is only necessary to list the ones with a different size column from the standard width.
-// Column widths are measured by grid columns. The default should usually be 3 as that is what the image sizes are based on.
-.column {
-  width: grid(3);
-  @include type($size, $line-height);
-  }
-
 // TYPOGRAPHIC STYLES
 // Keep vertical spacing and all line-height attributes a multiple of your line-height to avoid text flow bugs. Do not use "!important" on any measurements here
 // Only use system fonts for paragraphs and other large bodies of text. If web fonts are used line endings will be missing or duplicated.

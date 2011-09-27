@@ -164,11 +164,6 @@ mark {
   font-style: italic;
   font-weight: bold; }
 
-.column {
-  width: 243px;
-  font-size: 1em;
-  line-height: 1.333em; }
-
 p {
   color: #333333;
   text-indent: 1.333em; }
@@ -594,6 +589,11 @@ nav {
   width: 771px; }
 .lightbox .container[class*="quad"] {
   width: 1035px; }
+
+.column {
+  width: 243px;
+  font-size: 1em;
+  line-height: 1.333em; }
 
 .grid {
   position: absolute;
