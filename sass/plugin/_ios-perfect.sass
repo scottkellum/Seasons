@@ -5,6 +5,10 @@
 // Margins will be over-written.
 // Recommended column and gutter widths are 95px and 16px
 
+// default columns per grid
+$ipad-horizontal-columns: 9 !default
+$ipad-vertical-columns: 6 !default
+
 // Make sure iPad grids don't show up for desktop users.
 .grid.ipad
   +remove
@@ -21,14 +25,14 @@
   .grid.fixed
     &.ipad.horizontal
       height: 690px
-      width: grid(9)
-      min-width: grid(9)
-      padding: 0 ((1024px - (grid(9))) / 2)
+      width: grid($ipad-horizontal-columns)
+      min-width: grid($ipad-horizontal-columns)
+      padding: 0 ((1024px - (grid($ipad-horizontal-columns))) / 2)
     &.ipad.vertical
       height: 946px
-      width: grid(6)
-      min-width: grid(6)
-      padding: 0 ((768px - (grid(6))) / 2)
+      width: grid($ipad-vertical-columns)
+      min-width: grid($ipad-vertical-columns)
+      padding: 0 ((768px - (grid($ipad-vertical-columns))) / 2)
 
 .os-ipad.fullscreen
   .grid.fixed
