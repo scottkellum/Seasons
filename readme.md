@@ -7,39 +7,39 @@ Seasons is a boilerplate for [Treesaver](http://treesaverjs.com/), a JavaScript 
 Three folders, one containing the HTML project, one containing a CSS framework and another containing a Sass framework.
 
 ## Where do I start?
-### Sass workflow (recommended)
+
+### Compass workflow
+
+* Install the seasons gem `sudo gem install seasons`
+* Sart a new project using the seasons framework. `compass create my_project -r seasons --using seasons`
+* Create layouts and the UI in the `resources.html` file.
+* Organize articles in the `toc.json` file.
+* configure your project in the `_config.scss` file.
+* Style pages with the `_skin.scss` file.
+* Style chrome with the `_chrome.scss` file.
+
+### Sass workflow
 
 [For more detail, visit to the wiki](https://github.com/scottkellum/Seasons/wiki)
 
-* First, install Sass. You can learn about Sass at [sass-lang.com](http://sass-lang.com/).
+* First, install Sass or Compass. You can learn about Sass at [sass-lang.com](http://sass-lang.com/).
+* Open the seasons folder in your terminal and type `sass --watch sass:html/_/css`.
+* Create layouts and the UI in the `_/resources.html` file.
+* Organize articles in the `_/toc.json` file.
+* configure your project in the `_config.sass` file.
+* Style pages with the `_skin.scss` file.
+* Style chrome with the `_chrome.scss` file.
 
-* Open the seasons folder in your terminal and type sass --watch sass:html/_/css.
-
-* Create layouts and the UI in the html/_/resources.html file.
-
-* Add content in the html folder.
-
-* Organize content in the html/_/toc.json file.
-
-* Point to your skin to style pages in the sass/style.sass file.
-
-* Style pages with the file you pointed to.
-
-### CSS workflow
+### CSS workflow (Sass or Compass is reccomended)
 
 [For more detail, visit to the wiki](https://github.com/scottkellum/Seasons/wiki)
 
 * Copy the contents of the CSS folder to the html/_/css folder, overwriting the existing CSS file.
-
 * Create layouts and the UI in the html/_/resources.html file.
-
-* Add content in the html folder.
-
-* Organize content in the html/_/toc.json file.
-
-* Point to your skin to style pages in the css/style.css file.
-
-* Style pages with the file you pointed to.
+* Create layouts and the UI in the `_/resources.html` file.
+* Organize articles in the `_/toc.json` file.
+* Style pages with the `skin.css` file.
+* Style chrome with the `chrome.css` file.
 
 ## Licence
 Proprietary for now.
