@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-treesaver no-js">
+  <head>
+    
+    <!-- META AND PAGE INFO -->
+    <title>Title</title>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width = device-width, height = device-height, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  	
+  	<!-- LINK TO THE STYLE SHEET -->
+  	<link rel="stylesheet" href="stylesheets/style.css" />
+  	
+  	<!-- RESOURCES.HTML CONTAINS THE PAGE LAYOUTS -->
+  	<link rel="resources prefetch" href="resources.html" />
+
+  	<!-- TOC.JSON CONTAINS THE ARTICLE ORDER -->
+    <link rel="index" href="toc.json" type="application/json">
+    
+    <!-- LOAD TREESAVER -->
+    <script src="javascripts/treesaver-0.9.3b.js"></script>
+    
+  	<!-- RESOURCES.HTML CONTAINS THE LAYOUTS AND TOC.HTML CONTAINS YOUR TABLE OF CONTENTS -->
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+  </head>
+  <body>
+
+  <!-- NO-TREESAVER HEADDER+NAV -->
+  <!-- Note that HTML5 tags are not used because this will usually be viewed on old and incompatible browsers. -->
+	<div id="header">
+		<h1><a href="index.html">Page Title</a></h1>
+	  <div class="nav">
+			<ol role="navigation sitemap">
+				<li><a href="#">Nav Link 1</a></li>
+				<li><a href="#">Nav Link 2</a></li>
+				<li><a href="#">Articles</a>
+				  <ol>
+				    <li><a href="#">Article link 1</a></li>
+				    <li><a href="#">Article link 2</a></li>
+				    <li><a href="#">Article link 3</a></li>
+				    <li><a href="#">Article link 4</a></li>
+				    <li><a href="#">Article link 5</a></li>
+				    <li><a href="#">Article link 6</a></li>
+				    <li><a href="#">Article link 7</a></li>
+				  </ol>
+				</li>
+			</ol>
+		</div>
+	</div>
+
+	<div id="content">
+
+  <!--======================== CONTENT ========================-->
+  <article data-grids="department">
+  
+  <figure>
+    <hgroup data-sizes="title fallback">
+      <h3 class="byline">byline</h3>
+      <h1 class="hed">Hed</h1>
+      <h2 class="dek">Dek</h2>
+      <h4 class="timestamp">timestamp</h4>
+    </hgroup>
+  </figure>
+  
+  <p class="noindent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non eros ac augue eleifend malesuada. Praesent sagittis nisl eu elit ultrices adipiscing. Maecenas lectus ligula, mollis rutrum sagittis nec, pretium et neque. Praesent sit amet justo ut diam mollis laoreet sit amet sed dui. Nulla id nunc non tortor semper tincidunt nec nec elit. Maecenas convallis nisi in eros interdum euismod. Cras laoreet consequat eros, vel posuere est hendrerit sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at sapien eros, et blandit ipsum. Aliquam elementum orci eget tortor feugiat eu eleifend elit volutpat. Mauris auctor velit eget nisl tincidunt elementum. Fusce dignissim urna ut augue accumsan at aliquam mauris vulputate. Fusce facilisis lorem ac nunc sollicitudin ultrices. Vestibulum egestas placerat orci, eget egestas dui pretium eu. Aenean vel neque egestas dolor molestie tincidunt. Cras id nulla ante, quis pulvinar magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ut eros lectus.</p>
+  
+  <!--A sample image-->
+  <figure class="zoomable">
+    <!-- USE DIFFERENT SIZED IMAGES TO HELP LOAD TIME -->
+    <!-- data-minWidth is used to let Treesaver know the minimum space required for figures to fit in grids and lightboxes -->
+    <div data-sizes="single" data-minWidth="243" data-minHeight="202" ratio="4x3">
+      <img data-src="images/img.jpg" width="243" height="182" />
+      <p class="caption">Caption congue eu sollicitudin ac, fringilla vitae elit. <span class="credit">John Smith</span></p>
+    </div>
+    <!--Using regular "src" and the class "no-treesaver" so this displays on old browsers or without JavaScript.-->
+    <div data-sizes="double" data-minWidth="507" data-minHeight="400" ratio="4x3" class="no-treesaver">
+      <img src="images/img.jpg" width="507" height="380" />
+      <p class="caption">Caption congue eu sollicitudin ac, fringilla vitae elit. <span class="credit">John Smith</span></p>
+    </div>
+    <div data-sizes="triple" data-minWidth="771" data-minHeight="598" ratio="4x3">
+      <img data-src="images/img.jpg" width="771" height="578" />
+      <p class="caption">Caption congue eu sollicitudin ac, fringilla vitae elit. <span class="credit">John Smith</span></p>
+    </div>
+    <div data-sizes="quad" data-minWidth="1035" data-minHeight="796" ratio="4x3">
+      <img data-src="images/img.jpg" width="1035" height="776" />
+      <p class="caption">Caption congue eu sollicitudin ac, fringilla vitae elit. <span class="credit">John Smith</span></p>
+    </div>
+    <!-- Fallback content will be run into the column if a figure doesn’t place -->
+    <div data-sizes="fallback"><p>Figure didn’t place, click to view.</p></div>
+  </figure>
+  
+  <p>Integer ultrices sodales nibh, sed convallis mauris accumsan vitae. Proin libero ipsum, congue eu dignissim nec, malesuada eu ante. Nulla sit amet odio nec risus tempor ultricies. Nunc sit amet risus lectus. Aliquam est lorem, congue eu sollicitudin ac, fringilla vitae elit. Nam sollicitudin, urna at pellentesque tempus, tellus diam ultricies tellus, sagittis pretium nulla risus ut quam. Donec cursus enim vel orci imperdiet egestas. Donec porttitor, risus at ornare condimentum, metus felis pulvinar magna, eu mollis lorem dui convallis sem. Aliquam elementum diam ut quam tempus imperdiet. Etiam egestas, dolor a ullamcorper feugiat, diam orci facilisis tortor, eget scelerisque sem nunc nec nisl. Nullam aliquam egestas porttitor. Donec convallis, lectus eget consequat bibendum, tellus eros semper leo, vel vehicula risus diam sed urna. Ut viverra justo ut purus posuere malesuada. Quisque nec nunc dui. Nunc consectetur, felis ac ultrices bibendum, elit sapien tristique lorem, nec facilisis felis mi vel est. Donec nec nisi ac sapien consectetur tempor. Nunc interdum felis et erat tincidunt id luctus tortor fermentum. Suspendisse vehicula odio in mi auctor sed pellentesque felis varius. Proin fermentum nunc vel risus dictum non eleifend dui feugiat.</p>
+  <h5>Subhed one</h5>
+  <p>Aliquam rutrum, turpis sit amet iaculis tincidunt, lorem elit porttitor risus, ut elementum arcu urna et odio. Quisque adipiscing diam non velit dapibus hendrerit. In hac habitasse platea dictumst. Proin egestas, lectus vitae pharetra eleifend, ipsum dolor eleifend arcu, quis suscipit augue metus eu tellus. Morbi felis nisi, accumsan ac tincidunt eleifend, ornare nec magna. Duis eget accumsan sem. Morbi eu tellus turpis. Duis sagittis velit in justo pulvinar eget congue justo mollis. Nulla varius rhoncus lacinia. Ut lobortis tempor laoreet. Nam sollicitudin aliquam nulla, in bibendum risus dictum id. Donec ultricies adipiscing tortor, vitae facilisis arcu accumsan sed. Donec nec augue at justo dignissim tempor sed eget justo. Cras justo lorem, porta eget vulputate tempor, scelerisque ut dolor. Donec nec porttitor risus. Nunc vitae urna in orci placerat cursus non eu nunc.</p>
+  <h6>Subhed two</h6>
+  <p>Nunc massa risus, fermentum ut malesuada vitae, vehicula in felis. Maecenas lobortis elit tempor nisi condimentum posuere. Morbi dignissim quam id nisl dapibus vehicula consectetur velit pretium. Nam eu varius nisl. Maecenas condimentum viverra ante, id rhoncus turpis eleifend quis. Curabitur suscipit malesuada tellus ullamcorper malesuada. Phasellus sit amet risus at sapien rutrum congue. Suspendisse ultrices augue ut ante tempus in ultrices elit convallis. Aenean non leo vitae orci volutpat ornare. Nam vitae euismod risus. Sed eu turpis nisi. Mauris ipsum mi, convallis nec pretium sit amet, posuere nec elit. Suspendisse euismod, quam quis volutpat placerat, lacus urna interdum neque, eu pellentesque eros sapien eget enim. Nam suscipit bibendum nulla non aliquam. Ut id dui tellus, eget sollicitudin tellus. Aenean suscipit elit id massa scelerisque porta eget eu lorem.</p>
+  <p>Sed euismod ligula et nibh tincidunt a elementum odio consequat. Donec cursus nunc non eros feugiat sit amet pharetra risus mattis. Aliquam volutpat auctor iaculis. Vestibulum elementum felis vitae lacus gravida in euismod nulla posuere. Aliquam nulla purus, viverra volutpat sagittis quis, ultrices at augue. Vestibulum eu eros at neque facilisis accumsan. Morbi ligula mi, fermentum a sagittis sed, luctus adipiscing quam. Fusce sollicitudin mollis sem non vulputate. Vestibulum tincidunt, massa et egestas vestibulum, ligula tortor ullamcorper enim, eget ultricies lectus libero et nibh. Etiam ultrices molestie arcu. In urna purus, euismod ac dictum vitae, iaculis ac leo. Phasellus lectus massa, scelerisque non hendrerit in, porttitor ut sapien. Maecenas ipsum neque, volutpat ac ultrices eget, venenatis sed odio. Suspendisse potenti. Morbi mattis cursus diam vel placerat. Phasellus congue, ligula non congue rutrum, nisl nulla placerat justo, et imperdiet urna justo id nisl. Sed ligula tortor, consequat quis auctor at, aliquet non tortor. Sed sodales aliquam justo, ut sagittis orci ultricies vel. Pellentesque ut ligula massa, posuere lobortis risus.</p>
+
+  </article>
+  <!--====================== END CONTENT ======================-->
+  
+  </div>
+
+  <!--NO-JS FOOTER-->
+  <div id="footer">
+	  <div class="nav">
+			<ol>
+				<li><a href="#">Nav Link 1</a></li>
+				<li><a href="#">Nav Link 2</a></li>
+				<li><a href="#">Articles</a>
+				  <ol>
+				    <li><a href="#">Article link 1</a></li>
+				    <li><a href="#">Article link 2</a></li>
+				    <li><a href="#">Article link 3</a></li>
+				    <li><a href="#">Article link 4</a></li>
+				    <li><a href="#">Article link 5</a></li>
+				    <li><a href="#">Article link 6</a></li>
+				    <li><a href="#">Article link 7</a></li>
+				  </ol>
+				</li>
+			</ol>
+		</div>
+  </div>
+
+</body>
+</html>

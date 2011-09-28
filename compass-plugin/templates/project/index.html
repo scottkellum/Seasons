@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-treesaver no-js">
+  <head>
+    
+    <!-- META AND PAGE INFO -->
+    <title>Title</title>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width = device-width, height = device-height, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  	
+  	<!-- LINK TO THE STYLE SHEET -->
+  	<link rel="stylesheet" href="stylesheets/style.css" />
+  	
+  	<!-- RESOURCES.HTML CONTAINS THE PAGE LAYOUTS -->
+  	<link rel="resources prefetch" href="resources.html" />
+
+  	<!-- TOC.JSON CONTAINS THE ARTICLE ORDER -->
+    <link rel="index" href="toc.json" type="application/json">
+    
+    <!-- LOAD TREESAVER -->
+    <script src="javascripts/treesaver-0.9.3b.js"></script>
+    
+  	<!-- RESOURCES.HTML CONTAINS THE LAYOUTS AND TOC.HTML CONTAINS YOUR TABLE OF CONTENTS -->
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+  </head>
+  <body>
+
+  <!-- NO-TREESAVER HEADDER+NAV -->
+  <!-- Note that HTML5 tags are not used because this will usually be viewed on old and incompatible browsers. -->
+	<div id="header">
+		<h1><a href="index.html">Page Title</a></h1>
+	  <div class="nav">
+			<ol role="navigation sitemap">
+				<li><a href="#">Nav Link 1</a></li>
+				<li><a href="#">Nav Link 2</a></li>
+				<li><a href="#">Articles</a>
+				  <ol>
+				    <li><a href="#">Article link 1</a></li>
+				    <li><a href="#">Article link 2</a></li>
+				    <li><a href="#">Article link 3</a></li>
+				    <li><a href="#">Article link 4</a></li>
+				    <li><a href="#">Article link 5</a></li>
+				    <li><a href="#">Article link 6</a></li>
+				    <li><a href="#">Article link 7</a></li>
+				  </ol>
+				</li>
+			</ol>
+		</div>
+	</div>
+
+	<div id="content">
+
+  <!--======================== CONTENT ========================-->
+  <article data-grids="cover">
+  <p>asdf</p>
+  <figure class="required">
+    <!-- USE DIFFERENT SIZED IMAGES TO HELP LOAD TIME -->
+    <div data-sizes="single" ratio="3x4">
+      <img data-src="images/img.jpg" width="243" height="324" />
+    </div>
+    <!--Using regular "src" and the class "no-treesaver" so this displays on old browsers or without JavaScript.-->
+    <div data-sizes="double" ratio="3x4" class="no-treesaver">
+      <img src="images/img.jpg" width="507" height="676" />
+    </div>
+    <div data-sizes="triple" ratio="3x4">
+      <img data-src="images/img.jpg" width="771" height="1028" />
+    </div>
+    <div data-sizes="quad" ratio="3x4">
+      <img data-src="images/img.jpg" width="1035" height="1380" />
+    </div>
+  </figure>
+
+  </article>
+  <!--====================== END CONTENT ======================-->
+  
+  </div>
+
+  <!--NO-JS FOOTER-->
+  <div id="footer">
+	  <div class="nav">
+			<ol>
+				<li><a href="#">Nav Link 1</a></li>
+				<li><a href="#">Nav Link 2</a></li>
+				<li><a href="#">Articles</a>
+				  <ol>
+				    <li><a href="#">Article link 1</a></li>
+				    <li><a href="#">Article link 2</a></li>
+				    <li><a href="#">Article link 3</a></li>
+				    <li><a href="#">Article link 4</a></li>
+				    <li><a href="#">Article link 5</a></li>
+				    <li><a href="#">Article link 6</a></li>
+				    <li><a href="#">Article link 7</a></li>
+				  </ol>
+				</li>
+			</ol>
+  </div>
+
+</body>
+</html>
