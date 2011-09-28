@@ -10,7 +10,7 @@ Three folders, one containing the HTML project, one containing a CSS framework a
 
 ### Compass workflow
 
-* Install the seasons gem `sudo gem install seasons`
+* Install Compass, then install the seasons gem `sudo gem install seasons`
 * Sart a new project using the seasons framework. `compass create my_project -r seasons --using seasons`
 * Create layouts and the UI in the `resources.html` file.
 * Organize articles in the `toc.json` file.
@@ -22,7 +22,7 @@ Three folders, one containing the HTML project, one containing a CSS framework a
 
 [For more detail, visit to the wiki](https://github.com/scottkellum/Seasons/wiki)
 
-* First, install Sass or Compass. You can learn about Sass at [sass-lang.com](http://sass-lang.com/).
+* First, install Sass. You can learn about Sass at [sass-lang.com](http://sass-lang.com/).
 * Open the seasons folder in your terminal and type `sass --watch sass:html/_/css`.
 * Create layouts and the UI in the `_/resources.html` file.
 * Organize articles in the `_/toc.json` file.
