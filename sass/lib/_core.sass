@@ -15,6 +15,7 @@ $margin: 20px !default
 $top: 20px !default
 $bottom: 20px !default
 $columns: 12 !default
+$text-column-span: 3 !default
 
 
 // IMAGE + PAGE RATIOS
@@ -49,17 +50,17 @@ $rows: 10 !default
 // Lightbox sizes
 .lightbox .container
   &[class*="single"]
-    width: grid(3)
+    width: grid($text-column-span)
   &[class*="double"]
-    width: grid(6)
+    width: grid($text-column-span * 2)
   &[class*="triple"]
-    width: grid(9)
+    width: grid($text-column-span * 3)
   &[class*="quad"]
-    width: grid(12)
+    width: grid($text-column-span * 4)
 
 // COLUMN WIDTHS
 .column
-  width: grid(3)
+  width: grid($text-column-span)
   @include type($size, $line-height)
 
 // GRID+FIGURE MEASUREMENTS
