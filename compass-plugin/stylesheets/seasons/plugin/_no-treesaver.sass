@@ -1,0 +1,72 @@
+// SUPPORT FOR NON-TREESAVER PAGES
+
+// Hide no-treesaver elements unless they are in a placed figure
+html.treesaver
+  .no-treesaver
+    display: none
+  .container, .fallback
+    .no-treesaver
+      display: block
+  
+// No-treesaver styles
+html.no-treesaver
+  overflow: auto
+  overflow-y: scroll
+  body
+    width: 100%
+    max-width: grid(9)
+    margin: 0 auto
+    overflow: visible
+    background: $page
+  #header, #content, #footer
+    padding: $line-height $margin
+  #header
+    h1
+      +solid($line-height)
+      margin-bottom: ms(-2)
+  .nav
+    ol, ul
+      list-style: none
+      margin: 0 (-$margin)
+      padding: 0 $margin
+    li
+      display: inline
+      position: relative
+      // SUCKERFISH MENUS
+      ol, ul
+        z-index: 1
+        display: none
+        position: absolute
+        top: 100%
+        left: 0
+        margin: 0
+        padding: 0
+      li
+        width: auto
+        display: block
+        a
+          display: block
+      &:hover ol, ul
+        display: block
+  #content
+    div, iframe, object
+      display: none
+      &.no-treesaver
+        overflow: visible
+        display: block
+        float: right
+        padding-left: 1em
+        width: 100%
+        max-width: grid(6)
+        div
+          display: block
+        img, iframe, video
+          width: 100%
+          height: auto
+  #footer
+    clear: both
+    padding-bottom: 0
+    .nav li
+      ol, ul
+        top: auto
+        bottom: 100%

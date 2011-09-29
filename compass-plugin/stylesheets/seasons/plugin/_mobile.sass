@@ -1,0 +1,83 @@
+// MOBILE STYLES
+// These styles allow you to create smartphone specific grids.
+// To use create a new set of grids with the class "mobile"
+// all width measurements will be overwritten by these styles.
+
+// Suggested cover width
+$cover_width: 250px
+
+// Remove mobile grids for desktop users
+.mobile.grid
+  +remove
+  margin: 0
+  +border-radius(0)
+  +box-shadow(none)
+  border: none
+
+// All the mobile grid styles here.
+.smallscreen.mobile
+  .viewer
+    padding: 0
+    margin: 0
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background: $page
+  .grid:not(.fixed)
+    +remove
+  .mobile.grid
+    opacity: 1 !important
+    margin: 0
+    width: 280px
+    min-width: 280px
+    padding: 20px
+  .column, .container
+    width: 280px
+    min-width: 280px
+
+
+// SHRINK IMAGES + PAGES
+=ratio($width, $height, $cols: $columns)
+  // Force resize images
+  .mobile.grid .container [ratio="#{$width}x#{$height}"] img
+    width: 280px
+    height: 280px * ( $height / $width )
+
+// Pull in the ratios defined in the skin
++ratios
+
+// MOBILE COVERS
+// If you grid is named "cover" it will be resized to be optimized for mobile devices.
+.smallscreen.mobile
+  // Large mobile cover
+  .cover.fixed.w3col.grid, .cover.fixed.w3col.grid *
+    margin: 0
+    padding: 0
+    width: $cover_width
+    height: $cover_width * ( 4 / 3 )
+    min-width: $cover_width
+    min-height: $cover_width * ( 4 / 3 )
+    .img
+      top: 0
+  // Small mobile cover
+  .cover.fixed.w2col.grid, .cover.fixed.w2col.grid *
+    margin: 0
+    padding: 0
+    width: $cover_width/2
+    height: $cover_width/2 * ( 4 / 3 )
+    min-width: $cover_width/2
+    min-height: $cover_width/2 * ( 4 / 3 )
+    .img
+      top: 0
+  .cover.grid
+    margin: 0 ( ( $cover_width - 320px ) / 8 )
+  .fixed.grid, .sizetocontainer.grid
+    max-width: none
+    max-height: none
+    min-width: none
+    min-height: none
+  // FALLBACK IMAGES
+  .mobile.grid .keeptogether.fallback img
+    width: 40px
+    height: 40px
