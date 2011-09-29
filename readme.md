@@ -20,7 +20,7 @@ Three folders, one containing the HTML project, one containing a CSS framework a
 
 ### Sass workflow
 
-[For more detail, visit to the wiki](https://github.com/scottkellum/Seasons/wiki)
+[For more detail, visit to the wiki](https://github.com/scottkellum/Seasons/wiki/Styling-with-Sass-and-Compass)
 
 * First, install Sass. You can learn about Sass at [sass-lang.com](http://sass-lang.com/).
 * Open the seasons folder in your terminal and type `sass --watch sass:html/_/css`.
@@ -32,7 +32,7 @@ Three folders, one containing the HTML project, one containing a CSS framework a
 
 ### CSS workflow (Sass or Compass is reccomended)
 
-[For more detail, visit to the wiki](https://github.com/scottkellum/Seasons/wiki)
+[For more detail, visit to the wiki](https://github.com/scottkellum/Seasons/wiki/Styling-with-CSS)
 
 * Copy the contents of the CSS folder to the html/_/css folder, overwriting the existing CSS file.
 * Create layouts and the UI in the html/_/resources.html file.
