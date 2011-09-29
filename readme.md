@@ -48,3 +48,10 @@ Dual-licensed under MIT and GPLv2 ON LAUNCH with the following exceptions:
 
 * _modular-scale.sass — [Copyright © 2011](https://github.com/scottkellum/modular-scale)
 * _reset.sass — [BSD License](http://html5reset.org/#acknowledgements)
+
+## Credits
+
+* [Filipe Fortes](https://github.com/fortes) and [Bram Stein](https://github.com/bramstein) for their work on [Treesaver](https://github.com/Treesaver/treesaver)
+* [Tim Murtaugh](https://github.com/murtaugh) for [HTML5-Reset](https://github.com/murtaugh/HTML5-Reset)
+* [Adam Stacoviak](https://github.com/adamstac) and [Mason Wendell](https://github.com/canarymason) for their help with [modular-scale](https://github.com/scottkellum/modular-scale)
+* Additional thanks to [Roger Black](http://rogerblack.com/), [Craig Weber](https://github.com/crgwbr), [Alicia Duffy](https://github.com/aliciaduffy), and [Jeffrey Zeldman](http://www.zeldman.com/)
