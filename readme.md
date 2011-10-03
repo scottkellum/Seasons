@@ -1,10 +1,10 @@
 # Seasons, a boilerplate for Treesaver
 
-Since Treesaver has been launched one of the most frequently asked questions has been “do you have a boilerplate or basic template?” The answer is yes, we have always had a bare-bones walkthrough but in-house we have been using something much more evolved. With a good boilerplate to kickstart projects, this  complex framework can be fully realized.
+Since [Treesaver](https://github.com/Treesaver/treesaver) has been launched one of the most frequently asked questions has been “do you have a boilerplate or basic template?” The answer is yes, we have always had a bare-bones walkthrough but in-house we have been using something much more evolved. With a good boilerplate to kickstart projects, this  complex framework can be fully realized.
 
 [Seasons](https://github.com/scottkellum/Seasons), the boilerplate we have built up and used in house for over a year  is now available as a starting point. We hope this will open the doors  to get started creating dynamic HTML publications with ease, and to enable integration of Treesaver publications in content management systems.
 
-Treesaver will still be producing high quality templates, both custom and off-the-shelf. With this documentation our clients can better understand and use the platform.
+[Treesaver](http://treesaver.net) will still be producing high quality templates, both custom and off-the-shelf. With this documentation our clients can better understand and use the platform.
 
 We are happy to launch Seasons, and eager to see what you do with it.
 
