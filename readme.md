@@ -1,5 +1,7 @@
-# Seasons
+# Seasons 0.9.3.beta1
 ### A style framework for your Treesaver publication.
+
+## This is BETA software containing a beta version of Treesaver.js. Formatting is subject to change.
 
 Seasons is a boilerplate for [Treesaver](http://treesaverjs.com/), a JavaScript layout engine. While Treesaver is an awesome bit of code it takes quite a bit of tinkering to get something up and running. This project aims to do the heavy lifting for you so you can get on with designing and building your project, not just tinkering until it works.
 
