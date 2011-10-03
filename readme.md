@@ -54,9 +54,7 @@ Three different frameworks: CSS, Sass, and Compass. Pick your preference and get
 * Style chrome with the `chrome.css` file.
 
 ## Licence
-Proprietary for now.
-
-Dual-licensed under MIT and GPLv2 ON LAUNCH with the following exceptions:
+Dual-licensed under MIT and GPLv2 with the following exceptions:
 
 * _modular-scale.sass — [Copyright © 2011](https://github.com/scottkellum/modular-scale)
 * _reset.sass — [BSD License](http://html5reset.org/#acknowledgements)
