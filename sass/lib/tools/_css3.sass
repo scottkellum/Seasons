@@ -516,7 +516,7 @@ $prefixes: -webkit- -moz- -ms- -o-
   background-image: linear-gradient(top, $startcolor, $endcolor)
 
 =hgradient($left, $right)
-  @warn "@mixin hgradient will be depruciated in 0.9.3.beta4 and above."
+  @warn "@mixin hgradient will be depruciated in 0.9.3.beta4 and later."
   background-color: $left / 2 + $right / 2
   filter: unquote("progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='")#{$left}unquote("', endColorstr='")#{$right}unquote("')")
   -ms-filter: unquote("progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#{$left}', endColorstr='#{$right}')")
