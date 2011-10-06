@@ -490,18 +490,42 @@ $prefixes: -webkit- -moz- -ms- -o-
   -o-border-#{$top}-#{$left}-radius: $borderradius
   border-#{$top}-#{$left}-radius: $borderradius
 
-=gradient($top, $bottom)
-  background-color: $top / 2 + $bottom / 2
-  filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='")#{$top}unquote("', endColorstr='")#{$bottom}unquote("')")
-  -ms-filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$top}', endColorstr='#{$bottom}')")
-  background-image: -webkit-gradient(linear, left top, left bottom, from($top), to($bottom))
-  background-image: -webkit-linear-gradient(top, $top, $bottom)
-  background-image: -moz-linear-gradient(top, $top, $bottom)
-  background-image: -ms-linear-gradient(top, $top, $bottom)
-  background-image: -o-linear-gradient(top, $top, $bottom)
-  background-image: linear-gradient(top, $top, $bottom)
+=gradient($startcolor, $endcolor, $startpos: top)
+  background-color: $startcolor / 2 + $endcolor / 2
+  $vertical: false
+  $horizontal: false
+  @if $startpos == "top"
+    $vertical: true
+    background-image: -webkit-gradient(linear, top left, bottom left, from($startcolor), to($endcolor))
+  @if $startpos == "left"
+    $horizontal: true
+    background-image: -webkit-gradient(linear, top left, top right, from($startcolor), to($endcolor))
+  @if $startpos == "bottom"
+    background-image: -webkit-gradient(linear, bottom left, top left, from($startcolor), to($endcolor))
+  @if $startpos == "right"
+    background-image: -webkit-gradient(linear, top right, top left, from($startcolor), to($endcolor))
+  @if $startpos == "top left"
+    background-image: -webkit-gradient(linear, $startpos, bottom right, from($startcolor), to($endcolor))
+  @if $startpos == "top right"
+    background-image: -webkit-gradient(linear, $startpos, bottom left, from($startcolor), to($endcolor))
+  @if $startpos == "bottom left"
+    background-image: -webkit-gradient(linear, $startpos, top right, from($startcolor), to($endcolor))
+  @if $startpos == "bottom right"
+    background-image: -webkit-gradient(linear, $startpos, top left, from($startcolor), to($endcolor))
+  @if $vertical
+    filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='")#{$startcolor}unquote("', endColorstr='")#{$endcolor}unquote("')")
+    -ms-filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$startcolor}', endColorstr='#{$endcolor}')")
+  @if $horizontal
+    filter: unquote("progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='")#{$startcolor}unquote("', endColorstr='")#{$endcolor}unquote("')")
+    -ms-filter: unquote("progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#{$startcolor}', endColorstr='#{$endcolor}')")
+  background-image: -webkit-linear-gradient($startpos, $startcolor, $endcolor)
+  background-image: -moz-linear-gradient($startpos, $startcolor, $endcolor)
+  background-image: -ms-linear-gradient($startpos, $startcolor, $endcolor)
+  background-image: -o-linear-gradient($startpos, $startcolor, $endcolor)
+  background-image: linear-gradient($startpos, $startcolor, $endcolor)
 
 =hgradient($left, $right)
+  @warn "@mixin hgradient will be depruciated in 0.9.3.beta4 and later."
   background-color: $left / 2 + $right / 2
   filter: unquote("progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='")#{$left}unquote("', endColorstr='")#{$right}unquote("')")
   -ms-filter: unquote("progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#{$left}', endColorstr='#{$right}')")
