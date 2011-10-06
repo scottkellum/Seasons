@@ -492,13 +492,13 @@ $prefixes: -webkit- -moz- -ms- -o-
 
 =gradient($startcolor, $endcolor, $startpos: top)
   background-color: $startcolor / 2 + $endcolor / 2
-  $vertical: false
-  $horizontal: false
   @if $startpos == "top"
-    $vertical: true
+    filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='")#{$startcolor}unquote("', endColorstr='")#{$endcolor}unquote("')")
+    -ms-filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$startcolor}', endColorstr='#{$endcolor}')")
     background-image: -webkit-gradient(linear, top left, bottom left, from($startcolor), to($endcolor))
   @if $startpos == "left"
-    $horizontal: true
+    filter: unquote("progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='")#{$startcolor}unquote("', endColorstr='")#{$endcolor}unquote("')")
+    -ms-filter: unquote("progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#{$startcolor}', endColorstr='#{$endcolor}')")
     background-image: -webkit-gradient(linear, top left, top right, from($startcolor), to($endcolor))
   @if $startpos == "bottom"
     background-image: -webkit-gradient(linear, bottom left, top left, from($startcolor), to($endcolor))
@@ -512,12 +512,6 @@ $prefixes: -webkit- -moz- -ms- -o-
     background-image: -webkit-gradient(linear, $startpos, top right, from($startcolor), to($endcolor))
   @if $startpos == "bottom right"
     background-image: -webkit-gradient(linear, $startpos, top left, from($startcolor), to($endcolor))
-  @if $vertical
-    filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='")#{$startcolor}unquote("', endColorstr='")#{$endcolor}unquote("')")
-    -ms-filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$startcolor}', endColorstr='#{$endcolor}')")
-  @if $horizontal
-    filter: unquote("progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='")#{$startcolor}unquote("', endColorstr='")#{$endcolor}unquote("')")
-    -ms-filter: unquote("progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#{$startcolor}', endColorstr='#{$endcolor}')")
   background-image: -webkit-linear-gradient($startpos, $startcolor, $endcolor)
   background-image: -moz-linear-gradient($startpos, $startcolor, $endcolor)
   background-image: -ms-linear-gradient($startpos, $startcolor, $endcolor)
