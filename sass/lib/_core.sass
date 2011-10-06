@@ -18,10 +18,16 @@ $columns: 12 !default
 $text-column-span: 3 !default
 
 
+$row-prefix: r !default
+$column-prefix: c !default
+$width-prefix: w !default
+$height-prefix: h !default
+$ratio-prefix: r !default
+
 // IMAGE + PAGE RATIOS
 =ratio($width, $height, $cols: $columns)
   @for $i from 1 through $cols
-    .r#{$width}x#{$height}.w#{$i}, .container.w#{$i} [ratio="#{$width}x#{$height}"] img // Grid ratio, figure ratio.
+    .#{$ratio-prefix+$width}x#{$height}.#{$width-prefix+$i}, .container.#{$width-prefix+$i} [ratio="#{$width}x#{$height}"] img // Grid ratio, figure ratio.
       width: grid($i) // Width spans all columns
       height: round(grid($i) * ( $height / $width )) // Height is the proportion of the width.
 
@@ -29,10 +35,10 @@ $text-column-span: 3 !default
 
 // GRID MEASURMENTS
 @for $i from 1 through $columns // loop defines columns. c1, c2, c3 . . .
-  .c#{$i}
+  .#{$column-prefix+$i}
     margin-left: grid($i) - $module-w
 @for $i from 1 through $columns // loop defines widths. w1, w2, w3 . . .
-  .w#{$i}
+  .#{$width-prefix+$i}
     width: grid($i)
 
 // Vertical grid
@@ -40,11 +46,11 @@ $vertical-grid: false !default
 $rows: 10 !default
 @if $vertical-grid // Generate only if $vertical-grid is true. This code is usually not nessisary.
   @for $i from 1 through $rows // loop defines rows. r1, r2, r3 . . .
-    .r#{$i}
+    .#{$row-prefix+$i}
       position: absolute
       top: (grid($i, $module-h) - $module-h) + $top
   @for $i from 1 through $rows // loop defines heights. h1, h2, h3 . . .
-    .h#{$i}
+    .#{$height-prefix+$i}
       height: grid($i, $module-h)
 
 // Lightbox sizes
