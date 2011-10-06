@@ -1,6 +1,6 @@
 // GRID MEASUREMENTS
-@function grid($unit, $measure: $module-w)
-  @return (($measure * $unit) + ($gutter * ($unit - 1)))
+@function grid($units, $measure: $module-w)
+  @return (($measure * $units) + ($gutter * ($units - 1)))
 
 $vertical-grid: false !default
 =location($across: 1, $width: 1, $down: 1, $height: 1)
