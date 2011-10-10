@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{seasons}
-  s.version = "0.9.3.beta3"
+  s.version = "0.9.3.beta4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.5")
   s.authors = ["Scott Kellum"]
@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://www.treesaver.net/}
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{seasons}
-  s.rubygems_version = %q{0.9.3.beta3}
+  s.rubygems_version = %q{0.9.3.beta4}
   s.summary = %q{The Compass variant of the Seasons framework to style Treesaver.}
   s.add_dependency(%q<compass>, ["~> 0.11"])
 end
