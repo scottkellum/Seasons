@@ -27,7 +27,7 @@ Three different frameworks: CSS, Sass, and Compass. Pick your preference and get
 * Create layouts and the UI in the `resources.html` file.
 * Organize articles in the `toc.json` file.
 * configure your project in the `_config.scss` file.
-* Style pages with the `_skin.scss` file.
+* Style pages with the `_grid.scss` file.
 * Style chrome with the `_chrome.scss` file.
 
 ### Sass workflow
@@ -39,7 +39,7 @@ Three different frameworks: CSS, Sass, and Compass. Pick your preference and get
 * Create layouts and the UI in the `_/resources.html` file.
 * Organize articles in the `_/toc.json` file.
 * configure your project in the `_config.sass` file.
-* Style pages with the `_skin.scss` file.
+* Style pages with the `_grid.scss` file.
 * Style chrome with the `_chrome.scss` file.
 
 ### CSS workflow (Sass or Compass is reccomended)
@@ -50,7 +50,7 @@ Three different frameworks: CSS, Sass, and Compass. Pick your preference and get
 * Create layouts and the UI in the html/_/resources.html file.
 * Create layouts and the UI in the `_/resources.html` file.
 * Organize articles in the `_/toc.json` file.
-* Style pages with the `skin.css` file.
+* Style pages with the `grid.css` file.
 * Style chrome with the `chrome.css` file.
 
 ## Licence

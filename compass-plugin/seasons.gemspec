@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
     "stylesheets/seasons/tools/_reset.sass",
     "templates/project/_chrome.scss",
     "templates/project/_config.sass",
-    "templates/project/_skin.scss",
+    "templates/project/_grid.scss",
     "templates/project/style.sass",
     "templates/project/treesaver-0.9.3b.js",
     "templates/project/toc.json",
