@@ -540,9 +540,9 @@ $prefixes: -webkit- -moz- -ms- -o-
   background-image: linear-gradient(top, lighten($color, 15%) 0%, $color 50%, darken($color, 5%) 51%, darken($color, 5%) 100%)
 
 // ROTATION
-=rotate($deg)
+=rotate($deg, $origin: 0% 100%)
   display: block
-  +transform-origin(0% 100%)
+  +transform-origin($origin)
   .no-csstransforms &
     @if $deg == 90
       filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1)
