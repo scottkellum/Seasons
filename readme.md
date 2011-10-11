@@ -22,8 +22,8 @@ Three different frameworks: CSS, Sass, and Compass. Pick your preference and get
 
 ### Compass workflow
 
-[Walkthrough](https://github.com/scottkellum/Seasons/wiki/Compass-walkthrough)
-[For more detail, visit to the wiki](https://github.com/scottkellum/Seasons/wiki/Styling-with-Sass-and-Compass)
+* [Walkthrough](https://github.com/scottkellum/Seasons/wiki/Compass-walkthrough)
+* [For more detail, visit to the wiki](https://github.com/scottkellum/Seasons/wiki/Styling-with-Sass-and-Compass)
 
 * Install Compass, then install the seasons gem `sudo gem install seasons`
 * Sart a new project using the seasons framework. `compass create my_project -r seasons --using seasons`
@@ -35,8 +35,8 @@ Three different frameworks: CSS, Sass, and Compass. Pick your preference and get
 
 ### Sass workflow
 
-[Walkthrough](https://github.com/scottkellum/Seasons/wiki/Sass-walkthrough)
-[For more detail, visit to the wiki](https://github.com/scottkellum/Seasons/wiki/Styling-with-Sass-and-Compass)
+* [Walkthrough](https://github.com/scottkellum/Seasons/wiki/Sass-walkthrough)
+* [For more detail, visit to the wiki](https://github.com/scottkellum/Seasons/wiki/Styling-with-Sass-and-Compass)
 
 * First, install Sass. You can learn about Sass at [sass-lang.com](http://sass-lang.com/).
 * Open the seasons folder in your terminal and type `sass --watch sass:html/_/css`.
@@ -48,8 +48,8 @@ Three different frameworks: CSS, Sass, and Compass. Pick your preference and get
 
 ### CSS workflow (Sass or Compass is reccomended)
 
-[Walkthrough](https://github.com/scottkellum/Seasons/wiki/CSS-and-HTML-walkthrough)
-[For more detail, visit to the wiki](https://github.com/scottkellum/Seasons/wiki/Styling-with-CSS)
+* [Walkthrough](https://github.com/scottkellum/Seasons/wiki/CSS-and-HTML-walkthrough)
+* [For more detail, visit to the wiki](https://github.com/scottkellum/Seasons/wiki/Styling-with-CSS)
 
 * Copy the contents of the CSS folder to the html/_/css folder, overwriting the existing CSS file.
 * Create layouts and the UI in the html/_/resources.html file.
