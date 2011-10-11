@@ -2,7 +2,7 @@ description "Seasons treesaver framework"
 
 stylesheet 'style.sass'
 stylesheet '_config.sass'
-stylesheet '_grid.scss'
+stylesheet '_pages.scss'
 stylesheet '_chrome.scss'
 
 html 'resources.html'

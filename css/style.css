@@ -17,8 +17,8 @@ It creates a flexable yet solid foundation for building templates.
 
 
 
-/* Select the grid you wish to use - */
-@import url("grid.css");
+/* Select the page styles you wish to use - */
+@import url("pages.css");
 
 /* Select the chrome style you wish to use - */
 @import url("chrome.css");
