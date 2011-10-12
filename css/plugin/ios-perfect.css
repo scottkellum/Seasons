@@ -39,12 +39,12 @@ html.no-offline [data-requires~="offline"] {
   width: 99999px;
   opacity: 1 !important; }
 .os-ipad .grid.fixed.ipad.horizontal {
-  height: 690px;
+  height: 644px;
   width: 771px;
   min-width: 771px;
   padding: 0 126.5px; }
 .os-ipad .grid.fixed.ipad.vertical {
-  height: 946px;
+  height: 900px;
   width: 507px;
   min-width: 507px;
   padding: 0 130.5px; }
