@@ -1,10 +1,10 @@
 // VENDOR PREFIXR
 $prefixes: -webkit- -moz- -ms- -o-
 
-=prefix($attribute, $value, $prefixes)
+=prefix($property, $value, $prefixes)
   @each $prefix in $prefixes
-    #{$prefix}#{$attribute}: $value
-  #{$attribute}: $value
+    #{$prefix}#{$property}: $value
+  #{$property}: $value
 
 
 // STANDARDIZE VENDOR-SPECIFIC PROPERTIES
