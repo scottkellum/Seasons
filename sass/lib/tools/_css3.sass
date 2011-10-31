@@ -1,9 +1,14 @@
 // VENDOR PREFIXR
-$prefixes: -webkit- -moz- -ms- -o-
+$prefixes: -webkit- -moz- -ms- -o- !default
 
 =prefix($property, $value, $prefixes)
   @each $prefix in $prefixes
     #{$prefix}#{$property}: $value
+  #{$property}: $value
+
+=prefix-value($property, $value, $prefixes)
+  @each $prefix in $prefixes
+    #{$property}: #{$prefix}$value
   #{$property}: $value
 
 
