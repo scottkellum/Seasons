@@ -17,6 +17,7 @@ $bottom: 20px !default
 $columns: 12 !default
 $text-column-span: 3 !default
 
+$consistant-page-width: false !default
 
 $row-prefix: r !default
 $column-prefix: c !default
@@ -40,6 +41,14 @@ $ratio-prefix: r !default
 @for $i from 1 through $columns // loop defines widths. w1, w2, w3 . . .
   .#{$width-prefix+$i}
     width: grid($i)
+
+// Force consistant page widths
+@if $consistant-page-width
+  $i: $columns - $text-column-span
+  @while $i > 0
+    .#{$width-prefix+$i}.grid:not(.fixed):not(.sizetocontainer)
+      max-width: grid($i + $text-column-span)
+    $i: $i - $text-column-span
 
 // Vertical grid
 $vertical-grid: false !default
