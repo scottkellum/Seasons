@@ -28,12 +28,20 @@ $bottom: ms(3) // default bottom margin (for text and containers)
 $columns: 12 // # of columns you want to calculate for
 
 // COLORS
-$primary: #f66
-$secondary: #6f6
-$tertiary: #66f
+// calculated by a built in color schemer, write your own color schemes as you wish.
+$base-color: #237ADE // base or primary color
+$color-scheme: analogic // complement, triad, tetrad, analogic or accented-analogic
+$color-angle: 30 // color offset ammount.
+
+// Output of color scemer, set to your own values if you want.
+$primary: color-schemer(primary)
+$secondary: color-schemer(secondary)
+$tertiary: color-schemer(tertiary)
+$quadrary: color-schemer(quadrary)
+
 $text: #333
 $page: #fff
-$body: #333
+$body: #666
 
 // FONTS
 $font: serif
