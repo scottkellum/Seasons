@@ -8,6 +8,10 @@
       "timestamp": "timestamp"
     },
     {
+      "url": "sample-ad.html",
+      "title": "ad"
+    },
+    {
       "url": "article.html",
       "title": "title",
       "publication": "publication",

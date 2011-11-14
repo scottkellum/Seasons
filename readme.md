@@ -1,4 +1,5 @@
 # Seasons, a boilerplate for Treesaver
+## [live version of the latest build](http://lab.scottkellum.com/seasons/)
 
 Since [Treesaver](https://github.com/Treesaver/treesaver) has been launched one of the most frequently asked questions has been “do you have a boilerplate or basic template?” The answer is yes, we have always had a bare-bones walkthrough but in-house we have been using something much more evolved. With a good boilerplate to kickstart projects, this  complex framework can be fully realized.
 
@@ -8,7 +9,7 @@ Since [Treesaver](https://github.com/Treesaver/treesaver) has been launched one 
 
 We are happy to launch Seasons, and eager to see what you do with it.
 
-# Seasons 0.9.3.beta6
+# Seasons 0.9.3.beta8
 ### A style framework for your Treesaver publication.
 
 ### This is BETA software containing a beta version of Treesaver.js. Formatting is subject to change.
