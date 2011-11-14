@@ -62,6 +62,7 @@ Three different frameworks: CSS, Sass, and Compass. Pick your preference and get
 Dual-licensed under MIT and GPLv2 with the following exceptions:
 
 * _modular-scale.sass — [Copyright © 2011](https://github.com/scottkellum/modular-scale)
+* _color-schemer.sass — [Copyright © 2011](https://github.com/scottkellum/color-schemer)
 * _reset.sass — [BSD License](http://html5reset.org/#acknowledgements)
 
 ## Credits
@@ -70,4 +71,5 @@ Dual-licensed under MIT and GPLv2 with the following exceptions:
 * Thanks to [Filipe Fortes](https://github.com/fortes) and [Bram Stein](https://github.com/bramstein) for their work on [Treesaver](https://github.com/Treesaver/treesaver)
 * Thanks to [Tim Murtaugh](https://github.com/murtaugh) for [HTML5-Reset](https://github.com/murtaugh/HTML5-Reset)
 * Thanks to [Adam Stacoviak](https://github.com/adamstac) and [Mason Wendell](https://github.com/canarymason) for their help with [modular-scale](https://github.com/scottkellum/modular-scale)
+* Thanks to [Mason Wendell](https://github.com/canarymason) for their help with [color-schemer](https://github.com/scottkellum/color-schemer)
 * Additional thanks to [Roger Black](http://rogerblack.com/), [Craig Weber](https://github.com/crgwbr), [Alicia Duffy](https://github.com/aliciaduffy), and [Jeffrey Zeldman](http://www.zeldman.com/)
