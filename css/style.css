@@ -29,6 +29,7 @@ It creates a flexable yet solid foundation for building templates.
 @import url("lib/core.css");
 
 /* PLUGINS */
+@import url("plugin/ad.css");
 /* @import url("plugin/ios-perfect.css"); */
 /* @import url("plugin/mobile.css"); */
 /* @import url("plugin/no-treesaver.css"); */
