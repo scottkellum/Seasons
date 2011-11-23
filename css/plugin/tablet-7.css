@@ -1,0 +1,6 @@
+@media all and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape), all and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait) {
+  html.touch {
+    font-size: 16px; } }
+@media all and (device-width: 683px) and (max-device-height: 400px) and (orientation: landscape), all and (device-width: 400px) and (max-device-height: 683px) and (orientation: portrait) {
+  html.touch {
+    font-size: 10.667px; } }
