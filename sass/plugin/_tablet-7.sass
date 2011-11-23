@@ -3,7 +3,7 @@
 $tab7-vertual-resolution: 1 !default
 
 @if unit($module-w) != "em"
-  @warn "Your grid MUST be based on ems to scale for smaller tablets properly."
+  @warn "Your grid MUST be based on ems to scale to 7 inch tablets."
 @else
   // Standard 7" 1024x600 tablet
   @media all and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape), all and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait)

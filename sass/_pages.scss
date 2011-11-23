@@ -15,8 +15,10 @@ p {
     text-indent: 0;
     }
   &.caption {
-    color: #fff;
     text-align: left;
+    .lightbox & {
+      color: #fff;
+      }
     }
   }
 

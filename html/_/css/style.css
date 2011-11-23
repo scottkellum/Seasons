@@ -170,8 +170,9 @@ p {
   p.noindent, p.caption, .keeptogether p {
     text-indent: 0; }
   p.caption {
-    color: #fff;
     text-align: left; }
+    .lightbox p.caption {
+      color: #fff; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
