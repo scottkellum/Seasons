@@ -591,6 +591,9 @@ nav {
   width: 48.593em; }
 .lightbox .container[class*="quad"] {
   width: 65.235em; }
+.lightbox .container img {
+  width: 100%;
+  height: auto; }
 
 .column {
   width: 15.309em;
@@ -844,6 +847,6 @@ html.no-offline [data-requires~="offline"] {
 @media all and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape), all and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait) {
   html.touch {
     font-size: 16px; } }
-@media all and (device-width: 683px) and (max-device-height: 400px) and (orientation: landscape), all and (device-width: 400px) and (max-device-height: 683px) and (orientation: portrait) {
+@media all and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (max-device-height: 400px) and (orientation: landscape), all and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (max-device-height: 683px) and (orientation: portrait) {
   html.touch {
     font-size: 10.667px; } }
