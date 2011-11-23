@@ -24,59 +24,64 @@ $column-prefix: c !default
 $width-prefix: w !default
 $height-prefix: h !default
 $ratio-prefix: r !default
+$scale: 1
 
-// IMAGE + PAGE RATIOS
 =ratio($width, $height, $cols: $columns)
   @for $i from 1 through $cols
     .#{$ratio-prefix+$width}x#{$height}.#{$width-prefix+$i}, .container.#{$width-prefix+$i} [ratio="#{$width}x#{$height}"] img // Grid ratio, figure ratio.
-      width: grid($i) // Width spans all columns
-      height: round(grid($i) * ( $height / $width )) // Height is the proportion of the width.
+      width: grid($i) * $scale // Width spans all columns
+      height: round(grid($i) * ( $height / $width )) * $scale // Height is the proportion of the width.
 
-+ratios // Run the code above. Ratios are defined in _config.sass
+=build-grid
+  // IMAGE + PAGE RATIOS
+  
+  +ratios // Run the code above. Ratios are defined in _config.sass
+  
+  // GRID MEASURMENTS
+  @for $i from 1 through $columns // loop defines columns. c1, c2, c3 . . .
+    .#{$column-prefix+$i}
+      margin-left: (grid($i) - $module-w) * $scale
+  @for $i from 1 through $columns // loop defines widths. w1, w2, w3 . . .
+    .#{$width-prefix+$i}
+      width: grid($i) * $scale
+  
+  // Force consistant page widths
+  @if $consistant-page-width
+    $i: $columns - $text-column-span
+    @while $i > 0
+      .#{$width-prefix+$i}.grid:not(.fixed):not(.sizetocontainer)
+        max-width: grid($i + $text-column-span) * $scale
+      $i: $i - $text-column-span
+  
+  // Vertical grid
+  $vertical-grid: false !default
+  $rows: 10 !default
+  @if $vertical-grid // Generate only if $vertical-grid is true. This code is usually not nessisary.
+    @for $i from 1 through $rows // loop defines rows. r1, r2, r3 . . .
+      .#{$row-prefix+$i}
+        position: absolute
+        top: ((grid($i, $module-h) - $module-h) + $top) * $scale
+    @for $i from 1 through $rows // loop defines heights. h1, h2, h3 . . .
+      .#{$height-prefix+$i}
+        height: grid($i, $module-h) * $scale
+  
+  // Lightbox sizes
+  .lightbox .container
+    &[class*="single"]
+      width: grid($text-column-span) * $scale
+    &[class*="double"]
+      width: grid($text-column-span * 2) * $scale
+    &[class*="triple"]
+      width: grid($text-column-span * 3) * $scale
+    &[class*="quad"]
+      width: grid($text-column-span * 4) * $scale
+  
+  // COLUMN WIDTHS
+  .column
+    width: grid($text-column-span) * $scale
+    @include type($size, $line-height)
 
-// GRID MEASURMENTS
-@for $i from 1 through $columns // loop defines columns. c1, c2, c3 . . .
-  .#{$column-prefix+$i}
-    margin-left: grid($i) - $module-w
-@for $i from 1 through $columns // loop defines widths. w1, w2, w3 . . .
-  .#{$width-prefix+$i}
-    width: grid($i)
-
-// Force consistant page widths
-@if $consistant-page-width
-  $i: $columns - $text-column-span
-  @while $i > 0
-    .#{$width-prefix+$i}.grid:not(.fixed):not(.sizetocontainer)
-      max-width: grid($i + $text-column-span)
-    $i: $i - $text-column-span
-
-// Vertical grid
-$vertical-grid: false !default
-$rows: 10 !default
-@if $vertical-grid // Generate only if $vertical-grid is true. This code is usually not nessisary.
-  @for $i from 1 through $rows // loop defines rows. r1, r2, r3 . . .
-    .#{$row-prefix+$i}
-      position: absolute
-      top: (grid($i, $module-h) - $module-h) + $top
-  @for $i from 1 through $rows // loop defines heights. h1, h2, h3 . . .
-    .#{$height-prefix+$i}
-      height: grid($i, $module-h)
-
-// Lightbox sizes
-.lightbox .container
-  &[class*="single"]
-    width: grid($text-column-span)
-  &[class*="double"]
-    width: grid($text-column-span * 2)
-  &[class*="triple"]
-    width: grid($text-column-span * 3)
-  &[class*="quad"]
-    width: grid($text-column-span * 4)
-
-// COLUMN WIDTHS
-.column
-  width: grid($text-column-span)
-  @include type($size, $line-height)
++build-grid
 
 // GRID+FIGURE MEASUREMENTS
 .grid
@@ -156,11 +161,13 @@ $scroll-support: true !default
     width: 3px
 
 // TYPOGRAPHY RESET
-html, body
+html
   +type($base-size, $line-height)
   font-family: $font
   color: $text
   background-color: $body
+
+html, body
   overflow: hidden
 
 // Make sure headlines look good and always fit
