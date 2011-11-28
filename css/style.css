@@ -32,5 +32,6 @@ It creates a flexable yet solid foundation for building templates.
 @import url("plugin/ad.css");
 /* @import url("plugin/mobile.css"); */
 /* @import url("plugin/ipad.css"); */
-/* @import url("plugin/tablet-7.css"); */
+@import url("plugin/tablet-7-normalize.css");
+/* @import url("plugin/tablet-7-template.css"); */
 /* @import url("plugin/no-treesaver.css"); */
