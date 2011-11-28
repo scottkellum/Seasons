@@ -1,0 +1,47 @@
+// PIXEL-PERFECT TEMPLATES FOR 7" TABLETS.
+// These styles allow you to create specific grids for 7" tablets.
+// To use create a new set of grids with the class "seven" followed by either "vertical" or "horizontal"
+
+// Margins and column widths will be over-written.
+
+$seasons-tablet-7-normalize-loaded: false !default
+$tablet-7-margin: $margin !default
+
+// Resize images
+=ratio($width, $height, $cols: $columns)
+  // Force resize images
+  .seven.grid .container [ratio="#{$width}x#{$height}"] img
+    width: 600 / ( $base-size * $tab7-virtual-resolution / 1px ) - $tablet-7-margin * 2
+    height: ( 600 / ( $base-size * $tab7-virtual-resolution / 1px ) - $tablet-7-margin * 2 ) * ( $height / $width )
+
+@if $seasons-tablet-7-normalize-loaded
+  // Make sure seven grids don't show up for desktop users.
+  .grid.seven
+    +remove
+    margin: 0
+    +border-radius(0)
+    +box-shadow(none)
+    border: none
+  
+  @media screen and (-webkit-device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape), all and (-webkit-device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait), screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (max-device-height: 400px) and (orientation: landscape), all and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (max-device-height: 683px) and (orientation: portrait)
+    html.touch
+      background-color: $page
+      // Force sizing and remove standard desktop grids.
+      .grid:not(.fixed):not(.sizetocontainer):not(.seven)
+        +remove
+      .grid
+        opacity: 1 !important
+      .column, .container
+        width: 600 / ( $base-size * $tab7-virtual-resolution / 1px ) - $tablet-7-margin * 2
+      .grid.seven
+        width: 600 / ( $base-size * $tab7-virtual-resolution / 1px ) - $tablet-7-margin * 2
+        min-width: 600 / ( $base-size * $tab7-virtual-resolution / 1px ) - $tablet-7-margin * 2
+        margin: 0
+        padding: 0 $margin
+      
+      // Pull in the ratios defined in the skin
+      +ratios
+@else
+  @warn "Make sure tablet-7-normalize is loaded before loading tablet-7-templates."
+
+$seasons-tablet-7-template-loaded: true

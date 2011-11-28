@@ -1,0 +1,49 @@
+.grid.seven {
+  min-width: 99999px;
+  width: 99999px;
+  margin: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  border: none; }
+
+@media screen and (-webkit-device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape), all and (-webkit-device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait), screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (max-device-height: 400px) and (orientation: landscape), all and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (max-device-height: 683px) and (orientation: portrait) {
+  html.touch {
+    background-color: white; }
+    html.touch .grid:not(.fixed):not(.sizetocontainer):not(.seven) {
+      min-width: 99999px;
+      width: 99999px; }
+    html.touch .grid {
+      opacity: 1 !important; }
+    html.touch .column, html.touch .container {
+      width: 28.583em; }
+    html.touch .grid.seven {
+      width: 28.583em;
+      min-width: 28.583em;
+      margin: 0;
+      padding: 0 1.333em; }
+    html.touch .seven.grid .container [ratio="16x9"] img {
+      width: 28.583em;
+      height: 16.078em; }
+    html.touch .seven.grid .container [ratio="4x3"] img {
+      width: 28.583em;
+      height: 21.438em; }
+    html.touch .seven.grid .container [ratio="5x4"] img {
+      width: 28.583em;
+      height: 22.867em; }
+    html.touch .seven.grid .container [ratio="1x1"] img {
+      width: 28.583em;
+      height: 28.583em; }
+    html.touch .seven.grid .container [ratio="4x5"] img {
+      width: 28.583em;
+      height: 35.729em; }
+    html.touch .seven.grid .container [ratio="3x4"] img {
+      width: 28.583em;
+      height: 38.111em; } }

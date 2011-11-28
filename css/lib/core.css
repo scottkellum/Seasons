@@ -1,511 +1,374 @@
 .r16x9.w1, .container.w1 [ratio="16x9"] img {
-  width: 67px;
-  height: 38px; }
+  width: 4.214em;
+  height: 2em; }
 
 .r16x9.w2, .container.w2 [ratio="16x9"] img {
-  width: 155px;
-  height: 87px; }
+  width: 9.761em;
+  height: 5em; }
 
 .r16x9.w3, .container.w3 [ratio="16x9"] img {
-  width: 243px;
-  height: 137px; }
+  width: 15.309em;
+  height: 9em; }
 
 .r16x9.w4, .container.w4 [ratio="16x9"] img {
-  width: 331px;
-  height: 186px; }
+  width: 20.856em;
+  height: 12em; }
 
 .r16x9.w5, .container.w5 [ratio="16x9"] img {
-  width: 419px;
-  height: 236px; }
+  width: 26.403em;
+  height: 15em; }
 
 .r16x9.w6, .container.w6 [ratio="16x9"] img {
-  width: 507px;
-  height: 285px; }
+  width: 31.951em;
+  height: 18em; }
 
 .r16x9.w7, .container.w7 [ratio="16x9"] img {
-  width: 595px;
-  height: 335px; }
+  width: 37.498em;
+  height: 21em; }
 
 .r16x9.w8, .container.w8 [ratio="16x9"] img {
-  width: 683px;
-  height: 384px; }
+  width: 43.045em;
+  height: 24em; }
 
 .r16x9.w9, .container.w9 [ratio="16x9"] img {
-  width: 771px;
-  height: 434px; }
+  width: 48.593em;
+  height: 27em; }
 
 .r16x9.w10, .container.w10 [ratio="16x9"] img {
-  width: 859px;
-  height: 483px; }
+  width: 54.14em;
+  height: 30em; }
 
 .r16x9.w11, .container.w11 [ratio="16x9"] img {
-  width: 947px;
-  height: 533px; }
+  width: 59.687em;
+  height: 34em; }
 
 .r16x9.w12, .container.w12 [ratio="16x9"] img {
-  width: 1035px;
-  height: 582px; }
+  width: 65.235em;
+  height: 37em; }
 
 .r4x3.w1, .container.w1 [ratio="4x3"] img {
-  width: 67px;
-  height: 50px; }
+  width: 4.214em;
+  height: 3em; }
 
 .r4x3.w2, .container.w2 [ratio="4x3"] img {
-  width: 155px;
-  height: 116px; }
+  width: 9.761em;
+  height: 7em; }
 
 .r4x3.w3, .container.w3 [ratio="4x3"] img {
-  width: 243px;
-  height: 182px; }
+  width: 15.309em;
+  height: 11em; }
 
 .r4x3.w4, .container.w4 [ratio="4x3"] img {
-  width: 331px;
-  height: 248px; }
+  width: 20.856em;
+  height: 16em; }
 
 .r4x3.w5, .container.w5 [ratio="4x3"] img {
-  width: 419px;
-  height: 314px; }
+  width: 26.403em;
+  height: 20em; }
 
 .r4x3.w6, .container.w6 [ratio="4x3"] img {
-  width: 507px;
-  height: 380px; }
+  width: 31.951em;
+  height: 24em; }
 
 .r4x3.w7, .container.w7 [ratio="4x3"] img {
-  width: 595px;
-  height: 446px; }
+  width: 37.498em;
+  height: 28em; }
 
 .r4x3.w8, .container.w8 [ratio="4x3"] img {
-  width: 683px;
-  height: 512px; }
+  width: 43.045em;
+  height: 32em; }
 
 .r4x3.w9, .container.w9 [ratio="4x3"] img {
-  width: 771px;
-  height: 578px; }
+  width: 48.593em;
+  height: 36em; }
 
 .r4x3.w10, .container.w10 [ratio="4x3"] img {
-  width: 859px;
-  height: 644px; }
+  width: 54.14em;
+  height: 41em; }
 
 .r4x3.w11, .container.w11 [ratio="4x3"] img {
-  width: 947px;
-  height: 710px; }
+  width: 59.687em;
+  height: 45em; }
 
 .r4x3.w12, .container.w12 [ratio="4x3"] img {
-  width: 1035px;
-  height: 776px; }
+  width: 65.235em;
+  height: 49em; }
 
 .r5x4.w1, .container.w1 [ratio="5x4"] img {
-  width: 67px;
-  height: 54px; }
+  width: 4.214em;
+  height: 3em; }
 
 .r5x4.w2, .container.w2 [ratio="5x4"] img {
-  width: 155px;
-  height: 124px; }
+  width: 9.761em;
+  height: 8em; }
 
 .r5x4.w3, .container.w3 [ratio="5x4"] img {
-  width: 243px;
-  height: 194px; }
+  width: 15.309em;
+  height: 12em; }
 
 .r5x4.w4, .container.w4 [ratio="5x4"] img {
-  width: 331px;
-  height: 265px; }
+  width: 20.856em;
+  height: 17em; }
 
 .r5x4.w5, .container.w5 [ratio="5x4"] img {
-  width: 419px;
-  height: 335px; }
+  width: 26.403em;
+  height: 21em; }
 
 .r5x4.w6, .container.w6 [ratio="5x4"] img {
-  width: 507px;
-  height: 406px; }
+  width: 31.951em;
+  height: 26em; }
 
 .r5x4.w7, .container.w7 [ratio="5x4"] img {
-  width: 595px;
-  height: 476px; }
+  width: 37.498em;
+  height: 30em; }
 
 .r5x4.w8, .container.w8 [ratio="5x4"] img {
-  width: 683px;
-  height: 546px; }
+  width: 43.045em;
+  height: 34em; }
 
 .r5x4.w9, .container.w9 [ratio="5x4"] img {
-  width: 771px;
-  height: 617px; }
+  width: 48.593em;
+  height: 39em; }
 
 .r5x4.w10, .container.w10 [ratio="5x4"] img {
-  width: 859px;
-  height: 687px; }
+  width: 54.14em;
+  height: 43em; }
 
 .r5x4.w11, .container.w11 [ratio="5x4"] img {
-  width: 947px;
-  height: 758px; }
+  width: 59.687em;
+  height: 48em; }
 
 .r5x4.w12, .container.w12 [ratio="5x4"] img {
-  width: 1035px;
-  height: 828px; }
+  width: 65.235em;
+  height: 52em; }
 
 .r1x1.w1, .container.w1 [ratio="1x1"] img {
-  width: 67px;
-  height: 67px; }
+  width: 4.214em;
+  height: 4em; }
 
 .r1x1.w2, .container.w2 [ratio="1x1"] img {
-  width: 155px;
-  height: 155px; }
+  width: 9.761em;
+  height: 10em; }
 
 .r1x1.w3, .container.w3 [ratio="1x1"] img {
-  width: 243px;
-  height: 243px; }
+  width: 15.309em;
+  height: 15em; }
 
 .r1x1.w4, .container.w4 [ratio="1x1"] img {
-  width: 331px;
-  height: 331px; }
+  width: 20.856em;
+  height: 21em; }
 
 .r1x1.w5, .container.w5 [ratio="1x1"] img {
-  width: 419px;
-  height: 419px; }
+  width: 26.403em;
+  height: 26em; }
 
 .r1x1.w6, .container.w6 [ratio="1x1"] img {
-  width: 507px;
-  height: 507px; }
+  width: 31.951em;
+  height: 32em; }
 
 .r1x1.w7, .container.w7 [ratio="1x1"] img {
-  width: 595px;
-  height: 595px; }
+  width: 37.498em;
+  height: 37em; }
 
 .r1x1.w8, .container.w8 [ratio="1x1"] img {
-  width: 683px;
-  height: 683px; }
+  width: 43.045em;
+  height: 43em; }
 
 .r1x1.w9, .container.w9 [ratio="1x1"] img {
-  width: 771px;
-  height: 771px; }
+  width: 48.593em;
+  height: 49em; }
 
 .r1x1.w10, .container.w10 [ratio="1x1"] img {
-  width: 859px;
-  height: 859px; }
+  width: 54.14em;
+  height: 54em; }
 
 .r1x1.w11, .container.w11 [ratio="1x1"] img {
-  width: 947px;
-  height: 947px; }
+  width: 59.687em;
+  height: 60em; }
 
 .r1x1.w12, .container.w12 [ratio="1x1"] img {
-  width: 1035px;
-  height: 1035px; }
+  width: 65.235em;
+  height: 65em; }
 
 .r4x5.w1, .container.w1 [ratio="4x5"] img {
-  width: 67px;
-  height: 84px; }
+  width: 4.214em;
+  height: 5em; }
 
 .r4x5.w2, .container.w2 [ratio="4x5"] img {
-  width: 155px;
-  height: 194px; }
+  width: 9.761em;
+  height: 12em; }
 
 .r4x5.w3, .container.w3 [ratio="4x5"] img {
-  width: 243px;
-  height: 304px; }
+  width: 15.309em;
+  height: 19em; }
 
 .r4x5.w4, .container.w4 [ratio="4x5"] img {
-  width: 331px;
-  height: 414px; }
+  width: 20.856em;
+  height: 26em; }
 
 .r4x5.w5, .container.w5 [ratio="4x5"] img {
-  width: 419px;
-  height: 524px; }
+  width: 26.403em;
+  height: 33em; }
 
 .r4x5.w6, .container.w6 [ratio="4x5"] img {
-  width: 507px;
-  height: 634px; }
+  width: 31.951em;
+  height: 40em; }
 
 .r4x5.w7, .container.w7 [ratio="4x5"] img {
-  width: 595px;
-  height: 744px; }
+  width: 37.498em;
+  height: 47em; }
 
 .r4x5.w8, .container.w8 [ratio="4x5"] img {
-  width: 683px;
-  height: 854px; }
+  width: 43.045em;
+  height: 54em; }
 
 .r4x5.w9, .container.w9 [ratio="4x5"] img {
-  width: 771px;
-  height: 964px; }
+  width: 48.593em;
+  height: 61em; }
 
 .r4x5.w10, .container.w10 [ratio="4x5"] img {
-  width: 859px;
-  height: 1074px; }
+  width: 54.14em;
+  height: 68em; }
 
 .r4x5.w11, .container.w11 [ratio="4x5"] img {
-  width: 947px;
-  height: 1184px; }
+  width: 59.687em;
+  height: 75em; }
 
 .r4x5.w12, .container.w12 [ratio="4x5"] img {
-  width: 1035px;
-  height: 1294px; }
+  width: 65.235em;
+  height: 82em; }
 
 .r3x4.w1, .container.w1 [ratio="3x4"] img {
-  width: 67px;
-  height: 89px; }
+  width: 4.214em;
+  height: 6em; }
 
 .r3x4.w2, .container.w2 [ratio="3x4"] img {
-  width: 155px;
-  height: 207px; }
+  width: 9.761em;
+  height: 13em; }
 
 .r3x4.w3, .container.w3 [ratio="3x4"] img {
-  width: 243px;
-  height: 324px; }
+  width: 15.309em;
+  height: 20em; }
 
 .r3x4.w4, .container.w4 [ratio="3x4"] img {
-  width: 331px;
-  height: 441px; }
+  width: 20.856em;
+  height: 28em; }
 
 .r3x4.w5, .container.w5 [ratio="3x4"] img {
-  width: 419px;
-  height: 559px; }
+  width: 26.403em;
+  height: 35em; }
 
 .r3x4.w6, .container.w6 [ratio="3x4"] img {
-  width: 507px;
-  height: 676px; }
+  width: 31.951em;
+  height: 43em; }
 
 .r3x4.w7, .container.w7 [ratio="3x4"] img {
-  width: 595px;
-  height: 793px; }
+  width: 37.498em;
+  height: 50em; }
 
 .r3x4.w8, .container.w8 [ratio="3x4"] img {
-  width: 683px;
-  height: 911px; }
+  width: 43.045em;
+  height: 57em; }
 
 .r3x4.w9, .container.w9 [ratio="3x4"] img {
-  width: 771px;
-  height: 1028px; }
+  width: 48.593em;
+  height: 65em; }
 
 .r3x4.w10, .container.w10 [ratio="3x4"] img {
-  width: 859px;
-  height: 1145px; }
+  width: 54.14em;
+  height: 72em; }
 
 .r3x4.w11, .container.w11 [ratio="3x4"] img {
-  width: 947px;
-  height: 1263px; }
+  width: 59.687em;
+  height: 80em; }
 
 .r3x4.w12, .container.w12 [ratio="3x4"] img {
-  width: 1035px;
-  height: 1380px; }
+  width: 65.235em;
+  height: 87em; }
 
 .c1 {
-  margin-left: 0px; }
+  margin-left: 0em; }
 
 .c2 {
-  margin-left: 88px; }
+  margin-left: 5.547em; }
 
 .c3 {
-  margin-left: 176px; }
+  margin-left: 11.095em; }
 
 .c4 {
-  margin-left: 264px; }
+  margin-left: 16.642em; }
 
 .c5 {
-  margin-left: 352px; }
+  margin-left: 22.189em; }
 
 .c6 {
-  margin-left: 440px; }
+  margin-left: 27.737em; }
 
 .c7 {
-  margin-left: 528px; }
+  margin-left: 33.284em; }
 
 .c8 {
-  margin-left: 616px; }
+  margin-left: 38.831em; }
 
 .c9 {
-  margin-left: 704px; }
+  margin-left: 44.379em; }
 
 .c10 {
-  margin-left: 792px; }
+  margin-left: 49.926em; }
 
 .c11 {
-  margin-left: 880px; }
+  margin-left: 55.473em; }
 
 .c12 {
-  margin-left: 968px; }
+  margin-left: 61.021em; }
 
 .w1 {
-  width: 67px; }
+  width: 4.214em; }
 
 .w2 {
-  width: 155px; }
+  width: 9.761em; }
 
 .w3 {
-  width: 243px; }
+  width: 15.309em; }
 
 .w4 {
-  width: 331px; }
+  width: 20.856em; }
 
 .w5 {
-  width: 419px; }
+  width: 26.403em; }
 
 .w6 {
-  width: 507px; }
+  width: 31.951em; }
 
 .w7 {
-  width: 595px; }
+  width: 37.498em; }
 
 .w8 {
-  width: 683px; }
+  width: 43.045em; }
 
 .w9 {
-  width: 771px; }
+  width: 48.593em; }
 
 .w10 {
-  width: 859px; }
+  width: 54.14em; }
 
 .w11 {
-  width: 947px; }
+  width: 59.687em; }
 
 .w12 {
-  width: 1035px; }
-
-.r1 {
-  position: absolute;
-  top: 28px; }
-
-.r2 {
-  position: absolute;
-  top: 100px; }
-
-.r3 {
-  position: absolute;
-  top: 172px; }
-
-.r4 {
-  position: absolute;
-  top: 244px; }
-
-.r5 {
-  position: absolute;
-  top: 316px; }
-
-.r6 {
-  position: absolute;
-  top: 388px; }
-
-.r7 {
-  position: absolute;
-  top: 460px; }
-
-.r8 {
-  position: absolute;
-  top: 532px; }
-
-.r9 {
-  position: absolute;
-  top: 604px; }
-
-.r10 {
-  position: absolute;
-  top: 676px; }
-
-.r11 {
-  position: absolute;
-  top: 748px; }
-
-.r12 {
-  position: absolute;
-  top: 820px; }
-
-.r13 {
-  position: absolute;
-  top: 892px; }
-
-.r14 {
-  position: absolute;
-  top: 964px; }
-
-.r15 {
-  position: absolute;
-  top: 1036px; }
-
-.r16 {
-  position: absolute;
-  top: 1108px; }
-
-.r17 {
-  position: absolute;
-  top: 1180px; }
-
-.r18 {
-  position: absolute;
-  top: 1252px; }
-
-.r19 {
-  position: absolute;
-  top: 1324px; }
-
-.r20 {
-  position: absolute;
-  top: 1396px; }
-
-.h1 {
-  height: 51px; }
-
-.h2 {
-  height: 123px; }
-
-.h3 {
-  height: 195px; }
-
-.h4 {
-  height: 267px; }
-
-.h5 {
-  height: 339px; }
-
-.h6 {
-  height: 411px; }
-
-.h7 {
-  height: 483px; }
-
-.h8 {
-  height: 555px; }
-
-.h9 {
-  height: 627px; }
-
-.h10 {
-  height: 699px; }
-
-.h11 {
-  height: 771px; }
-
-.h12 {
-  height: 843px; }
-
-.h13 {
-  height: 915px; }
-
-.h14 {
-  height: 987px; }
-
-.h15 {
-  height: 1059px; }
-
-.h16 {
-  height: 1131px; }
-
-.h17 {
-  height: 1203px; }
-
-.h18 {
-  height: 1275px; }
-
-.h19 {
-  height: 1347px; }
-
-.h20 {
-  height: 1419px; }
+  width: 65.235em; }
 
 .lightbox .container[class*="single"] {
-  width: 243px; }
+  width: 15.309em; }
 .lightbox .container[class*="double"] {
-  width: 507px; }
+  width: 31.951em; }
 .lightbox .container[class*="triple"] {
-  width: 771px; }
+  width: 48.593em; }
 .lightbox .container[class*="quad"] {
-  width: 1035px; }
+  width: 65.235em; }
+.lightbox .container img {
+  width: 100%;
+  height: auto; }
 
 .grid {
   position: absolute;
@@ -570,12 +433,14 @@ html.js .hidden, html.no-js .hidden {
 .touch ::-webkit-scrollbar {
   width: 3px; }
 
-html, body {
+html {
   font-size: 16px;
   line-height: 1.333em;
   font-family: serif;
   color: #333333;
-  background-color: #333333;
+  background-color: #666666; }
+
+html, body {
   overflow: hidden; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -592,14 +457,13 @@ p {
 .column, .container {
   position: absolute;
   overflow: hidden;
-  top: 28px;
-  bottom: 38px; }
+  top: 1.778em;
+  bottom: 2.37em; }
 
 .column {
   min-height: 4em; }
 
 #previousPage, #nextPage {
-  z-index: -1;
   opacity: 0.5; }
 
 .grid.trimleft {
@@ -651,8 +515,8 @@ figure {
   display: none; }
 
 .fill .caption {
-  padding-left: 21px;
-  padding-right: 21px; }
+  padding-left: 1.333em;
+  padding-right: 1.333em; }
 
 .caption.left {
   text-align: left; }

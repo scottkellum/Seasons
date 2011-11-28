@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{seasons}
-  s.version = "0.9.3.beta8"
+  s.version = "0.9.3.beta9"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.5")
   s.authors = ["Scott Kellum"]
@@ -25,7 +25,8 @@ Gem::Specification.new do |s|
     "stylesheets/seasons/plugin/_ipad.sass",
     "stylesheets/seasons/plugin/_mobile.sass",
     "stylesheets/seasons/plugin/_no-treesaver.sass",
-    "stylesheets/seasons/plugin/_tablet-7.sass",
+    "stylesheets/seasons/plugin/_tablet-7-normalize.sass",
+    "stylesheets/seasons/plugin/_tablet-7-template.sass",
     "templates/project/_chrome.scss",
     "templates/project/_config.sass",
     "templates/project/_pages.scss",
@@ -43,7 +44,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://www.treesaver.net/}
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{seasons}
-  s.rubygems_version = %q{0.9.3.beta8}
+  s.rubygems_version = %q{0.9.3.beta9}
   s.summary = %q{The Compass variant of the Seasons framework to style Treesaver.}
   s.add_dependency(%q<compass>, ["~> 0.11"])
 end

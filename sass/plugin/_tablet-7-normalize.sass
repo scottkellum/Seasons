@@ -1,0 +1,18 @@
+// Normalize 7" tablets.
+
+// Default is halfway between both resolutions. I find the default 3/2 on the tab to be too much.
+$tab7-virtual-resolution: (6/5) !default
+
+@if unit($module-w) != "em"
+  @warn "Your grid MUST be based on ems to scale to 7 inch tablets."
+@else
+  // Standard 7" 1024x600 tablet
+  @media screen and (-webkit-device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape), all and (-webkit-device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait)
+    html
+      font-size: $base-size * $tab7-virtual-resolution
+  // 1024x600 tablet with virtual resolution (Original Galaxy Tab)
+  @media screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (max-device-height: 400px) and (orientation: landscape), all and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (max-device-height: 683px) and (orientation: portrait)
+    html
+      font-size: $base-size * (2/3) * $tab7-virtual-resolution
+
+$seasons-tablet-7-normalize-loaded: true

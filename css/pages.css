@@ -4,7 +4,7 @@ If you have a set of grids with a different column width, define it here. The de
 Column widths are measured by grid columns. The default should usually be 3 as that is what the image sizes are based on.
 */
 .column {
-  width: 243px;
+  width: 15.309em;
   font-size: 1em;
   line-height: 1.333em; }
 
@@ -21,6 +21,8 @@ p {
     text-indent: 0; }
   p.caption {
     text-align: left; }
+    .lightbox p.caption {
+      color: #fff; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
@@ -37,8 +39,8 @@ GENERAL GRID STYLES
 Styles here apply to every grid in your publication
 */
 .grid {
-  margin: 21px;
-  padding: 0 21px;
+  margin: 1.333em;
+  padding: 0 1.333em;
   background: white; }
 
 
