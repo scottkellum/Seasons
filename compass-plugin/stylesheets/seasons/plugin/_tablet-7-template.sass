@@ -11,8 +11,8 @@ $tablet-7-margin: $margin !default
 =ratio($width, $height, $cols: $columns)
   // Force resize images
   .seven.grid .container [ratio="#{$width}x#{$height}"] img
-    width: 600 / ( $base-size * $tab7-virtual-resolution / 1px ) - $tablet-7-margin * 2
-    height: ( 600 / ( $base-size * $tab7-virtual-resolution / 1px ) - $tablet-7-margin * 2 ) * ( $height / $width )
+    width: 600 / ( $base-size * $tab7-pixel-ratio / 1px ) - $tablet-7-margin * 2
+    height: ( 600 / ( $base-size * $tab7-pixel-ratio / 1px ) - $tablet-7-margin * 2 ) * ( $height / $width )
 
 @if $seasons-tablet-7-normalize-loaded
   // Make sure seven grids don't show up for desktop users.
@@ -32,10 +32,10 @@ $tablet-7-margin: $margin !default
       .grid
         opacity: 1 !important
       .column, .container
-        width: 600 / ( $base-size * $tab7-virtual-resolution / 1px ) - $tablet-7-margin * 2
+        width: 600 / ( $base-size * $tab7-pixel-ratio / 1px ) - $tablet-7-margin * 2
       .grid.seven
-        width: 600 / ( $base-size * $tab7-virtual-resolution / 1px ) - $tablet-7-margin * 2
-        min-width: 600 / ( $base-size * $tab7-virtual-resolution / 1px ) - $tablet-7-margin * 2
+        width: 600 / ( $base-size * $tab7-pixel-ratio / 1px ) - $tablet-7-margin * 2
+        min-width: 600 / ( $base-size * $tab7-pixel-ratio / 1px ) - $tablet-7-margin * 2
         margin: 0
         padding: 0 $margin
       
