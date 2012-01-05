@@ -764,14 +764,14 @@ figure {
   right: 0 !important;
   width: auto; }
 
-#chromeContainer .chrome:first-child {
+.chrome:first-child .grid, .chrome:first-child nav {
   -webkit-filter: blur(2px);
   -moz-filter: blur(2px);
   -ms-filter: blur(2px);
   -o-filter: blur(2px);
   filter: blur(2px); }
 
-#chromeContainer .chrome:last-child {
+.chrome:last-child .grid, .chrome:last-child nav {
   -webkit-filter: blur(0);
   -moz-filter: blur(0);
   -ms-filter: blur(0);

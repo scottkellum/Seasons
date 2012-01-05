@@ -282,11 +282,10 @@ $fullbleed: true !default
 
 
 // BLUR LIGHTBOX BACKGROUND
-// New browsers only.
 @if $blur-lightbox
-  #chromeContainer .chrome:first-child
+  .chrome:first-child .grid, .chrome:first-child nav
     +prefix(filter, blur($blur-radius))
-  #chromeContainer .chrome:last-child
+  .chrome:last-child .grid, .chrome:last-child nav
     +prefix(filter, blur(0))
 
 
