@@ -26,6 +26,9 @@ $height-prefix: h !default
 $ratio-prefix: r !default
 $scale: 1
 
+$blur-radius: 2px !default
+$blur-lightbox: true !default
+
 =ratio($width, $height, $cols: $columns)
   @for $i from 1 through $cols
     .#{$ratio-prefix+$width}x#{$height}.#{$width-prefix+$i}, .container.#{$width-prefix+$i} [ratio="#{$width}x#{$height}"] img // Grid ratio, figure ratio.
@@ -64,20 +67,6 @@ $scale: 1
     @for $i from 1 through $rows // loop defines heights. h1, h2, h3 . . .
       .#{$height-prefix+$i}
         height: grid($i, $module-h) * $scale
-  
-  // Lightbox sizes
-  .lightbox .container
-    &[class*="single"]
-      width: grid($text-column-span) * $scale
-    &[class*="double"]
-      width: grid($text-column-span * 2) * $scale
-    &[class*="triple"]
-      width: grid($text-column-span * 3) * $scale
-    &[class*="quad"]
-      width: grid($text-column-span * 4) * $scale
-    img
-      width: 100%
-      height: auto
   
   // COLUMN WIDTHS
   .column
@@ -290,6 +279,15 @@ $fullbleed: true !default
     left: 0 !important
     right: 0 !important
     width: auto
+
+
+// BLUR LIGHTBOX BACKGROUND
+// New browsers only.
+@if $blur-lightbox
+  #chromeContainer .chrome:first-child
+    +prefix(filter, blur($blur-radius))
+  #chromeContainer .chrome:last-child
+    +prefix(filter, blur(0))
 
 
 // MOBILE OPTIMIZATIONS
