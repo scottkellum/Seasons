@@ -6,13 +6,15 @@ $tab7-pixel-ratio: (6/5) !default
 @if unit($module-w) != "em"
   @warn "Your grid MUST be based on ems to scale to 7 inch tablets."
 @else
-  // Standard 7" 1024x600 tablet
-  @media screen and (-webkit-device-pixel-ratio: 1) and (device-width: 1024px) and (orientation: landscape), all and (-webkit-device-pixel-ratio: 1) and (device-width: 600px) and (orientation: portrait)
+  
+  // Standard 7" 1024x600 tablet (Kindle Fire)
+  @media screen and (-webkit-device-pixel-ratio: 1) and (device-width: 1024px) and (orientation: landscape), screen and (-webkit-device-pixel-ratio: 1) and (device-width: 600px) and (orientation: portrait)
     html
-      font-size: $base-size * $tab7-virtual-resolution
+      font-size: $base-size * $tab7-pixel-ratio
+  
   // 1024x600 tablet with virtual resolution (Original Galaxy Tab)
-  @media screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape), all and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait)
+  @media screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape), screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait)
     html
-      font-size: $base-size * (2/3) * $tab7-virtual-resolution
+      font-size: $base-size * (2/3) * $tab7-pixel-ratio
 
 $seasons-tablet-7-normalize-loaded: true
