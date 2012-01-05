@@ -16,6 +16,9 @@ p {
     }
   &.caption {
     text-align: left;
+    .lightbox & {
+      color: #fff;
+      }
     }
   }
 

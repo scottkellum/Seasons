@@ -195,7 +195,7 @@ h1 {
   left: 0; }
 
 nav {
-  display: none;
+  display: block;
   position: absolute;
   z-index: 1; }
 
@@ -583,18 +583,6 @@ nav {
 .w12 {
   width: 65.235em; }
 
-.lightbox .container[class*="single"] {
-  width: 15.309em; }
-.lightbox .container[class*="double"] {
-  width: 31.951em; }
-.lightbox .container[class*="triple"] {
-  width: 48.593em; }
-.lightbox .container[class*="quad"] {
-  width: 65.235em; }
-.lightbox .container img {
-  width: 100%;
-  height: auto; }
-
 .column {
   width: 15.309em;
   font-size: 1em;
@@ -603,7 +591,6 @@ nav {
 .grid {
   position: absolute;
   overflow: hidden;
-  z-index: 1;
   -webkit-backface-visibility: hidden;
   -webkit-font-smoothing: subpixel-antialiased; }
 
@@ -777,6 +764,20 @@ figure {
   right: 0 !important;
   width: auto; }
 
+#chromeContainer .chrome:first-child {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -ms-filter: blur(2px);
+  -o-filter: blur(2px);
+  filter: blur(2px); }
+
+#chromeContainer .chrome:last-child {
+  -webkit-filter: blur(0);
+  -moz-filter: blur(0);
+  -ms-filter: blur(0);
+  -o-filter: blur(0);
+  filter: blur(0); }
+
 .os-ipad, .os-ipad .grid, .os-iphone, .os-iphone .grid {
   -webkit-font-smoothing: antialiased; }
 
@@ -844,9 +845,9 @@ html.no-offline [data-requires~="offline"] {
 .ad.grid.w12 {
   width: 1200px; }
 
-@media screen and (-webkit-device-pixel-ratio: 1) and (device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape), all and (-webkit-device-pixel-ratio: 1) and (device-width: 600px) and (max-device-height: 1024px) and (orientation: portrait) {
+@media screen and (-webkit-device-pixel-ratio: 1) and (device-width: 1024px) and (orientation: landscape), screen and (-webkit-device-pixel-ratio: 1) and (device-width: 600px) and (orientation: portrait) {
   html {
     font-size: 19.2px; } }
-@media screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (max-device-height: 400px) and (orientation: landscape), all and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (max-device-height: 683px) and (orientation: portrait) {
+@media screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape), screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait) {
   html {
     font-size: 12.8px; } }

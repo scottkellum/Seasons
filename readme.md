@@ -9,7 +9,7 @@ Since [Treesaver](https://github.com/Treesaver/treesaver) has been launched one 
 
 We are happy to launch Seasons, and eager to see what you do with it.
 
-# Seasons 0.9.3.beta9
+# Seasons 0.9.3.beta10
 ### A style framework for your Treesaver publication.
 
 ### This is BETA software containing a beta version of Treesaver.js. Formatting is subject to change.
