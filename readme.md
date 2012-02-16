@@ -64,8 +64,6 @@ Three different frameworks: CSS, Sass, and Compass. Pick your preference and get
 ## Licence
 Dual-licensed under MIT and GPLv2 with the following exceptions:
 
-* _modular-scale.sass — [Copyright © 2011](https://github.com/scottkellum/modular-scale)
-* _color-schemer.sass — [Copyright © 2011](https://github.com/scottkellum/color-schemer)
 * _reset.sass — [BSD License](http://html5reset.org/#acknowledgements)
 
 ## Credits
