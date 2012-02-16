@@ -28,7 +28,7 @@ Three different frameworks: CSS, Sass, and Compass. Pick your preference and get
 * [Walkthrough](https://github.com/scottkellum/Seasons/wiki/Compass-walkthrough)
 * [For more detail, visit to the wiki](https://github.com/scottkellum/Seasons/wiki/Styling-with-Sass-and-Compass)
 
-* Install Compass, then install the seasons gem `sudo gem install seasons`
+* Install Compass, then install the seasons gem `sudo gem install seasons --pre`
 * Sart a new project using the seasons framework. `compass create my_project -r seasons --using seasons`
 * Create layouts and the UI in the `resources.html` file.
 * Organize articles in the `toc.json` file.
