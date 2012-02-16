@@ -9,10 +9,12 @@ Since [Treesaver](https://github.com/Treesaver/treesaver) has been launched one 
 
 We are happy to launch Seasons, and eager to see what you do with it.
 
-# Seasons 0.9.3.beta12
+# Seasons 0.9.3.beta13
 ### A style framework for your Treesaver publication.
 
 ### This is BETA software containing a beta version of Treesaver.js. Formatting is subject to change.
+
+### Modular-scale, color-schemer, and flexbox were removed in this release. Please add those to your project as needed from their individual repositories.
 
 Seasons is a boilerplate for [Treesaver](http://treesaverjs.com/), a JavaScript layout engine. While Treesaver is an awesome bit of code it takes quite a bit of tinkering to get something up and running. This project aims to do the heavy lifting for you so you can get on with designing and building your project, not just tinkering until it works.
 
@@ -71,6 +73,4 @@ Dual-licensed under MIT and GPLv2 with the following exceptions:
 * Seasons is created by [Scott Kellum](https://github.com/scottkellum), [@scottkellum](https://twitter.com/#!/scottkellum) on twitter
 * Thanks to [Filipe Fortes](https://github.com/fortes) and [Bram Stein](https://github.com/bramstein) for their work on [Treesaver](https://github.com/Treesaver/treesaver)
 * Thanks to [Tim Murtaugh](https://github.com/murtaugh) for [HTML5-Reset](https://github.com/murtaugh/HTML5-Reset)
-* Thanks to [Adam Stacoviak](https://github.com/adamstac) and [Mason Wendell](https://github.com/canarymason) for their help with [modular-scale](https://github.com/scottkellum/modular-scale)
-* Thanks to [Mason Wendell](https://github.com/canarymason) for their help with [color-schemer](https://github.com/scottkellum/color-schemer)
 * Additional thanks to [Roger Black](http://rogerblack.com/), [Craig Weber](https://github.com/crgwbr), [Alicia Duffy](https://github.com/aliciaduffy), and [Jeffrey Zeldman](http://www.zeldman.com/)
