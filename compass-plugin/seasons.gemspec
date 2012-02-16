@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{seasons}
-  s.version = "0.9.3.beta11"
+  s.version = "0.9.3.beta12"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.5")
   s.authors = ["Scott Kellum"]
@@ -20,7 +20,9 @@ Gem::Specification.new do |s|
     "stylesheets/seasons/tools/_css3.sass",
     "stylesheets/seasons/tools/_flexbox.sass",
     "stylesheets/seasons/tools/_grid-tools.sass",
+    "stylesheets/seasons/tools/_math.scss",
     "stylesheets/seasons/tools/_modular-scale.sass",
+    "stylesheets/seasons/tools/_relative-pixels.sass",
     "stylesheets/seasons/tools/_reset.sass",
     "stylesheets/seasons/plugin/_ad.sass",
     "stylesheets/seasons/plugin/_ipad.sass",

@@ -141,14 +141,14 @@ $scroll-support: true !default
     height: 100%
     padding-bottom: 40px
   // FORCE SCROLLBAR FOR SAFARI IN LION -- http://simurai.com/post/8083942390/force-lion-scrollbar
-  ::-webkit-scrollbar
+  ::-webkit-scrollbar, ::-moz-scrollbar, ::scrollbar
     -webkit-appearance: none
     width: 6px
-  ::-webkit-scrollbar-thumb
+  ::-webkit-scrollbar-thumb, ::-moz-scrollbar-thumb, ::scrollbar-thumb
     border-radius: 3px
     background-color: rgba(0,0,0,.5)
   // Make The Scrollbars Smaller On Touch Devices
-  .touch ::-webkit-scrollbar
+  .touch ::-webkit-scrollbar, .touch ::-moz-scrollbar, .touch ::-scrollbar
     width: 3px
 
 // TYPOGRAPHY RESET
