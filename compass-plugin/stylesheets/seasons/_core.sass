@@ -283,10 +283,13 @@ $fullbleed: true !default
 
 // BLUR LIGHTBOX BACKGROUND
 @if $blur-lightbox
-  .chrome:first-child .grid, .chrome:first-child nav
-    +prefix(filter, blur($blur-radius))
-  .chrome:last-child .grid, .chrome:last-child nav
-    +prefix(filter, blur(0))
+  // This blurs the grids and nav when the chrome is the first-child but overrides the blur when it is also the last-child.
+  // When the lightbox is enabled, the lightbox becomes the last-child, removing the override and blurring the grid and nav.
+  // IE has a bug where they don’t remove the blur. Therefore no blur can be written in the first place.
+  html:not(.browser-msie) .chrome:first-child .grid, html:not(.browser-msie) .chrome:first-child nav
+    +prefix(filter, blur($blur-radius), -moz- -webkit- -o-)
+  html:not(.browser-msie) .chrome:last-child .grid, html:not(.browser-msie) .chrome:last-child nav
+    +prefix(filter, blur(0), -moz- -webkit- -o-)
 
 
 // MOBILE OPTIMIZATIONS

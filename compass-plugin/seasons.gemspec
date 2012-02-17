@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{seasons}
-  s.version = "0.9.3.beta13"
+  s.version = "0.9.3.beta14"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.5")
   s.authors = ["Scott Kellum"]
