@@ -752,17 +752,15 @@ figure {
   right: 0 !important;
   width: auto; }
 
-.chrome:first-child .grid, .chrome:first-child nav {
-  -webkit-filter: blur(2px);
+html:not(.browser-msie) .chrome:first-child .grid, html:not(.browser-msie) .chrome:first-child nav {
   -moz-filter: blur(2px);
-  -ms-filter: blur(2px);
+  -webkit-filter: blur(2px);
   -o-filter: blur(2px);
   filter: blur(2px); }
 
-.chrome:last-child .grid, .chrome:last-child nav {
-  -webkit-filter: blur(0);
+html:not(.browser-msie) .chrome:last-child .grid, html:not(.browser-msie) .chrome:last-child nav {
   -moz-filter: blur(0);
-  -ms-filter: blur(0);
+  -webkit-filter: blur(0);
   -o-filter: blur(0);
   filter: blur(0); }
 
