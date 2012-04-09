@@ -5,7 +5,7 @@
 // Margins and column widths will be over-written.
 
 $seasons-tablet-7-normalize-loaded: false !default
-$tablet-7-margin: $margin !default
+$tablet-7-margin: $margin * 2 !default
 
 // Resize images
 =ratio($width, $height, $cols: $columns)
@@ -27,7 +27,7 @@ $tablet-7-margin: $margin !default
     html.touch
       background-color: $page
       // Force sizing and remove standard desktop grids.
-      .grid:not(.fixed):not(.sizetocontainer):not(.seven)
+      .grid:not(.fixed):not(.sizetocontainer):not(.seven):not(.cover):not(.ad)
         +remove
       .grid
         opacity: 1 !important
