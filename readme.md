@@ -1,3 +1,5 @@
+# *NO LONGER MAINTAINED*
+
 # Seasons, a boilerplate for Treesaver
 ## [live version of the latest build](http://lab.scottkellum.com/seasons/)
 
